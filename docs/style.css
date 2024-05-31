@@ -1,0 +1,10 @@
+.page1 h1{
+    font-weight: 999;
+    font-stretch: 260%;
+}
+.slide {
+    transition: width 0.3s ease;
+}
+.bestseller {
+    align-items: stretch;
+}
