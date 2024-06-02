@@ -12,18 +12,61 @@
 />
 </head>
 <body>
-    <h1 class=""></h1>
+    <main>
+        <div id="home">
+          <!-- navbar.html -->
+          <nav class="absolute h-[10vmin] px-[10vmin] pt-[5vmin] w-full top-0 bg-transparent text-white backdrop-blur-3xl shadow-md flex items-center justify-between p-4 z-50">  
+            <div class="logo">
+                 <img src="/Devinja-ReimagineRound1/media/boat.png" alt="Logo" class="h-10">
+              </div>
+            <div class="right-nav flex gap-[3vmin] text-[2.2vmin] font-semibold items-center">
+              <a href="#home" class="py-2">Categories</a>
+              <div class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">More</a>
+                <div class="dropdown-content hidden">
+                    <a href="#boatPersonalisation">Boat Personalisation</a>
+                    <a href="#giftWithBoat">Gift with Boat</a>
+                    <a href="#corporateOrders">Corporate Orders</a>
+                </div>
+             </div>
+             <div class="search-bar relative flex items-center">
+              <i class="ri-search-line absolute text-[2vmin] font-bold left-[2vmin]"></i>
+              <input class="w-[40vmin] h-[5vmin] px-[vmin] rounded-full bg-[#fff7f771] border-2 border-white" type="text" placeholder=''>
+             </div>
+              <a class="text-[3vmin] font-medium"><i class="ri-user-line"></i></a>
+              <a href="#cart" class="text-[3vmin] font-medium"><i class="ri-shopping-cart-2-line"></i></a>
+           </div>
+          </nav>
+
+
+            <canvas></canvas>
+
+            <div class="text-content absolute bottom-0">
+              <marquee class="text-[40vmin] font-bold text-white font-serif" behavior="scroll" direction="left" scrollamount="20">Live the <span class="text-red-600">Boat Life</span>!</marquee>
+            </div>
+        </div>
+         <div class="div h-screen w-full bg-black"></div>
+    </main>
+    
 
      
 
 
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"
+        integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
