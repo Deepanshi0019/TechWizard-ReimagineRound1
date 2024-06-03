@@ -4,11 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "LXGW WenKai Mono TC", monospace;
+    font-family: "metropolis", sans-serif ; 
 }
 @font-face {
-  font-family: Machina;
-  src: url(./PP_Neue_Machina_Inktrap_Medium.ttf);
+  font-family: metropolis;
+  src: url(./metropolis.light.otf);
 }
 html body{
    height: 100vh;
@@ -26,5 +26,9 @@ html body{
   canvas {
     max-width: 100vw;
     max-height: 100vh;
+  }
+
+  .Life-Section{
+    background: url(/Devinja-ReimagineRound1/media/download.svg);
   }
 /*                Home-Page CSS Ends Here

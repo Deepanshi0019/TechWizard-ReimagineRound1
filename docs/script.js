@@ -18,7 +18,7 @@ function dom() {
 
 function files() {
     let data = [];
-    for (let i = 255; i >= 164; i--) {
+    for (let i = 164; i <= 255; i++) {
         data.push(`/Devinja-ReimagineRound1/media/homa-page-images/Image${i}.jpg`);
     }
     return data;
@@ -109,6 +109,7 @@ function TeamAnimation() {
                 display: 'block', // Ensure the element is visible
                 opacity: 1,
                 x: gsap.utils.mapRange(0, window.innerWidth, -200, 200, dets.clientX),
+                y: gsap.utils.mapRange(0, window.innerWidth, -60, 60, dets.clientY),
                 scale: 1.2, // Scale up for pop effect
                 ease: Power4.easeOut,
                 duration: 1.1
