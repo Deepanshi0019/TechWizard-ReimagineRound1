@@ -1,3 +1,5 @@
+/*                                 Home-Page CSS             */
+
 let context;
 
 function dom() {
@@ -17,7 +19,7 @@ function dom() {
 function files() {
     let data = [];
     for (let i = 255; i >= 164; i--) {
-        data.push(`/media/homa-page-images/Image${i}.jpg`);
+        data.push(`/Devinja-ReimagineRound1/media/homa-page-images/Image${i}.jpg`);
     }
     return data;
 }
@@ -82,10 +84,53 @@ function scaleImage(img, ctx) {
 
 gsap.to("#home canvas", {
     scrollTrigger: {
-        scrub: 0.1,
+        scrub: true,
         trigger: "#home",
         start: "bottom 100%",
     },
 });
 
 dom();
+
+gsap.from("#home h1",{
+     y:"100%",
+     delay:1,
+     opacity:0,
+})
+
+/*                                 Home-Page CSS Ends Here            */
+
+//                                   LifeStyle
+
+function TeamAnimation() {
+    document.querySelectorAll('.life1').forEach(function(el) {
+        el.addEventListener('mousemove', function(dets) {
+            gsap.to(this.querySelector('.img-life'), {
+                display: 'block', // Ensure the element is visible
+                opacity: 1,
+                x: gsap.utils.mapRange(0, window.innerWidth, -200, 200, dets.clientX),
+                scale: 1.2, // Scale up for pop effect
+                ease: Power4.easeOut,
+                duration: 1.1
+            });
+        });
+        el.addEventListener('mouseleave', function(dets) {
+            gsap.to(this.querySelector('.img-life'), {
+                opacity: 0,
+                x: 0, // Reset position
+                scale: 0.5, // Reset scale
+                ease: Power4.easeOut,
+                duration: 1.1,
+                onComplete: () => {
+                    this.querySelector('.img-life').style.display = 'none'; 
+                }
+            });
+        });
+    });
+}
+
+TeamAnimation();
+    
+
+
+//                                    LifeStyle Ends Here  
