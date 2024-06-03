@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cormorant:ital,wght@0,300..700;1,300..700&family=LXGW+WenKai+Mono+TC&family=Poetsen+One&family=Rubik+Mono+One&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=LXGW+WenKai+Mono+TC&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "LXGW WenKai Mono TC", monospace;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 100;
+    
 }
 @font-face {
   font-family: Machina;
