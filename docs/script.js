@@ -92,17 +92,28 @@ gsap.to("#home canvas", {
 
 dom();
 
-gsap.from("#home h1",{
-     y:"100%",
-     delay:1,
-     opacity:0,
-})
+function hompageheading(){
+    gsap.from("#home .text-content",{     // 
+        y:"500%",
+        opacity:0,
+        ease:Power4,
+        scrollTrigger:{
+           trigger:"#home .text-content",
+           scrub:true,
+           scroller:"body",
+           
+           start:"bottom 50%",
+        }
+   })
+}
+hompageheading()     // homepage text animation
 
 /*                                 Home-Page CSS Ends Here            */
 
+
 //                                   LifeStyle
 
-function TeamAnimation() {
+function LifeStyleAnime() {
     document.querySelectorAll('.life1').forEach(function(el) {
         el.addEventListener('mousemove', function(dets) {
             gsap.to(this.querySelector('.img-life'), {
@@ -130,7 +141,7 @@ function TeamAnimation() {
     });
 }
 
-TeamAnimation();
+LifeStyleAnime();
     
 
 
