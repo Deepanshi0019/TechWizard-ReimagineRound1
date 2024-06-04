@@ -14,44 +14,35 @@
 <body>
 
     <!-- explore BESTSELLER -->
-    <div class="bestseller flex w-full ">
-        <div class="cont h-[500vh] relative overflow-hidden">
-            <div class="slider z-[10] w-full overflow-hidden sticky top-0 left-0 h-[100vh] flex">
-                <div class="slide p-10 w-[60%] bg-black flex-shrink-0">
-                    <h1 class="text-[45vmin] w-full text-white font-extrabold tracking-tighter">HITS</h1>
-                    <h4 class="text-white w-3/5 px-6 mt-[-8vmin]">Explore our most popular products, where cutting-edge
-                        technology meets unparalleled style. Discover why our customers love Boat.</h4>
-                </div>
-                <div class="slide w-[60%] bg-red-300 flex-shrink-0">
-                    <video autoplay loop class="w-full h-[67.5vmin] mt-[-1vmin]" src="/vids/smartwatch.mp4"></video>
-                    <h1 class="text-[10vmin] tracking-wider text-center font-semibold mt-[5vmin]">smartwatches</h1>
-                    <i class="ri-arrow-right-up-line text-[5vmin] h-[5.5vmin] p-5 ml-[100vmin] rounded-full border-2 border-black"></i>
-                </div>
-                <div class="slide w-[60%] bg-[#AD2E27] overflow-hidden flex-shrink-0">
-                    <video autoplay loop class="w-full h-[67.5vmin] mt-[-1vmin]" src="/vids/earpod.mp4"></video>
-                    <h1 class="text-[10vmin] tracking-wider text-center font-semibold mt-[5vmin]">earbuds</h1>
-                    <i class="ri-arrow-right-up-line text-[5vmin] h-[5.5vmin] p-5 ml-[100vmin] rounded-full border-2 border-black"></i>
-                </div>
-                <div class="slide w-[60%] bg-[#B6D2E3] overflow-hidden flex-shrink-0">
-                    <video autoplay loop class="w-full h-[67.5vmin] mt-[-1vmin]" src="/vids/neckbends.mp4"></video>
-                    <h1 class="text-[10vmin] tracking-wider text-center font-semibold mt-[5vmin]">neckbands</h1>
-                    <i class="ri-arrow-right-up-line text-[5vmin] h-[5.5vmin] p-5 ml-[100vmin] rounded-full border-2 border-black"></i>
-                </div>
-                <div class="slide w-[60%] bg-[#A9AF8B] overflow-hidden flex-shrink-0">
-                    <video autoplay loop class="w-full h-[67.5vmin] mt-[-1vmin]" src="/vids/headphones.mp4"></video>
-                    <h1 class="text-[10vmin] tracking-wider text-center font-semibold mt-[5vmin]">headphones</h1>
-                    <i class="ri-arrow-right-up-line text-[5vmin] h-[5.5vmin] p-5 ml-[100vmin] rounded-full border-2 border-black"></i>
-                </div>
-                <div class="slide w-[60%] bg-gray-600 overflow-hidden flex-shrink-0">
-                    <video autoplay loop class="w-full h-[67.5vmin] mt-[-1vmin]" src="/vids/earpods.mp4"></video>
-                    <h1 class="text-[10vmin] tracking-wider text-center font-semibold mt-[5vmin]">wireless speakers</h1>
-                    <i class="ri-arrow-right-up-line text-[5vmin] h-[5.5vmin] p-5 ml-[100vmin] rounded-full border-2 border-black"></i>
-                </div>
-                
-            </div>
+    <div class="bestsellers w-full min-h-[150vh] gap-[10vh] items-center justify-center bg-[#202020]">
+        <div class="text w-full top-0 flex flex-col items-center justify-center py-[10vmin] ">
+            <h1 class="text-[8vmin] text-white text-center ">Explore <span class="text-red-500">Bestsellers</span></h1>
+            <p class="w-[95vmin] text-[3vmin] text-center py-[2vmin] text-[#7E7E7E]">Explore our most popular products, where cutting-edge
+                technology meets unparalleled style. Discover why our customers love Boat.</p>
+        </div>
+        <div class="cursor h-[18vmin] w-[18vmin] bg-red-600 rounded-full z-[99] fixed flex items-center justify-center ">
+            <h5 class="text-[2.5vmin] text-black">Explore</h5>
+        </div>
+        <div class="cards w-[80%] h-[90vh]" id="card-one">
+            <video autoplay loop class="w-full h-full" src="/vids/headphones.mp4"></video>
+        </div>
+        <div class="cards w-[80%] h-[90vh]" id="card-two">
+            <video autoplay loop class="w-full h-full" src="/vids/neckbands.mp4"></video>
+        </div>
+        <div class="cards w-[80%] h-[90vh]" id="card-three">
+            <video autoplay loop class="w-full h-full" src="/vids/smartwatch.mp4"></video>
+        </div>
+        <div class="cards w-[80%] h-[90vh]" id="card-four">
+            <video autoplay loop class="w-full h-full" src="/vids/earbuds.mp4"></video>
         </div>
     </div>
+    
+    <!-- PRODUCTS -->
+    <div class="products h-full w-full bg-[#202020]">
+        <h1 class="text-white border-white border-b-2">PRODUCTS</h1>
+        <div class="items"></div>
 
+    </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="

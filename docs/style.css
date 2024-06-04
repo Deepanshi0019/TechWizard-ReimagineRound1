@@ -1,10 +1,27 @@
-.page1 h1{
-    font-weight: 999;
-    font-stretch: 260%;
+/* bestsellers */
+.cards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.slide {
-    transition: width 0.3s ease;
+
+#card-one {
+    top: 60%;
 }
-.bestseller {
-    align-items: stretch;
+
+#card-two {
+    top: 160%;
 }
+
+#card-three {
+    top: 150%;
+}
+#card-four {
+    top: 180%;
+}
+.cursor{
+    transform: translate(-50%,-50%);
+}
+
+ 
