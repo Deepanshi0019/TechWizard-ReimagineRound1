@@ -94,3 +94,6 @@ images.forEach(function(image) {
         });
     });
 });
+
+//animations
+
