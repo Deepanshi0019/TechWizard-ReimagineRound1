@@ -3,14 +3,36 @@
   font-family:metropolis ;
   src: url(/Devinja-ReimagineRound1/font/metropolis.light\ \(1\).otf);
 }
+
 *{
   font-family: metropolis;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body{
   overflow-x: hidden;
   background: transparent;
 
 }
+/* Add this to your CSS file or <style> section */
+.card {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card.glow {
+  box-shadow: 0 0 60px 5px rgba(255, 0, 0, 0.672);
+}
+
+.card-category {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-category:hover {
+  transform: translateY(-20%) scale(2.3);
+}
+
+
 .card-category {
     transition: ease 0.5s;
 }
@@ -35,23 +57,14 @@ body{
 
   }
 }
-
-
-
-
-
-
-
-
-
-#IMG2 {
+/* #IMG2 {
     clip-path: circle(0% at 50% 50%);
   transition: clip-path 0.5s ease-in-out;
   }
   
   #IMG2.reveal {
     clip-path: circle(75% at 50% 50%);
-}
+} */
 #Text-div a {
     display: inline-block;
     overflow: hidden;
@@ -68,12 +81,70 @@ body{
     opacity: 1;
     transition-delay: calc(var(--char-index) * 0.1s);
   }
-  
-@media (min-width:360px) {
-  
-}
+  #Text-div h2{
+    cursor: pointer;
+  }
+  @media (max-width:607px) {
+    #Main-div{
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: center;
+      gap: 2rem;
+      height: auto;
+    }
+    #Heading-div{
+      height: 10vh;
+    }
+    #Image-div{
+     width: 100vw;
+     height: 30%;
+    }
+    #Text-div{
+      flex-direction: column;
+      justify-content: center;
 
+    }
+    #Text-div h2{
+      text-align: center;
+      margin-left: 0;
+      width: 100vw;
+      font-size: 9vmin;
+      user-select: none;
 
+    }
+    #Press-div{
+      padding-bottom: 4rem;
+    }
+
+  }
+  @media (min-width:607px) and (max-width:990px){
+    #Main-div{
+      
+      height: auto;
+    }
+    #Image-div{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     }
+     
+     #Text-div h2{
+      text-align: center;
+      margin-left: 0;
+      
+      font-size: 4vmin;
+      user-select: none;
+
+    }
+    #Heading h1{
+        font-size: 3vmin;
+        width: 100%;
+        height: 100%;
+    }
+
+  }
   @media (min-width:767px) and (max-width:1706px) {
     #Category-section{
       height: auto;
