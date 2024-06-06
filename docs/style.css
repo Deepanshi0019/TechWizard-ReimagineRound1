@@ -1,4 +1,9 @@
 /* bestsellers */
+::selection{
+    background-color: rgba(255, 70, 70, 0.848);
+    color: black;
+}
+
 .cards {
     position: absolute;
     top: 50%;
@@ -22,6 +27,31 @@
 }
 .cursor{
     transform: translate(-50%,-50%);
+}
+.pointer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%,-50%);
+}
+.products h1{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+.products h3{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+.rgt{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.rgt::-webkit-scrollbar{
+    display: none;
+}
+.item{
+    display: inline-block;
+    margin-right: 4vmin;
 }
 
  

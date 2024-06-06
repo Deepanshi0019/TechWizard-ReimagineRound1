@@ -1,7 +1,7 @@
 //bestseller
 var tl = gsap.timeline({scrollTrigger:{
     trigger:".bestsellers",
-    markers:true,
+    // markers:true,
     start:"38% 50%",
     end:"100% 50%",
     scrub:2,
@@ -46,28 +46,6 @@ tl
 },'d')
 
 //cursor
-// var bestsellers = document.querySelector(".bestsellers")
-// var cards = document.querySelector(".cards")
-// var cursor = document.querySelector(".cursor")
-
-// cards.addEventListener("mousemove", function(dets){
-//     gsap.to(cursor,{
-//         x:dets.x,
-//         y:dets.y
-//     })
-// })
-// cards.addEventListener("mouseenter",function(){
-//     gsap.to(cursor,{
-//         scale:1,
-//         opacity:0.8
-//     })
-// })
-// cards.addEventListener("mouseleave",function(){
-//     gsap.to(cursor,{
-//         scale:0,
-//         opacity:0
-//     })
-// })
 var bestsellers = document.querySelector(".bestsellers");
 var cards = document.querySelectorAll(".cards");
 var cursor = document.querySelector(".cursor");
@@ -87,6 +65,30 @@ cards.forEach(function(card) {
     });
     card.addEventListener("mouseleave", function(){
         gsap.to(cursor, {
+            scale: 0,
+            opacity: 0
+        });
+    });
+});
+
+var images = document.querySelectorAll(".item img")
+var pointer = document.querySelector(".pointer")
+var icons = document.querySelectorAll(".item i")
+images.forEach(function(image) {
+    image.addEventListener("mousemove", function(dets){
+        gsap.to(pointer, {
+            x: dets.clientX,
+            y: dets.clientY
+        });
+    });
+    image.addEventListener("mouseenter", function(){
+        gsap.to(pointer, {
+            scale: 1,
+            opacity: 0.8
+        });
+    });
+    image.addEventListener("mouseleave", function(){
+        gsap.to(pointer, {
             scale: 0,
             opacity: 0
         });
