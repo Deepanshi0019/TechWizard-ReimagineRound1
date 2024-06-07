@@ -47,7 +47,8 @@ body{
   }
 
   .Life-Section{
-    background: url(/Devinja-ReimagineRound1/media/download.svg);
+    background-color: black;
+    /*background: url(/Devinja-ReimagineRound1/media/download.svg);*/
   }
 /*                Home-Page CSS Ends Here
 
@@ -134,7 +135,8 @@ body{
 background-color: black;
   }
   #Press-div{
-    background: url(/Devinja-ReimagineRound1/media/download.svg);
+  /*  background: url(/Devinja-ReimagineRound1/media/download.svg);*/
+background-color: black;
 
   }
   @media (max-width:607px) {
