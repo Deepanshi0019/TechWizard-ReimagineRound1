@@ -3,7 +3,7 @@
     background-color: rgba(255, 70, 70, 0.848);
     color: black;
 }
-
+/* 
 .cards {
     position: absolute;
     top: 50%;
@@ -24,12 +24,11 @@
 }
 #card-four {
     top: 180%;
-}
+} */
 .cursor{
     transform: translate(-50%,-50%);
 }
 .pointer{
-    position: absolute;
     left: 0;
     top: 0;
     transform: translate(-50%,-50%);
@@ -52,7 +51,16 @@
 .item{
     display: inline-block;
     margin-right: 4vmin;
+    /* vertical-align: top; */
 }
+.box:hover .explore-btn {
+    opacity: 1;
+}
+ 
+
+
+
+/* RESPONSIVE */
 @media (max-width:600px) {
     .products h1{
         transform: rotate(-90deg);
@@ -69,8 +77,8 @@
         position: absolute; 
         top: 15%; 
         left: 0;
-        line-height: 20px;
-        font-size: 4vmin;
+        line-height: 30px;
+        font-size: 6vmin;
     }
     .rgt{
         display: flex;

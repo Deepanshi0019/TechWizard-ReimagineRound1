@@ -46,11 +46,10 @@ tl
 },'d')
 
 //cursor
-var bestsellers = document.querySelector(".bestsellers");
-var cards = document.querySelectorAll(".cards");
+var box = document.querySelectorAll(".box img");
 var cursor = document.querySelector(".cursor");
 
-cards.forEach(function(card) {
+box.forEach(function(card) {
     card.addEventListener("mousemove", function(dets){
         gsap.to(cursor, {
             x: dets.clientX,
@@ -73,7 +72,6 @@ cards.forEach(function(card) {
 
 var images = document.querySelectorAll(".item img")
 var pointer = document.querySelector(".pointer")
-var icons = document.querySelectorAll(".item i")
 images.forEach(function(image) {
     image.addEventListener("mousemove", function(dets){
         gsap.to(pointer, {
