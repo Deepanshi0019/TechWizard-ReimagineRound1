@@ -108,6 +108,23 @@ function hompageheading(){
 }
 hompageheading()     // homepage text animation
 
+//                               For responsive nav
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const burgerIcon = document.querySelector('.burger-icon');
+    const openedMenu = document.getElementById('Opened-menu');
+
+    burgerIcon.addEventListener('click', () => {
+        if (openedMenu.classList.contains('hidden')) {
+            openedMenu.classList.remove('hidden');
+        } else {
+            openedMenu.classList.add('hidden');
+        }
+    });
+});
+
+
 /*                                 Home-Page CSS Ends Here            */
 
 
