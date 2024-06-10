@@ -72,31 +72,63 @@ images.forEach(function(image) {
 
 //animations
 var tl = gsap.timeline();
-// tl.from(".lft h1, .lft h3",{
-//     x:100,
-//     opacity:0,
-//     delay:0.5,
-//     duration:0.9,
-//     stagger:0.3,
-//     scrollTrigger:{
-//         trigger:".lft h1, .lft h3",
-//         scroller:"body",
-//         start:"top top",
-//         end:"bottom bottom",
-//         scrub:2
-//     }
-// })
-// tl.from(".rgt .item",{
-//     y:50,
-//     opacity:0,
-//     delay:0.3,
-//     duration:0.4,
-//     stagger:0.3,
-//     scrollTrigger:{
-//         trigger:".lft h1, .lft h3",
-//         scroller:"body",
-//         start:"top top",
-//         end:"bottom bottom",
-//         scrub:2
-//     }
-// })
+tl.from(".lft h1, .lft h3",{
+    x:100,
+    opacity:0,
+    delay:0.5,
+    duration:0.9,
+    stagger:0.3,
+    scrollTrigger:{
+        trigger:".lft h1, .lft h3",
+        scroller:"body",
+        start:"top -1%",
+        end:"top 80%",
+        scrub:3,
+        // markers: true
+    }
+})
+tl.from(".rgt .item",{
+    y:50,
+    opacity:0,
+    delay:0.3,
+    duration:0.6,
+    stagger:0.5,
+    scrollTrigger:{
+        trigger:".lft h1, .lft h3",
+        scroller:"body",
+        start:"top 0%",
+        end:"top 80%",
+        scrub:3,
+        // markers: true
+    }
+})
+tl.from(".bestseller h1, .bestseller h4",{
+    y:60,
+    opacity:0,
+    // delay:0.3,
+    duration:0.6,
+    stagger:0.5,
+    scrollTrigger:{
+        trigger:".bestseller h1, .bestseller h4",
+        scroller:"body",
+        start:"top 50%",
+        end:"top 80%",
+        scrub:2,
+        // markers: true
+    }
+})
+tl.from(".cont .box",{
+    y:30,
+    opacity:0,
+    delay:0.6,
+    duration:0.6,
+    stagger:0.5,
+    scrollTrigger:{
+        trigger:".bestseller .cont",
+        scroller:"body",
+        start:"top 50%",
+        end:"top 80%",
+        scrub:2,
+        // markers: true
+    }
+})
