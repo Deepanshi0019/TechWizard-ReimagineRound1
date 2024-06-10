@@ -35,7 +35,7 @@
 
 
 /* RESPONSIVE */
-@media (min-width:600px) and (max-width: 768px){
+@media (max-width: 768px){
     .products{
         display: flex;
         flex-direction: column;
@@ -66,46 +66,70 @@
         margin-top: -10vmin;
     }
 }
-@media (min-width:768px) and (max-width:1536px){
+@media only screen and (min-width:768px) and (max-width:991px){
     .lft h1{
         font-size: 20vmin;
     }
     .lft h3{
         font-size: 4.5vmin;
     }
+    .bestseller{
+        min-height: 200vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -120vmin;
+    }
     .bestseller h1{
-        margin-top: 18vmin;
-        background-color: blueviolet;
+        margin-top: 170vmin;
     }
     .bestseller h4{
         white-space: nowrap;
+        margin-top: 2vmin;
+        margin-right: 0vmin;
+        text-align: center;
+        font-size: 3.4vmin;
     }
     .bestseller .cont{
-        width: 100%;
-        background-color: rebeccapurple;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        gap: 2vmin;
+        margin-top: 7vmin;
+        padding: 0 6vmin;
     }
-    #box1{
-        height: 30vmin;
-        width: 20vmin;
+    .bestseller .box{
+        transform: skewY(0);
     }
-    /* .box .box1{
-        height: 30vmin;
-        width: 20vmin;
-        border-radius: 5vmin;
-    } */
-    .box .box2{
-        height: 40vmin;
-        width: 25vmin;
-        border-radius: 5vmin;
+    .bestseller .card{
+        height: 55vmin;
+        width: 40vmin;
+        margin-top: 0vmin;
     }
-    .box .box1{
-        height: 30vmin;
-        width: 25vmin;
-        border-radius: 5vmin;
+    #card{
+        margin-top: -10vmin;
+    }
+    .card .explore-btn{
+        opacity: 1;
+        margin-top: -80%;
+        margin-left: 30%;
+        border: 2px solid white;
+        width: 50%;
+    }
+    .card .explore-btn h4{
+        color: white;
+        margin-top: -1vmin;
+    }
+    .card .text{
+        margin-top: 17vmin;
+    }
+    .card .text h4{
+        color: white;
+    }
+    #card5{
+        margin-left: 30%;
+        margin-top: 9vmin;
     }
 }
     
