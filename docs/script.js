@@ -45,30 +45,7 @@ tl
     height: "75vh"
 },'d')
 
-//cursor
-var box = document.querySelectorAll(".box img");
-var cursor = document.querySelector(".cursor");
-
-box.forEach(function(card) {
-    card.addEventListener("mousemove", function(dets){
-        gsap.to(cursor, {
-            x: dets.clientX,
-            y: dets.clientY
-        });
-    });
-    card.addEventListener("mouseenter", function(){
-        gsap.to(cursor, {
-            scale: 1,
-            opacity: 0.8
-        });
-    });
-    card.addEventListener("mouseleave", function(){
-        gsap.to(cursor, {
-            scale: 0,
-            opacity: 0
-        });
-    });
-});
+//pointer
 
 var images = document.querySelectorAll(".item img")
 var pointer = document.querySelector(".pointer")
@@ -94,4 +71,32 @@ images.forEach(function(image) {
 });
 
 //animations
-
+var tl = gsap.timeline();
+// tl.from(".lft h1, .lft h3",{
+//     x:100,
+//     opacity:0,
+//     delay:0.5,
+//     duration:0.9,
+//     stagger:0.3,
+//     scrollTrigger:{
+//         trigger:".lft h1, .lft h3",
+//         scroller:"body",
+//         start:"top top",
+//         end:"bottom bottom",
+//         scrub:2
+//     }
+// })
+// tl.from(".rgt .item",{
+//     y:50,
+//     opacity:0,
+//     delay:0.3,
+//     duration:0.4,
+//     stagger:0.3,
+//     scrollTrigger:{
+//         trigger:".lft h1, .lft h3",
+//         scroller:"body",
+//         start:"top top",
+//         end:"bottom bottom",
+//         scrub:2
+//     }
+// })
