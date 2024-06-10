@@ -17,31 +17,36 @@
 
         <div id="home"><!--home div starting-->
            <!-- navbar🍻-->
-          <nav class="absolute h-[7vmin] px-[10vmin] pt-[5vmin] w-full top-0 bg-transparent text-white backdrop-blur-3xl shadow-md flex items-center justify-between p-[5vmin] z-50">  
+           <nav class="absolute  h-[7vmin] px-[5vmin] md:px-[10vmin] pt-[5vmin] w-full top-0 bg-transparent text-white backdrop-blur-3xl shadow-md flex items-center justify-between  p-[5vmin]  md:p-[5vmin] z-50">  
             <div class="logo">
-                 <img src="/Devinja-ReimagineRound1/media/boat.png" alt="Logo" class="h-[4vmin]">
+                 <img src="https://i.postimg.cc/RV06435D/boat.png" alt="Logo" class="h-[6vmin]  md:h-[4vmin] ">
               </div>
-            <div class="right-nav flex gap-[3vmin] text-[2vmin] font-semibold items-center">
-              <a href="#home" class=""> 
-                  <h5 class="">Categories</h5>
-                  <div class="duplicate hidden text-[#ffffff90]">Categories</div>
-               </a>
-              <a href="#home" class="py-2">Shop</a>
-              <div class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">More</a>
-                <div class="dropdown-content hidden">
+            <div class="right-nav  flex gap-[3vmin] text-[2vmin] font-semibold items-center">
+              <a href="#home" class=" hidden md:block"> 
+                <h5 class="">Categories</h5>
+                <div class="duplicate hidden text-[#ffffff90]">Categories</div>
+                </a>
+                <a href="#home" class="py-2 hidden md:block">Shop</a>
+                <div class="dropdown hidden md:block">
+                  <a href="javascript:void(0)" class="dropbtn">More</a>
+                  <div class="dropdown-content hidden">
                     <a href="#boatPersonalisation">Boat Personalisation</a>
                     <a href="#giftWithBoat">Gift with Boat</a>
                     <a href="#corporateOrders">Corporate Orders</a>
-                </div>
-             </div>
-             <div class="search-bar relative flex items-center">
-              <i class="ri-search-line absolute text-[2vmin] font-bold left-[2vmin]"></i>
-              <input class="w-[30vmin] h-[4vmin] px-[vmin] rounded-full bg-transparent border-2 border-white" type="text" placeholder=''>
-             </div>
-              <a class="text-[3vmin] font-medium"><i class="ri-user-line"></i></a>
-              <a href="#cart" class="text-[3vmin] font-medium"><i class="ri-shopping-cart-2-line"></i></a>
-           </div>
+                    </div>
+                    </div>
+                    <div class="search-bar hidden md:block relative lg:flex items-center">
+                      <i class="ri-search-line absolute text-[2vmin] font-bold left-[2vmin] top-[0.5vmin]"></i>
+                      <input class="w-[30vmin] h-[4vmin] px-[5vmin] rounded-full bg-transparent border-2 border-white" type="text" placeholder=''>
+                      </div>
+                      <a id="Cart-log" class=" text-[5vmin] md:text-[3vmin] font-medium "><i class="ri-user-line"></i></a>
+                      <a id="user-logo" href="#cart" class="text-[5vmin] md:text-[3vmin] font-medium "><i class="ri-shopping-cart-2-line"></i></a>
+                      <div class="burger-icon block md:hidden cursor-pointer">
+                        <div class="burger">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                      </div>
           </nav>
           <!--Navbar🍻 Ends here--> 
 
