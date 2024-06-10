@@ -139,6 +139,17 @@ background-color: black;
 background-color: black;
 
   }
+  @media (max-width:444px) {
+    .card-category{
+      padding-bottom: 9vmin;
+    }
+    }
+    @media (min-width:444px) and (max-width:607px) {
+    .card-category{
+      padding-bottom: 11vmin;
+    }
+    
+  }
   @media (max-width:607px) {
     #Main-div{
       display: flex;

@@ -219,11 +219,8 @@ ttoi.addEventListener('mouseenter', function () {
 
 const linkss = document.querySelectorAll('#Text-div h2');
 
-linkss.forEach((link, index) => {
-  gsap.set(link, { opacity: 0.5, y: '-10px' });
 
-  gsap.from(link, { opacity: 0, y: '-10px', duration: 5, delay: index * 0.2 });
-});
+
 
 document.querySelectorAll('.card-category').forEach(item => {
   item.addEventListener('mouseenter', () => {
