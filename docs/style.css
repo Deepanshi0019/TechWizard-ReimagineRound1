@@ -79,7 +79,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: -120vmin;
+        margin-top: -150vmin;
     }
     .bestseller h1{
         margin-top: 170vmin;
@@ -97,7 +97,8 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 7vmin;
-        padding: 0 6vmin;
+        /* gap: 7vmin; */
+        padding: 0 14vmin;
     }
     .bestseller .box{
         transform: skewY(0);
