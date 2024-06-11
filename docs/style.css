@@ -440,6 +440,9 @@ canvas {
     justify-content: center;
     margin-top: -10vmin;
   }
+  .bestseller .explore-btn{
+    margin-top: -35vh;
+  }
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -536,9 +539,9 @@ canvas {
     
   }
 
-  .bestseller h1 {
-    /* margin-top: 70vmin; */
-  }
+  /* .bestseller h1 {
+    margin-top: 70vmin;
+  } */
 
   .bestseller h4 {
     white-space: nowrap;
@@ -557,16 +560,16 @@ canvas {
 
 
   .card .explore-btn {
-    opacity: 1;
-    margin-top: -80%;
-    margin-left: 30%;
-    border: 2px solid white;
-    width: 50%;
+    color: black;
+    border: 2px solid black;
   }
 
   .card .explore-btn h4 {
     color: white;
     margin-top: -1vmin;
+  }
+  .explore-btn .item-name{
+    margin-top: 40vh;
   }
 
   .card .text {
