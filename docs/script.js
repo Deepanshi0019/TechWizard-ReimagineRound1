@@ -218,19 +218,19 @@ let bs = document.getElementById('BS');
 let ttoi = document.getElementById('TTOI');
 
 bw.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/Video/bw.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bw.mp4" class="h-[70%] w-[100%]"></video>`
 })
 ht.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/Video/HT.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/HT.mp4" class="h-[70%] w-[100%]"></video>`
 })
 fn.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/Video/fn.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/fn.mp4" class="h-[70%] w-[100%]"></video>`
 })
 bs.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/Video/bs.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bs.mp4" class="h-[70%] w-[100%]"></video>`
 })
 ttoi.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/Video/TTOI.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/TTOI.mp4" class="h-[70%] w-[100%]"></video>`
 })
 
 
