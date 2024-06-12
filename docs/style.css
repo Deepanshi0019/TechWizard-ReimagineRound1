@@ -441,11 +441,12 @@ canvas {
     margin-top: -10vmin;
   }
   .bestseller .explore-btn{
-    margin-top: -35vh;
+    margin-top: -30vh;
   }
+
 }
 
-@media only screen and (min-width:768px) and (max-width:991px) {
+@media (min-width:768px) and (max-width:991px) {
   .lft h1 {
     font-size: 18vmin;
     margin-left: -30vmin;
@@ -484,7 +485,6 @@ canvas {
     align-items: center;
     justify-content: space-between;
     margin-top: 7vmin;
-    /* gap: 7vmin; */
     padding: 0 5vmin;
   }
 
@@ -539,16 +539,13 @@ canvas {
     
   }
 
-  /* .bestseller h1 {
-    margin-top: 70vmin;
-  } */
-
   .bestseller h4 {
     white-space: nowrap;
-    margin-top: 2vmin;
-    margin-right: 0vmin;
-    text-align: center;
-    font-size: 3.4vmin;
+    margin-top: -8vmin;
+    /* margin-left: -10vw; */
+    margin-left: 19vw;
+    text-align: left;
+    font-size: 2.5vmin;
   }
 
   .bestseller .cont {
@@ -558,6 +555,9 @@ canvas {
     justify-content: space-between;
   }
 
+  .bestseller .card{
+    margin-left: -0.2vw;
+  }
 
   .card .explore-btn {
     color: black;
@@ -579,9 +579,4 @@ canvas {
   .card .text h4 {
     color: white;
   }
-
-  /* #card5{
-    margin-left: 30%;
-    margin-top: 9vmin;
-} */
 }
