@@ -1,38 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cormorant:ital,wght@0,300..700;1,300..700&family=LXGW+WenKai+Mono+TC&family=Poetsen+One&family=Rubik+Mono+One&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Rubik Mono One", monospace;
-  font-weight: 100;
-
-  font-family: "metropolis", sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 100;
+    font-family: "metropolis", sans-serif ; 
 }
 
 @font-face {
   font-family: metropolis;
   src: url(./metropolis.light.otf);
 }
-
-html body {
-  height: 100vh;
-  width: 100%;
+html body{
+   height: 100vh;
+   width: 100%;
 }
 
-.right-nav>a:hover .duplicate {
-  top: 1vmin;
-  transition: bottom 0.5 ease;
+a{
+  position: relative;
   display: block;
+  overflow: hidden;
 }
-
-.right-nav>a:hover h5 {
-  bottom: 5vmin;
-  display: none;
-  transition: bottom 0.5 ease;
+a::before{
+  position: absolute;
+  content: attr(data-link-alt);
+  top: 100%;
+  opacity: 0;
+  transition: 1s;
 }
-
-/* Navbar responsiveness */
+a> span{
+  display: block;
+  transition: 1s;
+}
+a:hover span{
+  transform: translateY(-100%);
+}
+a:hover::before{
+    top: 0;
+    opacity: 1;
+    color: rgba(253, 255, 255, 0.791);
+}
+.icon:hover{
+  color: rgba(253, 255, 255, 0.791);
+  
+}
+* Navbar responsiveness */
 .burger {
   width: 40px;
   height: 40px;
