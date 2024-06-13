@@ -19,7 +19,7 @@ function dom() {
 function files() {
     let data = [];
     for (let i = 164; i <= 255; i++) {
-        data.push(`/media/homa-page-images/Image${i}.jpg`);
+        data.push(`/Devinja-ReimagineRound1/media/homa-page-images/Image${i}.jpg`);
     }
     return data;
 }
