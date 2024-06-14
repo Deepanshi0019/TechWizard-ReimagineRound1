@@ -45,7 +45,6 @@ a:hover::before{
   color: rgba(253, 255, 255, 0.791);
   
 }
-* Navbar responsiveness */
 .burger {
   width: 40px;
   height: 40px;
@@ -58,7 +57,6 @@ a:hover::before{
   transition: 300ms;
   border-radius: 10px;
 }
-
 .burger input[type="checkbox"] {
   appearance: none;
   transition: 300ms;
@@ -74,18 +72,16 @@ a:hover::before{
 .burger::before {
   transform: translateY(8px);
 }
-
 .burger::after {
   transform: translateY(-8px);
 }
-
 .burger .line,
 .burger::before,
 .burger::after {
   width: 25px;
   height: 2.1px;
   display: block;
-  background-color: rgb(106, 104, 104);
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   position: absolute;
 }
@@ -94,19 +90,17 @@ a:hover::before{
   width: 0;
   transition-delay: 100ms;
 }
-
 .burger:has(.line:checked)::before {
   animation: animation1 400ms ease-out 0s 1 both;
 }
-
 .burger:has(.line:checked)::after {
   animation: animation2 400ms ease-out 0s 1 both;
 }
 
-/* .burger:hover {
-  background: #aeaeae;
+.burger:hover {
+  /* background: #aeaeae; */
   border-radius: 50%;
-} */
+}
 
 .burger:hover .line,
 .burger:hover::before,
@@ -114,36 +108,36 @@ a:hover::before{
   background: #e8e8e8;
 }
 
-/* .burger:active {
+.burger:active {
   scale: 0.95;
-} */
+}
+#Opened-menu{
+  
+}
+
 @keyframes animation1 {
   0% {
     transform: translateY(8px) rotate(0deg);
   }
-
   50% {
     transform: translateY(0px) rotate(0deg);
   }
-
   100% {
     transform: translateY(0px) rotate(45deg);
   }
 }
-
 @keyframes animation2 {
   0% {
     transform: translateY(-8px) rotate(0deg);
   }
-
   50% {
     transform: translateY(0px) rotate(0deg);
   }
-
   100% {
     transform: translateY(0px) rotate(-45deg);
   }
 }
+
 
 @media (min-width:421px) and (max-width:768px) {
   .logo>img {

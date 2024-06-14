@@ -39,15 +39,16 @@
                             </div>
                               <div id="Cart-log" class=" icon text-[5vmin] md:text-[3vmin] font-medium"><i class="ri-user-line"></i></div>
                               <div id="user-logo" href="#cart" class="icon text-[5vmin] md:text-[3vmin] font-medium "><i class="ri-shopping-cart-2-line"></i></div>
-                            <div class="burger-icon block md:hidden cursor-pointer">
-                                <div class="burger">
-                                    <div class="line"></div>
-                                </div>
-                            </div>
+                              <div class="burger-icon md:hidden">
+                                <label class="burger" for="burger">
+                                  <input class="line" type="checkbox" id="burger" />
+                                </label>
+                              </div>
+                              
                     </div>
                   </nav>
 
-                  <div id="Opened-menu" class="absolute hidden h-auto  w-full bg-black ">
+                  <div id="Opened-menu" class="absolute  h-auto hidden md:hidden  w-full bg-black ">
                     <ul class="flex flex-col gap-[4vmin] p-[5vmin]">
                       <li class=" font-bold flex gap-[2vmin]" data-link-alt="Categories">Categories<i class="ri-arrow-right-wide-line"></i></li>
                       <li class=" font-bold flex gap-[2vmin]" data-link-alt="Shop">Shop<i class="ri-arrow-right-wide-line"></i></li>
