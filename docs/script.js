@@ -19,7 +19,7 @@ function dom() {
 function files() {
     let data = [];
     for (let i = 164; i <= 255; i++) {
-        data.push(`/media/homa-page-images/Image${i}.jpg`);
+        data.push(`/Devinja-ReimagineRound1/media/homa-page-images/Image${i}.jpg`);
     }
     return data;
 }
@@ -94,35 +94,43 @@ dom();
 
 function hompageheading(){
     gsap.from("#home .text-content",{     // 
-        y:"500%",
+        y:"200%",
         opacity:0,
         ease:Power4,
         scrollTrigger:{
-           trigger:"#home .text-content",
+           trigger:"#home",
            scrub:true,
            scroller:"body",
-           
-           start:"bottom 50%",
+           markers:true,
+           start:"bottom 100%",
+         
         }
    })
 }
-hompageheading()     // homepage text animation
+hompageheading()
+                 // homepage text animation
 
 //                               For responsive nav
 
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    const burgerIcon = document.querySelector('.burger-icon');
-    const openedMenu = document.getElementById('Opened-menu');
+const burgerIcon = document.querySelector('.burger-icon');
+const openedMenu = document.getElementById('Opened-menu');
 
-    burgerIcon.addEventListener('click', () => {
-        if (openedMenu.classList.contains('hidden')) {
-            openedMenu.classList.remove('hidden');
-        } else {
-            openedMenu.classList.add('hidden');
-        }
-    });
+burgerIcon.addEventListener('click', () => {
+    if (burgerIcon && openedMenu) {
+        burgerIcon.addEventListener('click', () => {
+            openedMenu.classList.toggle('hidden');
+            if (openedMenu.classList.contains('hidden')) {
+                console.log("hidden");
+            } else {
+                console.log("show");
+            }
+        });
+    } else {
+        console.error('Burger icon or opened menu element not found');
+    }
 });
+
 
 
 /*                                 Home-Page CSS Ends Here            */
@@ -218,19 +226,19 @@ let bs = document.getElementById('BS');
 let ttoi = document.getElementById('TTOI');
 
 bw.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bw.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = `<video loop muted autoplay src="/Devinja-ReimagineRound1/vdio/bw.mp4" class="h-[70%] w-[100%]"></video>`
 })
 ht.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/HT.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = `<video loop muted autoplay src="/Devinja-ReimagineRound1/vdio/HT.mp4" class="h-[70%] w-[100%]"></video>`
 })
 fn.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/fn.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = `<video loop muted autoplay src="/Devinja-ReimagineRound1/vdio/fn.mp4" class="h-[70%] w-[100%]"></video>`
 })
 bs.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bs.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = `<video loop muted autoplay src="/Devinja-ReimagineRound1/vdio/bs.mp4" class="h-[70%] w-[100%]"></video>`
 })
 ttoi.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/TTOI.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = `<video loop muted autoplay src="/Devinja-ReimagineRound1/vdio/TTOI.mp4" class="h-[70%] w-[100%]"></video>`
 })
 
 
