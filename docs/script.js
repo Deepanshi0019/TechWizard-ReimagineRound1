@@ -94,19 +94,21 @@ dom();
 
 function hompageheading(){
     gsap.from("#home .text-content",{     // 
-        y:"500%",
+        y:"200%",
         opacity:0,
         ease:Power4,
         scrollTrigger:{
-           trigger:"#home .text-content",
+           trigger:"#home",
            scrub:true,
            scroller:"body",
-           
-           start:"bottom 50%",
+           markers:true,
+           start:"bottom 100%",
+         
         }
    })
 }
-hompageheading()     // homepage text animation
+hompageheading()
+                 // homepage text animation
 
 //                               For responsive nav
 
@@ -115,14 +117,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const burgerIcon = document.querySelector('.burger-icon');
     const openedMenu = document.getElementById('Opened-menu');
 
-    burgerIcon.addEventListener('click', () => {
-        if (openedMenu.classList.contains('hidden')) {
-            openedMenu.classList.remove('hidden');
-        } else {
-            openedMenu.classList.add('hidden');
-        }
-    });
+    if (burgerIcon && openedMenu) {
+        burgerIcon.addEventListener('click', () => {
+            openedMenu.classList.toggle('hidden');
+            if (openedMenu.classList.contains('hidden')) {
+                console.log("hidden");
+            } else {
+                console.log("show");
+            }
+        });
+    } else {
+        console.error('Burger icon or opened menu element not found');
+    }
 });
+
 
 
 /*                                 Home-Page CSS Ends Here            */
