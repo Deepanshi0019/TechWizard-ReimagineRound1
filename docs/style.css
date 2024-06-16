@@ -1,169 +1,3 @@
-/* bestsellers */
-/* ::selection{
-    background-color: rgba(255, 70, 70, 0.848);
-    color: black;
-}
-.pointer{
-    left: 0;
-    top: 0;
-    transform: translate(-50%,-50%);
-} */
-/* .lft h1{
-    transform: rotate(-90deg);
-
-}
-.lft h3{
-    transform: rotate(-90deg);
-    height: 100%;
-}
-.products .rgt{
-    white-space: nowrap;
-    overflow-x: auto;
-}
-.rgt::-webkit-scrollbar{
-    display: none;
-}
-.item{
-    display: inline-block;
-    margin-right: 4vmin;
-} */
-
- 
-
-
-
-/* RESPONSIVE */
-/* @media (max-width: 768px){
-    .products{
-        display: flex;
-        flex-direction: column;
-    }
-    .products .lft{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .lft h1{
-        transform: rotate(360deg);
-        text-align: center;
-        letter-spacing: 0.1vmin;
-        
-    }
-    .lft h3{
-        transform: rotate(360deg);
-        text-align: center;
-        font-size: 5vmin;
-    }
-    .products .rgt{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        margin-top: -10vmin;
-    }
-}
-@media only screen and (min-width:768px) and (max-width:991px){
-    .lft h1{
-        font-size: 20vmin;
-    }
-    .lft h3{
-        font-size: 4.5vmin;
-    }
-    .bestseller{
-        min-height: 200vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: -150vmin; 
-    }
-    .bestseller h1{
-        margin-top: 170vmin;
-    }
-    .bestseller h4{
-        white-space: nowrap;
-        margin-top: 2vmin;
-        margin-right: 0vmin;
-        text-align: center;
-        font-size: 3.4vmin;
-    }
-    .bestseller .cont{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 7vmin;
-        /* gap: 7vmin; */
-        /* padding: 0 14vmin;
-    }
-    .bestseller .box{
-        transform: skewY(0);
-    }
-    .bestseller .card{
-        height: 55vmin;
-        width: 40vmin;
-        margin-top: 0vmin;
-    }
-    #card{
-        margin-top: -10vmin;
-    }
-    .card .explore-btn{
-        opacity: 1;
-        margin-top: -80%;
-        margin-left: 30%;
-        border: 2px solid white;
-        width: 50%;
-    }
-    .card .explore-btn h4{
-        color: white;
-        margin-top: -1vmin;
-    }
-    .card .text{
-        margin-top: 17vmin;
-    }
-    .card .text h4{
-        color: white;
-    }
-    #card5{
-        margin-left: 30%;
-        margin-top: 9vmin;
-    }
-} */ 
-
-/* .exp-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.box:hover .exp-btn {
-    opacity: 1;
-}
-
-@media (min-width:991px){
-    .exp-btn{
-        opacity: 0;
-    }
-}
-
-@media (min-width:525px) and (max-width:1023px) {
-  .container
-  .box .card{
-    height: 40vh;
-    width: 35vh;
-  }
-} */
-/* @media (min-width: 1024px){
-    .container
-  .box .card{
-    height: 40vh;
-    width: 35vh;
-  }
-} */
-    
 /* bestsellers css*/
 ::selection {
   background-color: rgba(255, 70, 70, 0.848);
@@ -194,13 +28,9 @@
   
   .card:hover .exp-btn {
       opacity: 1;
-  }
+  } 
   
-  
-  
-  
-  
-  /* RESPONSIVE */
+  /* top picks & bestseller RESPONSIVE */
   @media (max-width:991px){
       .item-cont{
           flex-wrap: wrap;
@@ -231,60 +61,25 @@
     flex-direction: column;
   }
 
-  .products .lft {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .lft h1 {
-    transform: rotate(360deg);
-    text-align: center;
-    letter-spacing: 0.1vmin;
-
-  }
-
-  .lft h3 {
-    transform: rotate(360deg);
-    text-align: center;
-    font-size: 5vmin;
-  }
-
-  .products .rgt {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: -10vmin;
-  }
-
 }
 
-@media (min-width:768px) and (max-width:991px) {
-  .lft h1 {
-    font-size: 18vmin;
-    margin-left: -30vmin;
-  }
-
-  .lft h3 {
-    font-size: 4.5vmin;
-    margin-left: -67vmin;
-    margin-top: 16vmin;
-  }
-}
-@media (max-width:1023px){
+@media (max-width:1022px){
     .products{
         display: flex;
         flex-direction: column;
+    }
+    .products .item-cont{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      /* gap: 7vw; */
+      /* padding: 3vw; */
     }
     
 }
 @media (min-width:1023px){
   .products .item-cont {
-    display: flex;
-    flex-wrap: nowrap;
     white-space: nowrap;
     overflow-x: auto;
   }
