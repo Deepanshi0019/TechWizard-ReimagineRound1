@@ -31,6 +31,11 @@
   } 
   
   /* top picks & bestseller RESPONSIVE */
+  @media (min-width:461px) and (max-width:767px){
+    .itm-dets h4 span{
+      font-size: 2vmin;
+    }
+  }
   @media (max-width:991px){
       .item-cont{
           flex-wrap: wrap;
