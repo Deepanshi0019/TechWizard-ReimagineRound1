@@ -395,13 +395,14 @@ canvas {
   
   .card:hover .exp-btn {
       opacity: 1;
+  } 
+  
+  /* top picks & bestseller RESPONSIVE */
+  @media (min-width:461px) and (max-width:767px){
+    .itm-dets h4 span{
+      font-size: 2.5vmin;
+    }
   }
-  
-  
-  
-  
-  
-  /* RESPONSIVE */
   @media (max-width:991px){
       .item-cont{
           flex-wrap: wrap;
@@ -432,60 +433,25 @@ canvas {
     flex-direction: column;
   }
 
-  .products .lft {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .lft h1 {
-    transform: rotate(360deg);
-    text-align: center;
-    letter-spacing: 0.1vmin;
-
-  }
-
-  .lft h3 {
-    transform: rotate(360deg);
-    text-align: center;
-    font-size: 5vmin;
-  }
-
-  .products .rgt {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: -10vmin;
-  }
-
 }
 
-@media (min-width:768px) and (max-width:991px) {
-  .lft h1 {
-    font-size: 18vmin;
-    margin-left: -30vmin;
-  }
-
-  .lft h3 {
-    font-size: 4.5vmin;
-    margin-left: -67vmin;
-    margin-top: 16vmin;
-  }
-}
-@media (max-width:1023px){
+@media (max-width:1022px){
     .products{
         display: flex;
         flex-direction: column;
+    }
+    .products .item-cont{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      /* gap: 7vw; */
+      /* padding: 3vw; */
     }
     
 }
 @media (min-width:1023px){
   .products .item-cont {
-    display: flex;
-    flex-wrap: nowrap;
     white-space: nowrap;
     overflow-x: auto;
   }
