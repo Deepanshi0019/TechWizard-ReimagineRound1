@@ -386,6 +386,10 @@ canvas {
   margin-right: 4vmin;
 }
 
+.itm-dets{
+  color: black;
+}
+
 .exp-btn {
     position: absolute;
     top: 50%;
