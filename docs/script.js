@@ -24,3 +24,5 @@ images.forEach(function(image) {
         });
     });
 });
+
+// scroll reveal
