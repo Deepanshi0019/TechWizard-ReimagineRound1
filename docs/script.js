@@ -25,5 +25,5 @@ images.forEach(function(image) {
     });
 });
 
-// scroll reveal
+// animation on scroll disables for mobile
 AOS.init({disable: 'mobile'});
