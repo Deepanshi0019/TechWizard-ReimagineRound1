@@ -18,13 +18,13 @@ function dom() {
 
 function files() {
     let data = [];
-    for (let i = 164; i <= 255; i++) {
-        data.push(`/media/homa-page-images/Image${i}.jpg`);
+    for (let i = 1; i <= 298; i++) {
+        data.push(`/HomePage/Image${i}.jpg`);
     }
     return data;
 }
 
-const frameCount = 92;
+const frameCount = 298;
 const images = [];
 const imageSeq = {
     frame: 0
@@ -92,21 +92,6 @@ gsap.to("#home canvas", {
 
 dom();
 
-function hompageheading(){
-    gsap.from("#home .text-content",{     // 
-        y:"200%",
-        opacity:0,
-        ease:Power4,
-        scrollTrigger:{
-           trigger:"#home",
-           scrub:true,
-           scroller:"body",
-           markers:true,
-           start:"bottom 100%",
-         
-        }
-   })
-}
 hompageheading()
                  // homepage text animation
 
