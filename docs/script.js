@@ -18,13 +18,13 @@ function dom() {
 
 function files() {
     let data = [];
-    for (let i = 164; i <= 255; i++) {
-        data.push(`/Devinja-ReimagineRound1/media/homa-page-images/Image${i}.jpg`);
+    for (let i = 1; i <= 298; i++) {
+        data.push(`/HomePage/Image${i}.jpg`);
     }
     return data;
 }
 
-const frameCount = 92;
+const frameCount = 298;
 const images = [];
 const imageSeq = {
     frame: 0
@@ -94,20 +94,21 @@ dom();
 
 function hompageheading(){
     gsap.from("#home .text-content",{     // 
-        y:"500%",
+        y:"200%",
         opacity:0,
         ease:Power4,
         scrollTrigger:{
-           trigger:"#home .text-content",
+           trigger:"#home",
            scrub:true,
            scroller:"body",
            markers:true,
-           start:"bottom 50%",
-        },
-        // start:"top 50%",
+           start:"bottom 100%",
+         
+        }
    })
 }
-hompageheading()     // homepage text animation
+hompageheading()
+                 // homepage text animation
 
 //                               For responsive nav
 
