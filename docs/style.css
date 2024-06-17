@@ -386,6 +386,10 @@ canvas {
   margin-right: 4vmin;
 }
 
+.itm-dets{
+  color: black;
+}
+
 .exp-btn {
     position: absolute;
     top: 50%;
@@ -398,9 +402,9 @@ canvas {
   } 
   
   /* top picks & bestseller RESPONSIVE */
-  @media (min-width:461px) and (max-width:767px){
+  @media (min-width:461px) and (max-width:780px){
     .itm-dets h4 span{
-      font-size: 2.5vmin;
+      font-size: 2.3vmin;
     }
   }
   @media (max-width:991px){
@@ -445,8 +449,6 @@ canvas {
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-evenly;
-      /* gap: 7vw; */
-      /* padding: 3vw; */
     }
     
 }
@@ -473,4 +475,5 @@ canvas {
     height: 50vmin;
     width: 100%;
   }
+
 }
