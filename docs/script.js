@@ -18,13 +18,13 @@ function dom() {
 
 function files() {
     let data = [];
-    for (let i = 164; i <= 255; i++) {
-        data.push(`/Devinja-ReimagineRound1/media/homa-page-images/Image${i}.jpg`);
+    for (let i = 1; i <= 298; i++) {
+        data.push(`/HomePage/Image${i}.jpg`);
     }
     return data;
 }
 
-const frameCount = 92;
+const frameCount = 298;
 const images = [];
 const imageSeq = {
     frame: 0
@@ -92,21 +92,31 @@ gsap.to("#home canvas", {
 
 dom();
 
-function hompageheading(){
-    gsap.from("#home .text-content",{     // 
-        y:"500%",
-        opacity:0,
-        ease:Power4,
-        scrollTrigger:{
-           trigger:"#home .text-content",
-           scrub:true,
-           scroller:"body",
-           
-           start:"bottom 50%",
-        }
-   })
-}
-hompageheading()     // homepage text animation
+hompageheading()
+                 // homepage text animation
+
+//                               For responsive nav
+
+
+const burgerIcon = document.querySelector('.burger-icon');
+const openedMenu = document.getElementById('Opened-menu');
+
+burgerIcon.addEventListener('click', () => {
+    if (burgerIcon && openedMenu) {
+        burgerIcon.addEventListener('click', () => {
+            openedMenu.classList.toggle('hidden');
+            if (openedMenu.classList.contains('hidden')) {
+                console.log("hidden");
+            } else {
+                console.log("show");
+            }
+        });
+    } else {
+        console.error('Burger icon or opened menu element not found');
+    }
+});
+
+
 
 /*                                 Home-Page CSS Ends Here            */
 
@@ -146,6 +156,121 @@ LifeStyleAnime();
 
 
 //                                    LifeStyle Ends Here  
+
+
+
+
+//                                      category and the press section by rahul
+let imageDiv = document.getElementById('IMG');
+let imageDiv2 = document.getElementById('IMG2');
+let links = document.querySelectorAll('#Text-div h2');
+let txtdiv = document.getElementById('Text-div');
+var forHoverCards = document.querySelectorAll('.card-category')
+var actualCard = document.querySelectorAll('.card')
+
+
+imageDiv2.classList.add('reveal')
+imageDiv.classList.add('hidden')
+
+// links.addEventListener('mouseenter',function () { 
+//   imageDiv2.classList.add('hidden');
+//   imageDiv2.classList.remove('reveal');
+//  })
+
+//  links.addEventListener('mouseleave', () => {
+//   imageDiv2.classList.remove('hidden');
+//   imageDiv2.classList.add('reveal');
+//   // imageDiv.classList.add('hidden');
+// });
+
+links.forEach(link => {
+  link.addEventListener('mouseenter', () => {
+    imageDiv.classList.add('reveal');
+    imageDiv.classList.remove('hidden');
+    imageDiv2.classList.add('hidden');
+    imageDiv2.classList.remove('reveal');
+    // imageDiv2.classList.add('hidden');
+
+  });
+
+  link.addEventListener('mouseleave', () => {
+    imageDiv.classList.remove('reveal');
+    imageDiv.classList.add('hidden');
+    imageDiv2.classList.remove('hidden');
+  imageDiv2.classList.add('reveal');
+  });
+});
+
+
+
+
+let bw = document.getElementById('BW');
+let fn = document.getElementById('FN');
+let ht = document.getElementById('HT');
+let bs = document.getElementById('BS');
+let ttoi = document.getElementById('TTOI');
+
+bw.addEventListener('mouseenter', function () {
+  imageDiv.innerHTML = `<video loop muted autoplay src="/Devinja-ReimagineRound1/vdio/bw.mp4" class="h-[70%] w-[100%]"></video>`
+})
+ht.addEventListener('mouseenter', function () {
+  imageDiv.innerHTML = `<video loop muted autoplay src="/Devinja-ReimagineRound1/vdio/HT.mp4" class="h-[70%] w-[100%]"></video>`
+})
+fn.addEventListener('mouseenter', function () {
+  imageDiv.innerHTML = `<video loop muted autoplay src="/Devinja-ReimagineRound1/vdio/fn.mp4" class="h-[70%] w-[100%]"></video>`
+})
+bs.addEventListener('mouseenter', function () {
+  imageDiv.innerHTML = `<video loop muted autoplay src="/Devinja-ReimagineRound1/vdio/bs.mp4" class="h-[70%] w-[100%]"></video>`
+})
+ttoi.addEventListener('mouseenter', function () {
+  imageDiv.innerHTML = `<video loop muted autoplay src="/Devinja-ReimagineRound1/vdio/TTOI.mp4" class="h-[70%] w-[100%]"></video>`
+})
+
+
+// const linkss = document.querySelectorAll('#Text-div h2');
+
+// linkss.forEach((link, index) => {
+//   gsap.set(link, { opacity: 0.5, y: '-10px' });
+
+//   gsap.from(link, { opacity: 0, y: '-10px', duration: 5, delay: index * 0.2 });
+// });
+
+document.querySelectorAll('.card-category').forEach(item => {
+  item.addEventListener('mouseenter', () => {
+      item.closest('.card').classList.add('glow');
+  });
+  item.addEventListener('mouseleave', () => {
+      item.closest('.card').classList.remove('glow');
+  });
+});
+
+//bestseller
+
+//pointer
+
+var pic = document.querySelectorAll(".item img")
+var pointer = document.querySelector(".pointer")
+pic.forEach(function(image) {
+    image.addEventListener("mousemove", function(dets){
+        gsap.to(pointer, {
+            x: dets.clientX,
+            y: dets.clientY
+        });
+    });
+    image.addEventListener("mouseenter", function(){
+        gsap.to(pointer, {
+            scale: 1,
+            opacity: 0.8
+        });
+    });
+    image.addEventListener("mouseleave", function(){
+        gsap.to(pointer, {
+            scale: 0,
+            opacity: 0
+        });
+    });
+});
+
 
 
 //                               For responsive
