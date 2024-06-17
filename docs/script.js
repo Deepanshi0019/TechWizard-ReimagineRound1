@@ -19,7 +19,7 @@ function dom() {
 function files() {
     let data = [];
     for (let i = 164; i <= 255; i++) {
-        data.push(`/media/homa-page-images/Image${i}.jpg`);
+        data.push(`/Devinja-ReimagineRound1/media/homa-page-images/Image${i}.jpg`);
     }
     return data;
 }
@@ -94,21 +94,20 @@ dom();
 
 function hompageheading(){
     gsap.from("#home .text-content",{     // 
-        y:"200%",
+        y:"500%",
         opacity:0,
         ease:Power4,
         scrollTrigger:{
-           trigger:"#home",
+           trigger:"#home .text-content",
            scrub:true,
            scroller:"body",
            markers:true,
-           start:"bottom 100%",
-         
-        }
+           start:"bottom 50%",
+        },
+        // start:"top 50%",
    })
 }
-hompageheading()
-                 // homepage text animation
+hompageheading()     // homepage text animation
 
 //                               For responsive nav
 
@@ -258,14 +257,58 @@ document.querySelectorAll('.card-category').forEach(item => {
       item.closest('.card').classList.remove('glow');
   });
 });
-
 //bestseller
+var tl = gsap.timeline({scrollTrigger:{
+    trigger:".bestsellers",
+    // markers:true,
+    start:"38% 50%",
+    end:"100% 50%",
+    scrub:2,
+    pin:true
+}});
+tl
+.to(".text",{
+    top: "-30%",
+},'a')
+.to("#card-one",{
+    top: "35%",
+},'a')
+.to("#card-two",{
+    top: "100%"
+},'a')
+.to("#card-two",{
+    top: "45%"
+},'b')
+.to("#card-one",{
+    width: "65%",
+    height: "65vh"
+},'b')
+.to("#card-three",{
+    top: "100%"
+}, 'b')
+.to("#card-three",{
+    top: "50%"
+}, 'c')
+.to("#card-two",{
+    width: "70%",
+    height: "70vh"
+},'c')
+.to("#card-four",{
+    top: "100%"
+},'c')
+.to("#card-four",{
+    top: "57%"
+},'d')
+.to("#card-three",{
+    width: "75%",
+    height: "75vh"
+},'d')
 
 //pointer
 
-var pic = document.querySelectorAll(".item img")
+var pics = document.querySelectorAll(".item img")
 var pointer = document.querySelector(".pointer")
-pic.forEach(function(image) {
+pics.forEach(function(image) {
     image.addEventListener("mousemove", function(dets){
         gsap.to(pointer, {
             x: dets.clientX,
@@ -285,3 +328,66 @@ pic.forEach(function(image) {
         });
     });
 });
+
+//animations
+// var tl = gsap.timeline();
+// tl.from(".lft h1, .lft h3",{
+//     x:100,
+//     opacity:0,
+//     delay:0.5,
+//     duration:0.9,
+//     stagger:0.3,
+//     scrollTrigger:{
+//         trigger:".lft h1, .lft h3",
+//         scroller:"body",
+//         start:"top -1%",
+//         end:"top 80%",
+//         scrub:3,
+//         // markers: true
+//     }
+// })
+// tl.from(".rgt .item",{
+//     y:50,
+//     opacity:0,
+//     delay:0.3,
+//     duration:0.6,
+//     stagger:0.5,
+//     scrollTrigger:{
+//         trigger:".lft h1, .lft h3",
+//         scroller:"body",
+//         start:"top 0%",
+//         end:"top 80%",
+//         scrub:3,
+//         markers: true
+//     }
+// })
+// tl.from(".bestseller h1, .bestseller h4",{
+//     y:60,
+//     opacity:0,
+//     // delay:0.3,
+//     duration:0.6,
+//     stagger:0.5,
+//     scrollTrigger:{
+//         trigger:".bestseller h1, .bestseller h4",
+//         scroller:"body",
+//         start:"top 50%",
+//         end:"top 80%",
+//         scrub:2,
+//         markers: true
+//     }
+// })
+// tl.from(".cont .box",{
+//     y:30,
+//     opacity:0,
+//     delay:0.6,
+//     duration:0.6,
+//     stagger:0.5,
+//     scrollTrigger:{
+//         trigger:".bestseller .cont",
+//         scroller:"body",
+//         start:"top 50%",
+//         end:"top 80%",
+//         scrub:2,
+//         markers: true
+//     }
+// })
