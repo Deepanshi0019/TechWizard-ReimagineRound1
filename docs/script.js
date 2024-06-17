@@ -26,3 +26,4 @@ images.forEach(function(image) {
 });
 
 // scroll reveal
+AOS.init({disable: 'mobile'});
