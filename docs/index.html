@@ -9,16 +9,15 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
-
-
 <body>
+    <div class="custom-cursor absolute h-[10vmin] w-[10vmin] bg-transparent border-2 border-white z-40 rounded-full" style="transform: translate(-50%, -50%); "></div>
     <main class="text-white overflow-hidden" >
 <!--                                   HomaPage Section                       -->
 
         <div id="home" class=""><!--home div starting-->
            <!-- navbar🍻-->
             
-                <nav class="absolute h-[7vmin] px-[5vmin] pr-[10vmin] md:pr-[5vmin] md:px-[10vmin] pt-[5vmin] w-full  bg-transparent text-white backdrop-blur-3xl shadow-md flex items-center justify-between  p-[5vmin]  md:p-[5vmin] z-50">  
+                <nav class="absolute h-[7vmin] px-[5vmin] pr-[10vmin] md:pr-[5vmin] md:px-[10vmin] pt-[5vmin] w-full  bg-transparent text-white backdrop-blur-3xl shadow-md flex items-center justify-between  p-[5vmin]  md:p-[5vmin] z-20">  
                     <div class="logo">
                          <img src="https://i.postimg.cc/RV06435D/boat.png" alt="Logo" class="h-[6vmin]  md:h-[4vmin] ">
                       </div>
@@ -76,10 +75,10 @@
 
                <div class="life1  h-[20vh] px-[5vmin] border-y-2 border-white flex justify-between items-center">  <!--And box-->
                      <h1 class="text-[5vmin] font-semibold">For Fitness</h1>
-                     <div class="img-life h-[30vmin] w-[30vmin] rounded-full overflow-hidden bg-purple-400 " style="display: none;">
+                     <div class="img-life h-[30vmin] w-[30vmin] rounded-full overflow-hidden bg-purple-400" style="display: none;">
                           <img class="h-full w-full object-cover" src="https://i.postimg.cc/yYT8TyRk/hardik-panday.png" alt="">
                      </div>
-                     <h2>View All</h2>
+                     <h2 class="cursor-pointer underline hover:text-gray-400">View All</h2>
                 </div>
 
                 <div class="life1  h-[20vh] px-[5vmin] border-y-2 border-white flex justify-between items-center">  <!--Main box-->
@@ -87,7 +86,7 @@
                     <div class="img-life h-[30vmin] w-[30vmin] rounded-full overflow-hidden bg-purple-400 " style="display: none;">
                          <img class="h-full w-full object-cover" src="https://i.postimg.cc/R0gCzSd9/Diljit.jpg" alt="">
                     </div>
-                    <h2>View All</h2>
+                    <h2 class="cursor-pointer underline hover:text-gray-400">View All</h2>
                </div>
 
                 <div class="life1 h-[20vh] px-[5vmin] border-y-2 border-white flex justify-between items-center">    <!--Main box-->
@@ -95,7 +94,7 @@
                   <div class="img-life h-[30vmin] w-[30vmin] rounded-full overflow-hidden bg-purple-400 " style="display: none;">
                        <img class="h-full w-full object-cover" src="https://i.postimg.cc/Jzc4PcBs/Kartik-Aaryan.jpg" alt="">
                   </div>
-                  <h2>View All</h2>
+                  <h2 class="cursor-pointer underline hover:text-gray-400">View All</h2>
              </div>
        
 
@@ -104,7 +103,7 @@
                   <div class="img-life h-[30vmin] w-[30vmin] rounded-full overflow-hidden bg-purple-400 " style="display: none;">
                        <img class="h-full w-full object-cover" src="https://i.postimg.cc/N0sGV91p/shreys-iyer.png" alt="">
                   </div>
-                  <h2>View All</h2>
+                  <h2 class="cursor-pointer underline hover:text-gray-400">View All</h2>
              </div>
            </div>
       </div>
@@ -222,7 +221,7 @@
             <div class="pointer hidden md:h-[12vmin] md:w-[12vmin] md:bg-red-600 md:rounded-full md:z-[99] md:fixed md:flex md:items-center md:justify-center md:opacity-0">
                 <h5 class="text-[2.5vmin] text-white">View <i class="ri-arrow-right-up-line"></i></h5>
             </div>
-            <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
+            <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center cursor-pointer">
                 <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
                     <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/gcQh1SYN/Nirvana-Ion.webp" alt="">
                 </div>
@@ -305,35 +304,35 @@
         <div class="box mt-[8vh]">
             <div data-tilt data-tilt-glare class="card h-[22vh] w-[20vh] lg:h-[20vw] lg:w-[12vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
                 <img class="h-full w-full object-cover object-center rounded-[3vmin]" src="https://i.postimg.cc/0jTJmQtL/LIfestyle-renders.webp" alt="">
-                <div class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-8vw] lg:ml-[-2.8vw] "><h4 class="text-[3vmin] lg:text-[2vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">Explore</h4></div>
+                <div class="exp-btn cursor-pointer text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-8vw] lg:ml-[-2.8vw] "><h4 class="text-[3vmin] lg:text-[2vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">Explore</h4></div>
                 <div class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[2.7vmin] py-[1vw] lg:mt-[-4vw]">Smartwatches</div>
             </div>
         </div>
         <div class="box mt-[8vh]">
             <div data-tilt data-tilt-glare class="card h-[22vh] w-[20vh] lg:h-[25vw] lg:w-[15vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
                 <img class="h-full w-full object-cover object-center rounded-[3vmin]" src="https://i.postimg.cc/zXhhNCv5/Partypal-208.webp" alt="">
-                <div class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-10vw] lg:ml-[-3vw] lg:opacity-0"><h4 class="text-[3vmin] lg:text-[2.3vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">Explore</h4></div>
+                <div class="exp-btn cursor-pointer text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-10vw] lg:ml-[-3vw] lg:opacity-0"><h4 class="text-[3vmin] lg:text-[2.3vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">Explore</h4></div>
                 <div class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[3vmin] py-[1vw] lg:mt-[-4vw] lg:tracking-wide">Speakers</div>
             </div>
         </div>
         <div class="box mt-[8vh]">
             <div data-tilt data-tilt-glare class="card h-[22vh] w-[20vh] lg:h-[28vw] lg:w-[18vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
                 <img class="h-full w-full object-cover object-center rounded-[3vmin]" src="https://i.postimg.cc/Z5hd5WvN/Rockerz-518.webp" alt="">
-                <div class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-11vw] lg:ml-[-4.5vw]"><h4 class="text-[3vmin] lg:text-[2.5vmin] lg:font-semibold h-full w-full transition-all duration-300 px-[3vw] py-[1vw] lg:px-[1vw] lg:py-[0.3vw] hover:text-white">Explore</h4></div>
+                <div class="exp-btn cursor-pointer text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-11vw] lg:ml-[-4.5vw]"><h4 class="text-[3vmin] lg:text-[2.5vmin] lg:font-semibold h-full w-full transition-all duration-300 px-[3vw] py-[1vw] lg:px-[1vw] lg:py-[0.3vw] hover:text-white">Explore</h4></div>
                 <div class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[3.5vmin] py-[1vw] lg:mt-[-4vw]">Headphones</div>
             </div>
         </div>
         <div class="box mt-[8vh]">
             <div data-tilt data-tilt-glare class="card h-[22vh] w-[20vh] lg:h-[25vw] lg:w-[15vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
                 <img class="h-full w-full object-cover object-center rounded-[3vmin]" src="https://i.postimg.cc/R0BQyPLj/Airdop800-Black.webp" alt="">
-                <div class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-10vw] lg:ml-[-3vw] "><h4 class="text-[3vmin] lg:text-[2.3vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">Explore</h4></div>
+                <div class="exp-btn cursor-pointer text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-10vw] lg:ml-[-3vw] "><h4 class="text-[3vmin] lg:text-[2.3vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">Explore</h4></div>
                 <div class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[3vmin] py-[1vw] lg:mt-[-4vw] lg:tracking-wide">Earbuds</div>
             </div>
         </div>
         <div class="box mt-[8vh]">
             <div data-tilt data-tilt-glare class="card h-[22vh] w-[20vh] lg:h-[20vw] lg:w-[12vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
                 <img class="h-full w-full object-cover object-center rounded-[3vmin]" src="https://i.postimg.cc/dthByZ0S/bo-At-Rockerz-255-Max.webp" alt="">
-                <div class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-8vw] lg:ml-[-2.8vw] "><h4 class="text-[3vmin] lg:text-[2vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">Explore</h4></div>
+                <div class="exp-btn cursor-pointer text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-8vw] lg:ml-[-2.8vw] "><h4 class="text-[3vmin] lg:text-[2vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">Explore</h4></div>
                 <div class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[2.7vmin] py-[1vw] lg:mt-[-4vw]">Neckbends</div>
             </div>
     </div>
@@ -344,16 +343,16 @@
      <h1>Creat</h1>
 </footer>
  
- <script src="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
-     integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
-     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"
-     integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ=="
-     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
- <script src="script.js"></script>
- <script src="vanilla-tilt.js"></script>
+<script src="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+    integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"
+    integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script src="script.js"></script>
+<script src="vanilla-tilt.js"></script>
 </body>
 
 </html>

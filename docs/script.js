@@ -1,3 +1,12 @@
+/*                             Custom-Cursor                     */
+
+document.addEventListener('mousemove', function(e) {
+    const customCursor = document.querySelector('.custom-cursor');
+    customCursor.style.left = e.clientX + 'px';
+    customCursor.style.top = e.clientY + 'px';
+})
+
+
 /*                                 Home-Page CSS             */
 
 let context;
@@ -91,8 +100,6 @@ gsap.to("#home canvas", {
 });
 
 dom();
-
-hompageheading()
                  // homepage text animation
 
 //                               For responsive nav
