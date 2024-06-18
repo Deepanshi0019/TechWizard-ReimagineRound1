@@ -18,13 +18,13 @@ function dom() {
 
 function files() {
     let data = [];
-    for (let i = 1; i <= 298; i++) {
+    for (let i = 1; i <= 497; i++) {
         data.push(`/HomePage/Image${i}.jpg`);
     }
     return data;
 }
 
-const frameCount = 298;
+const frameCount = 497;
 const images = [];
 const imageSeq = {
     frame: 0
