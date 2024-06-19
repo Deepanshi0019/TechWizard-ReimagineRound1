@@ -92,7 +92,6 @@ gsap.to("#home canvas", {
 
 dom();
 
-hompageheading()
                  // homepage text animation
 
 //                               For responsive nav
