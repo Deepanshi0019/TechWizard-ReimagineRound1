@@ -7,6 +7,8 @@
     <title>Re-creation of boat</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
@@ -14,149 +16,268 @@
 <body>
 
     <!-- PRODUCTS -->
-    <div class="products min-h-[100vh] w-full bg-black p-[3vw] lg:p-[0vw] flex lg:flex-nowrap items-center justify-center lg:justify-between relative">
-        <div data-aos-anchor-placement="top-center" data-aos="fade-right" data-aos-easing="ease-out" class="headline lg:w-[20%] lg:h-full text-white flex flex-col lg:flex-wrap items-center justify-center lg:justify-between ">
-            <h1 class="text-[10vmin] lg:text-[20vmin] font-semibold lg:-rotate-90 lg:ml-[-25vw] tracking-tighter lg:font-bold lg:border-white lg:border-b-2">PRODUCTS</h1>
-            <div class="sub-head text-[3vmin] lg:text-[5vmin] text-center lg:text-left lg:-rotate-90 lg:mt-[-6vw] lg:leading-[2.5vw]">
+    <div
+        class="products min-h-[100vh] w-full bg-black p-[3vw] lg:p-[0vw] flex lg:flex-nowrap items-center justify-center lg:justify-between relative">
+        <div data-aos-anchor-placement="top-center" data-aos="fade-right" data-aos-easing="ease-out"
+            class="headline lg:w-[20%] lg:h-full text-white flex flex-col lg:flex-wrap items-center justify-center lg:justify-between ">
+            <h1
+                class="text-[10vmin] lg:text-[20vmin] font-semibold lg:-rotate-90 lg:ml-[-25vw] tracking-tighter lg:font-bold lg:border-white lg:border-b-2">
+                PRODUCTS</h1>
+            <div
+                class="sub-head text-[3vmin] lg:text-[5vmin] text-center lg:text-left lg:-rotate-90 lg:mt-[-6vw] lg:leading-[2.5vw]">
                 <h4>Discover <span class="text-red-600">boAt</span> :</h4>
                 <h4 class="lg:whitespace-nowrap">Ride the Wave of India's Top Tech!</h4>
             </div>
         </div>
-            <div data-aos-anchor-placement="top-center" data-aos-delay="200" data-aos="fade-left" data-aos-easing="ease-in-out" class="item-cont w-full lg:w-[67%] gap-[4vw] lg:gap-[0vw] mt-[6vh]">
-                <div class="pointer hidden md:h-[12vmin] md:w-[12vmin] md:bg-red-600 md:rounded-full md:z-[99] md:fixed md:flex md:items-center md:justify-center md:opacity-0">
+        <div class="slider w-full lg:w-[69%] mt-[6vh] relative">
+            <i id="left" class="ri-arrow-left-s-line hidden lg:block bg-red-600 h-[4vmin] w-[4vmin] text-center text-[2.5vmin] font-semibold z-10 rounded-full top-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute"></i>
+            <div data-aos-anchor-placement="top-center" data-aos-delay="200" data-aos="fade-left"
+                data-aos-easing="ease-in-out" class="item-cont scroll-smooth gap-[4vw] lg:gap-[0vw] lg:mr-[5vmin] lg:overflow-hidden">
+                <div
+                    class="pointer hidden md:h-[12vmin] md:w-[12vmin] md:bg-red-600 md:rounded-full md:z-[99] md:fixed md:flex md:items-center md:justify-center md:opacity-0">
                     <h5 class="text-[2.5vmin] text-white">View <i class="ri-arrow-right-up-line"></i></h5>
                 </div>
                 <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
                     <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
-                        <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/gcQh1SYN/Nirvana-Ion.webp" alt="">
+                        <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300"
+                            src="https://i.postimg.cc/gcQh1SYN/Nirvana-Ion.webp" alt="">
                     </div>
-                    <div class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
-                        <h4 class="ml-4"><span class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Nirvana Ion</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold "> &#8377;1,999</span>  <span class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;7,999</span></h4>
-                        <i class="ri-shopping-cart-2-line px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
-                    </div>
-                </div>
-                <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
-                    <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
-                        <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/zXhhNCv5/Partypal-208.webp" alt="">
-                    </div>
-                    <div class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
-                        <h4 class="ml-4"><span class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Party Pal</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold "> &#8377;8,999</span>  <span class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;9,990</span></h4>
-                        <i class="ri-shopping-cart-2-line px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
-                    </div>
-                </div>
-                <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
-                    <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
-                        <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/bwH2Dq1B/Primia-Curv.webp" alt="">
-                    </div>
-                    <div class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
-                        <h4 class="ml-4"><span class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Prima Curv</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold "> &#8377;2,199</span>  <span class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;8,999</span></h4>
-                        <i class="ri-shopping-cart-2-line px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
+                    <div
+                        class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
+                        <h4 class="ml-4"><span
+                                class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Nirvana
+                                Ion</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold ">
+                                &#8377;1,999</span> <span
+                                class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;7,999</span>
+                        </h4>
+                        <i
+                            class="ri-shopping-cart-2-line px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
                     </div>
                 </div>
                 <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
                     <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
-                        <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/Z5hd5WvN/Rockerz-518.webp" alt="">
+                        <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300"
+                            src="https://i.postimg.cc/zXhhNCv5/Partypal-208.webp" alt="">
                     </div>
-                    <div class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
-                        <h4 class="ml-4"><span class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Rockerz 518</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold "> &#8377;1,599</span>  <span class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;3,990</span></h4>
-                        <i class="ri-shopping-cart-2-line px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
-                    </div>
-                </div>
-                <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
-                    <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
-                        <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/dthByZ0S/bo-At-Rockerz-255-Max.webp" alt="">
-                    </div>
-                    <div class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
-                        <h4 class="ml-4"><span class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Rockerz 255</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold "> &#8377;1,399</span>  <span class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;3,999</span></h4>
-                        <i class="ri-shopping-cart-2-line px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
-                    </div>
-                </div>
-                <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
-                    <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
-                        <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/8PxbBkJk/av590.webp" alt="">
-                    </div>
-                    <div class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
-                        <h4 class="ml-4"><span class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Aavante Bar</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold "> &#8377;1,999</span>  <span class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;5,990</span></h4>
-                        <i class="ri-shopping-cart-2-line px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
+                    <div
+                        class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
+                        <h4 class="ml-4"><span
+                                class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Party
+                                Pal</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold ">
+                                &#8377;8,999</span> <span
+                                class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;9,990</span>
+                        </h4>
+                        <i
+                            class="ri-shopping-cart-2-line px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
                     </div>
                 </div>
                 <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
                     <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
-                        <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/zXGQPfGn/AD-311-Pro.webp" alt="">
+                        <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300"
+                            src="https://i.postimg.cc/bwH2Dq1B/Primia-Curv.webp" alt="">
                     </div>
-                    <div class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
-                        <h4 class="ml-4"><span class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Airpodes 800</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold "> &#8377;1,799</span>  <span class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;6,490</span></h4>
-                        <i class="ri-shopping-cart-2-line px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
+                    <div
+                        class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
+                        <h4 class="ml-4"><span
+                                class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Prima
+                                Curv</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold ">
+                                &#8377;2,199</span> <span
+                                class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;8,999</span>
+                        </h4>
+                        <i
+                            class="ri-shopping-cart-2-line px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
+                    </div>
+                </div>
+                <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
+                    <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
+                        <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300"
+                            src="https://i.postimg.cc/Z5hd5WvN/Rockerz-518.webp" alt="">
+                    </div>
+                    <div
+                        class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
+                        <h4 class="ml-4"><span
+                                class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Rockerz
+                                518</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold ">
+                                &#8377;1,599</span> <span
+                                class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;3,990</span>
+                        </h4>
+                        <i
+                            class="ri-shopping-cart-2-line px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
+                    </div>
+                </div>
+                <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
+                    <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
+                        <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300"
+                            src="https://i.postimg.cc/dthByZ0S/bo-At-Rockerz-255-Max.webp" alt="">
+                    </div>
+                    <div
+                        class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
+                        <h4 class="ml-4"><span
+                                class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Rockerz
+                                255</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold ">
+                                &#8377;1,399</span> <span
+                                class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;3,999</span>
+                        </h4>
+                        <i
+                            class="ri-shopping-cart-2-line px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
+                    </div>
+                </div>
+                <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
+                    <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
+                        <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300"
+                            src="https://i.postimg.cc/8PxbBkJk/av590.webp" alt="">
+                    </div>
+                    <div
+                        class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
+                        <h4 class="ml-4"><span
+                                class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Aavante
+                                Bar</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold ">
+                                &#8377;1,999</span> <span
+                                class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;5,990</span>
+                        </h4>
+                        <i
+                            class="ri-shopping-cart-2-line px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
+                    </div>
+                </div>
+                <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
+                    <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
+                        <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300"
+                            src="https://i.postimg.cc/zXGQPfGn/AD-311-Pro.webp" alt="">
+                    </div>
+                    <div
+                        class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
+                        <h4 class="ml-4"><span
+                                class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Airpodes
+                                800</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold ">
+                                &#8377;1,799</span> <span
+                                class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;6,490</span>
+                        </h4>
+                        <i
+                            class="ri-shopping-cart-2-line px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
                     </div>
                 </div>
                 <div class="item h-[40vh] w-[25vh] flex items-center justify-center lg:hidden">
-                    <div class="h-[20vh] w-[20vh] bg-red-600 rounded-full flex items-center justify-center text-[3vmin] font-semibold hover:bg-white hover:text-red-600">View More <i class="ri-arrow-right-up-line"></i></div>
+                    <div
+                        class="h-[20vh] w-[20vh] bg-red-600 rounded-full flex items-center justify-center text-[3vmin] font-semibold hover:bg-white hover:text-red-600">
+                        View More <i class="ri-arrow-right-up-line"></i></div>
                 </div>
             </div>
+            <i id="right" class="ri-arrow-right-s-line hidden lg:block bg-red-600 h-[4vmin] w-[4vmin] text-center text-[2.5vmin] font-semibold z-10 rounded-full right-[1.5vmin] top-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute"></i>
+        </div>
     </div>
 
     <!-- explore BESTSELLER -->
     <div class="bestseller min-h-[100vh] w-full bg-black p-[3vw] lg:p-[1vw] flex flex-col items-center justify-center">
         <div class="heading text-white flex flex-col items-center justify-center ">
-            <h1 ata-aos-anchor-placement="top-center" data-aos="fade-up" data-aos-easing="ease-out" class="text-[12vmin] font-bold">TOP <span class="text-red-600">PICKS</span></h1>
-                <div ata-aos-anchor-placement="top-center" data-aos="fade-up" class="sub-head text-center lg:text-left py-[3vw] lg:py-[0vw] lg:mt-[-5vw] lg:ml-[-65vw] text-[4vmin] lg:text-[2.5vmin] lg:leading-[1.5vw]">
-                    <h4>Discover <span class="text-red-600">boAt's</span> best:</h4>
-                    <h4>Top-notch audio, stylish accessories.</h4>
-                    <h4>Elevate your lifestyle!</h4>
-                </div>
+            <h1 ata-aos-anchor-placement="top-center" data-aos="fade-up" data-aos-easing="ease-out"
+                class="text-[12vmin] font-bold">TOP <span class="text-red-600">PICKS</span></h1>
+            <div ata-aos-anchor-placement="top-center" data-aos="fade-up"
+                class="sub-head text-center lg:text-left py-[3vw] lg:py-[0vw] lg:mt-[-5vw] lg:ml-[-65vw] text-[4vmin] lg:text-[2.5vmin] lg:leading-[1.5vw]">
+                <h4>Discover <span class="text-red-600">boAt's</span> best:</h4>
+                <h4>Top-notch audio, stylish accessories.</h4>
+                <h4>Elevate your lifestyle!</h4>
+            </div>
         </div>
-        <div data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-out" class="container flex flex-wrap items-center justify-center gap-[7vw] lg:gap-[2vw]">
+        <div data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-out"
+            class="container flex flex-wrap items-center justify-center gap-[7vw] lg:gap-[2vw]">
             <div class="box mt-[8vh]">
-                <div data-tilt data-tilt-glare class="card h-[22vh] w-[20vh] lg:h-[20vw] lg:w-[12vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
-                    <img class="h-full w-full object-cover object-center rounded-[3vmin]" src="https://i.postimg.cc/0jTJmQtL/LIfestyle-renders.webp" alt="">
-                    <div class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-8vw] lg:ml-[-2.8vw] "><h4 class="text-[3vmin] lg:text-[2vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">Explore</h4></div>
-                    <div class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[2.7vmin] py-[1vw] lg:mt-[-4vw]">Smartwatches</div>
+                <div data-tilt data-tilt-glare
+                    class="card h-[22vh] w-[20vh] lg:h-[20vw] lg:w-[12vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
+                    <img class="h-full w-full object-cover object-center rounded-[3vmin]"
+                        src="https://i.postimg.cc/0jTJmQtL/LIfestyle-renders.webp" alt="">
+                    <div
+                        class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-8vw] lg:ml-[-2.8vw] ">
+                        <h4
+                            class="text-[3vmin] lg:text-[2vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">
+                            Explore</h4>
+                    </div>
+                    <div
+                        class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[2.7vmin] py-[1vw] lg:mt-[-4vw]">
+                        Smartwatches</div>
                 </div>
             </div>
             <div class="box mt-[8vh]">
-                <div data-tilt data-tilt-glare class="card h-[22vh] w-[20vh] lg:h-[25vw] lg:w-[15vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
-                    <img class="h-full w-full object-cover object-center rounded-[3vmin]" src="https://i.postimg.cc/zXhhNCv5/Partypal-208.webp" alt="">
-                    <div class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-10vw] lg:ml-[-3vw] lg:opacity-0"><h4 class="text-[3vmin] lg:text-[2.3vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">Explore</h4></div>
-                    <div class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[3vmin] py-[1vw] lg:mt-[-4vw] lg:tracking-wide">Speakers</div>
+                <div data-tilt data-tilt-glare
+                    class="card h-[22vh] w-[20vh] lg:h-[25vw] lg:w-[15vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
+                    <img class="h-full w-full object-cover object-center rounded-[3vmin]"
+                        src="https://i.postimg.cc/zXhhNCv5/Partypal-208.webp" alt="">
+                    <div
+                        class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-10vw] lg:ml-[-3vw] lg:opacity-0">
+                        <h4
+                            class="text-[3vmin] lg:text-[2.3vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">
+                            Explore</h4>
+                    </div>
+                    <div
+                        class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[3vmin] py-[1vw] lg:mt-[-4vw] lg:tracking-wide">
+                        Speakers</div>
                 </div>
             </div>
             <div class="box mt-[8vh]">
-                <div data-tilt data-tilt-glare class="card h-[22vh] w-[20vh] lg:h-[28vw] lg:w-[18vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
-                    <img class="h-full w-full object-cover object-center rounded-[3vmin]" src="https://i.postimg.cc/Z5hd5WvN/Rockerz-518.webp" alt="">
-                    <div class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-11vw] lg:ml-[-4.5vw]"><h4 class="text-[3vmin] lg:text-[2.5vmin] lg:font-semibold h-full w-full transition-all duration-300 px-[3vw] py-[1vw] lg:px-[1vw] lg:py-[0.3vw] hover:text-white">Explore</h4></div>
-                    <div class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[3.5vmin] py-[1vw] lg:mt-[-4vw]">Headphones</div>
+                <div data-tilt data-tilt-glare
+                    class="card h-[22vh] w-[20vh] lg:h-[28vw] lg:w-[18vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
+                    <img class="h-full w-full object-cover object-center rounded-[3vmin]"
+                        src="https://i.postimg.cc/Z5hd5WvN/Rockerz-518.webp" alt="">
+                    <div
+                        class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-11vw] lg:ml-[-4.5vw]">
+                        <h4
+                            class="text-[3vmin] lg:text-[2.5vmin] lg:font-semibold h-full w-full transition-all duration-300 px-[3vw] py-[1vw] lg:px-[1vw] lg:py-[0.3vw] hover:text-white">
+                            Explore</h4>
+                    </div>
+                    <div
+                        class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[3.5vmin] py-[1vw] lg:mt-[-4vw]">
+                        Headphones</div>
                 </div>
             </div>
             <div class="box mt-[8vh]">
-                <div data-tilt data-tilt-glare class="card h-[22vh] w-[20vh] lg:h-[25vw] lg:w-[15vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
-                    <img class="h-full w-full object-cover object-center rounded-[3vmin]" src="https://i.postimg.cc/R0BQyPLj/Airdop800-Black.webp" alt="">
-                    <div class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-10vw] lg:ml-[-3vw] "><h4 class="text-[3vmin] lg:text-[2.3vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">Explore</h4></div>
-                    <div class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[3vmin] py-[1vw] lg:mt-[-4vw] lg:tracking-wide">Earbuds</div>
+                <div data-tilt data-tilt-glare
+                    class="card h-[22vh] w-[20vh] lg:h-[25vw] lg:w-[15vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
+                    <img class="h-full w-full object-cover object-center rounded-[3vmin]"
+                        src="https://i.postimg.cc/R0BQyPLj/Airdop800-Black.webp" alt="">
+                    <div
+                        class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-10vw] lg:ml-[-3vw] ">
+                        <h4
+                            class="text-[3vmin] lg:text-[2.3vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">
+                            Explore</h4>
+                    </div>
+                    <div
+                        class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[3vmin] py-[1vw] lg:mt-[-4vw] lg:tracking-wide">
+                        Earbuds</div>
                 </div>
             </div>
             <div class="box mt-[8vh]">
-                <div data-tilt data-tilt-glare class="card h-[22vh] w-[20vh] lg:h-[20vw] lg:w-[12vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
-                    <img class="h-full w-full object-cover object-center rounded-[3vmin]" src="https://i.postimg.cc/dthByZ0S/bo-At-Rockerz-255-Max.webp" alt="">
-                    <div class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-8vw] lg:ml-[-2.8vw] "><h4 class="text-[3vmin] lg:text-[2vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">Explore</h4></div>
-                    <div class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[2.7vmin] py-[1vw] lg:mt-[-4vw]">Neckbends</div>
+                <div data-tilt data-tilt-glare
+                    class="card h-[22vh] w-[20vh] lg:h-[20vw] lg:w-[12vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
+                    <img class="h-full w-full object-cover object-center rounded-[3vmin]"
+                        src="https://i.postimg.cc/dthByZ0S/bo-At-Rockerz-255-Max.webp" alt="">
+                    <div
+                        class="exp-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:mt-[-8vw] lg:ml-[-2.8vw] ">
+                        <h4
+                            class="text-[3vmin] lg:text-[2vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">
+                            Explore</h4>
+                    </div>
+                    <div
+                        class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[2.7vmin] py-[1vw] lg:mt-[-4vw]">
+                        Neckbends</div>
                 </div>
+            </div>
         </div>
-    </div>
 
-    
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+            integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-          AOS.init();
+            AOS.init();
         </script>
-    <script src="script.js"></script>
-    <script src="vanilla-tilt.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+        <script src="vanilla-tilt.js"></script>
 </body>
 
 </html>

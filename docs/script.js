@@ -25,5 +25,36 @@ images.forEach(function(image) {
     });
 });
 
+const itemCont = document.querySelector(".item-cont")
+firstItem = itemCont.querySelectorAll("item")[0];
+arrowIcons = document.querySelectorAll(".slider i")
+
+let firstItmWidth = firstItem.clientWidth 
+
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        itemCont.scrollLeft += icon.id == "left" ? -firstItmWidth : firstItmWidth;
+    })
+})
+
+let isDragStart = false, prevPageX, prevScrollLeft;
+const DragStart = () => {
+    isDragStart = true;
+}
+
+const dragging = (e) => {
+    if(!isDragStart) return;
+    e.preventDefault();
+    itemCont.scrollLeft = e.pageX;
+}
+
+const dragStop = () => {
+    isDragStart = false;
+}
+
+itemCont.addEventListener("mousedown", DragStart);
+itemCont.addEventListener("mousemove", dragging);
+itemCont.addEventListener("mouseup", dragStop);
+
 // animation on scroll disables for mobile
 AOS.init({disable: 'mobile'});
