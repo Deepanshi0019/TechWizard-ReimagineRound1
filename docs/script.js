@@ -100,6 +100,23 @@ gsap.to("#home canvas", {
 });
 
 dom();
+
+function hompageheading(){
+    gsap.from("#home .text-content",{     // 
+        y:"200%",
+        opacity:0,
+        ease:Power4,
+        scrollTrigger:{
+           trigger:"#home",
+           scrub:true,
+           scroller:"body",
+           markers:true,
+           start:"bottom 100%",
+         
+        }
+   })
+}
+hompageheading()
                  // homepage text animation
 
 //                               For responsive nav
@@ -112,6 +129,8 @@ burgerIcon.addEventListener('click', () => {
     if (burgerIcon && openedMenu) {
         burgerIcon.addEventListener('click', () => {
             openedMenu.classList.toggle('hidden');
+            openedMenu.classList.toggle("show");
+
             if (openedMenu.classList.contains('hidden')) {
                 console.log("hidden");
             } else {
@@ -122,6 +141,7 @@ burgerIcon.addEventListener('click', () => {
         console.error('Burger icon or opened menu element not found');
     }
 });
+
 
 
 
@@ -250,14 +270,13 @@ document.querySelectorAll('.card-category').forEach(item => {
       item.closest('.card').classList.remove('glow');
   });
 });
-
 //bestseller
 
 //pointer
 
-var pic = document.querySelectorAll(".item img")
+var pics = document.querySelectorAll(".item img")
 var pointer = document.querySelector(".pointer")
-pic.forEach(function(image) {
+pics.forEach(function(image) {
     image.addEventListener("mousemove", function(dets){
         gsap.to(pointer, {
             x: dets.clientX,
@@ -277,3 +296,7 @@ pic.forEach(function(image) {
         });
     });
 });
+
+// animation on scroll disables for mobile
+AOS.init({disable: 'mobile'});
+AOS.init({disable: 'tablet'});

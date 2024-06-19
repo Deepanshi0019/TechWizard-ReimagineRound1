@@ -113,6 +113,54 @@ a:hover::before{
 #Opened-menu{
   
 }
+/* Define the keyframes for sliding in from the top */
+@keyframes slideInFromTop {
+  0% {
+      opacity: 0;
+      transform: translateY(-100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Menu container with the animation applied */
+#Opened-menu {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  display: none; 
+  animation: slideInFromTop 0.5s ease-in-out; 
+}
+
+#Opened-menu.show {
+  display: block;
+}
+
+#Opened-menu ul {
+  padding: 5vmin;
+  list-style: none;
+  margin: 0;
+}
+
+#Opened-menu ul li {
+  font-size: 3vmin;
+  font-weight: bold;
+  display: flex;
+  gap: 2vmin;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s; 
+}
+
+#Opened-menu ul li:hover {
+  color: #aaa; 
+}
+
 
 @keyframes animation1 {
   0% {
@@ -260,6 +308,8 @@ canvas {
 
 #Text-div h2 {
   cursor: pointer;
+  transition: all ease 0.3s;
+  opacity: 1;
 }
 
 #Category-section {
