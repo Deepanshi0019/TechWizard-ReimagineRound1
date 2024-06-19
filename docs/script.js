@@ -120,6 +120,8 @@ burgerIcon.addEventListener('click', () => {
     if (burgerIcon && openedMenu) {
         burgerIcon.addEventListener('click', () => {
             openedMenu.classList.toggle('hidden');
+            openedMenu.classList.toggle("show");
+
             if (openedMenu.classList.contains('hidden')) {
                 console.log("hidden");
             } else {
@@ -130,6 +132,7 @@ burgerIcon.addEventListener('click', () => {
         console.error('Burger icon or opened menu element not found');
     }
 });
+
 
 
 
@@ -391,4 +394,3 @@ pics.forEach(function(image) {
 //         scrub:2,
 //         markers: true
 //     }
-// })
