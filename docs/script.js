@@ -133,6 +133,10 @@ burgerIcon.addEventListener('click', () => {
     }
 });
 
+window.addEventListener('scroll',function () { 
+    var Header = this.document.querySelector('#The-Nav-Bar')
+    Header.classList.toggle('sticky',this.window.scrollY > 0)
+ })
 
 
 

@@ -114,6 +114,12 @@ a:hover::before{
 #Opened-menu{
   
 }
+#The-Nav-Bar{
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
 /* Define the keyframes for sliding in from the top */
 @keyframes slideInFromTop {
   0% {
