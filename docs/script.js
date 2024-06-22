@@ -110,7 +110,7 @@ function hompageheading(){
            trigger:"#home",
            scrub:true,
            scroller:"body",
-           markers:true,
+           markers:false,
            start:"bottom 100%",
          
         }
@@ -302,5 +302,18 @@ pics.forEach(function(image) {
 });
 
 // animation on scroll disables for mobile
+let CartInside = document.querySelector('.Cart-Counting-System')
+
+let CartButton = document.querySelectorAll('.ri-shopping-cart-2-line');
+var ProductInCart = 0;
+CartButton.forEach(button => {
+    button.addEventListener('click', function() {
+        ProductInCart++;
+        CartInside.innerHTML = `<h1 class="custom-h1">${ProductInCart}</h1>`
+       
+    });
+});
+
+
 AOS.init({disable: 'mobile'});
 AOS.init({disable: 'tablet'});
