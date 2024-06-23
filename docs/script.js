@@ -304,7 +304,7 @@ pics.forEach(function(image) {
 // animation on scroll disables for mobile
 let CartInside = document.querySelector('.Cart-Counting-System')
 
-let CartButton = document.querySelectorAll('.ri-shopping-cart-2-line');
+let CartButton = document.querySelectorAll('.Cart-buttons');
 var ProductInCart = 0;
 CartButton.forEach(button => {
     button.addEventListener('click', function() {
