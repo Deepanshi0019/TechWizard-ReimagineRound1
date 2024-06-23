@@ -119,30 +119,23 @@ a:hover::before{
   z-index: 999;
   width: 100%;
 }
-/* #Cart-massage{
-  position: fixed;
-  top: 80%;
-  left: 50%;
-  right: 50%;
-  z-index: 999;
-  width: 30vmin;
-} */
+
 .custom-h1 {
-  font-size: 1.25rem; /* equivalent to text-xl */
-  border-radius: 50%; /* equivalent to rounded-full */
-  font-weight: bold; /* equivalent to font-bold */
-  position: absolute; /* equivalent to absolute */
-  top: 1.5vmin; /* equivalent to top-[1.5vmin] */
-  right: 3vmin; /* equivalent to right-[3vmin] */
-  height: 3vmin; /* equivalent to h-[3vmin] */
-  width: 3vmin; /* equivalent to w-[3vmin] */
-  text-align: center; /* equivalent to text-center */
-  color: white; /* equivalent to text-white */
-  background-color: #dc2626; /* equivalent to bg-red-600 in Tailwind's default colors */
-  line-height: 3vmin; /* Vertically centers the text */
+  font-size: 1.25rem; 
+  border-radius: 50%; 
+  font-weight: bold; 
+  position: absolute; 
+  top: 1.5vmin; 
+  right: 3vmin; 
+  height: 3vmin;
+  width: 3vmin; 
+  text-align: center; 
+  color: white; 
+  background-color: #dc2626; 
+  line-height: 3vmin; 
 }
 
-/* Define the keyframes for sliding in from the top */
+
 @keyframes slideInFromTop {
   0% {
       opacity: 0;
