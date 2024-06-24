@@ -19,6 +19,10 @@
   margin-right: 4vmin;
 }
 
+.card{
+  transform-style: preserve-3d
+}
+
 .exp-btn {
     position: absolute;
     top: 50%;
@@ -29,6 +33,15 @@
   .card:hover .exp-btn {
       opacity: 1;
   } 
+.dets-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  
   
   /* top picks & bestseller RESPONSIVE */
   @media (min-width:461px) and (max-width:767px){
@@ -65,7 +78,6 @@
     display: flex;
     flex-direction: column;
   }
-
 }
 
 @media (max-width:1022px){
@@ -81,7 +93,13 @@
       /* gap: 7vw; */
       /* padding: 3vw; */
     }
-    
+    .dets-btn {
+      opacity: 1;
+  } 
+    .exp-btn{
+      top: 5%;
+      left: 15%;
+    }
 }
 @media (min-width:1023px){
   .products .item-cont {
@@ -106,6 +124,12 @@
     height: 50vmin;
     width: 100%;
   }
+  .card:hover .playback-btn{
+    opacity: 1;
+  }
+  .card:hover .dets-btn {
+    opacity: 1;
+} 
 }
 
  
