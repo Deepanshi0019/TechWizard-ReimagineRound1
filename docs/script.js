@@ -276,15 +276,16 @@ document.querySelectorAll('.card-category').forEach(item => {
       item.closest('.card').classList.remove('glow');
   });
 });
-let CartInside = document.querySelector('.Cart-Counting-System')
+let CartInside = document.querySelector('#cartCounter')
 
 let CartButton = document.querySelectorAll('.Cart-buttons');
 var ProductInCart = 0;
 CartButton.forEach(button => {
     button.addEventListener('click', function() {
         ProductInCart++;
-        CartInside.innerHTML = `<h1 class="custom-h1">${ProductInCart}</h1>`
-       
+        CartInside.innerHTML = `${ProductInCart}`
+        CartInside.classList.toggle("cart-counter-update")
+        
     });
 });
 

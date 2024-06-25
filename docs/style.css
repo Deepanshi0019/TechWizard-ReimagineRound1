@@ -120,7 +120,7 @@ z-index: 999;
 width: 100%;
 }
 
-.custom-h1 {
+/* .custom-h1 {
 font-size: 2vmin; 
 border-radius: 50%; 
 font-weight: bold; 
@@ -136,6 +136,55 @@ text-align: center;
 color: white; 
 background-color: #dc2626; 
 line-height: 3vmin; 
+} */
+.cart-container {
+  position: relative;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cart icon style */
+.cart-icon {
+  font-size: 2em; /* Size of the cart icon */
+  cursor: pointer;
+}
+
+/* Cart counter style */
+.cart-counter {
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+}
+
+/* Optional: Add a subtle animation for when the number changes */
+.cart-counter-update {
+  animation: bump 0.3s ease-in-out;
+}
+
+/* Keyframes for the bump animation */
+@keyframes bump {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2);
+  }
+  100% {
+      transform: scale(1);
+  }
 }
 
 
@@ -224,8 +273,27 @@ color: #aaa;
 
   font-size: 4vmin;
 }
+
+
 }
 
+@media (min-width:100px ) and (max-width:599px) {
+  .cart-counter {
+    position: absolute;
+    top: 9px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 2vem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 20px;
+  }
+}
 
 /*                  Home-Page CSS                  */
 #home {
@@ -483,7 +551,33 @@ background-color: black;
   }
   
   
+  
   /* top picks & bestseller RESPONSIVE */
+
+
+  @media (min-width:333px) and (max-width:734px) {
+    
+
+    .custom-h1 {
+      font-size: 4vmin; 
+      border-radius: 50%; 
+      font-weight: bold; 
+      position: absolute; 
+      top: 1.5vmin; 
+      right: 22vmin; 
+      height: auto;
+      width: auto;
+      padding: 1vmin; 
+      padding-top: 0%;
+      padding-bottom: 0%;
+      text-align: center; 
+      color: white; 
+      background-color: #dc2626; 
+      line-height: 3vmin; 
+      }
+      
+
+  }
   @media (min-width:461px) and (max-width:767px){
     .itm-dets h4 span{
       font-size: 2.3vmin;
