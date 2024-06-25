@@ -266,7 +266,17 @@ box-sizing: border-box;
 
 /* Add this to your CSS file or <style> section */
 
+/*                             catgory css                           */
+.cat-box:hover .uppar-text{
+  transform: translateY(0);
+  transition: 0.5s ease-in-out;
+}
 
+.cat-box:hover .lower-btn{
+ transform: translateY(0);
+ transition: 0.5s ease-in-out;
+}
+/*                           catgory css ends                         */
 
 
 .card {
