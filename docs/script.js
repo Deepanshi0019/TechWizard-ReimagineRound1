@@ -28,7 +28,7 @@ function dom() {
 function files() {
     let data = [];
     for (let i = 1; i <= 298; i++) {
-        data.push(`/HomePage/Image${i}.jpg`);
+        data.push(`/Devinja-ReimagineRound1/HomePage/Image${i}.jpg`);
     }
     return data;
 }
@@ -300,23 +300,6 @@ pics.forEach(function(image) {
         });
     });
 });
-
-// animation on scroll disables for mobile
-let CartInside = document.querySelector('.Cart-Counting-System')
-
-let CartButton = document.querySelectorAll('.Cart-buttons');
-var ProductInCart = 0;
-CartButton.forEach(button => {
-    button.addEventListener('click', function() {
-        ProductInCart++;
-        CartInside.innerHTML = `<h1 class="custom-h1">${ProductInCart}</h1>`
-       
-    });
-});
-
-
-AOS.init({disable: 'mobile'});
-AOS.init({disable: 'tablet'});
 
 
 // animation on scroll disables for mobile
