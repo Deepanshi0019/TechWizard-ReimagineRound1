@@ -149,6 +149,8 @@ window.addEventListener('scroll',function () {
 
 
 
+
+
 /*                                 Home-Page CSS Ends Here            */
 
 
@@ -274,6 +276,18 @@ document.querySelectorAll('.card-category').forEach(item => {
       item.closest('.card').classList.remove('glow');
   });
 });
+let CartInside = document.querySelector('.Cart-Counting-System')
+
+let CartButton = document.querySelectorAll('.Cart-buttons');
+var ProductInCart = 0;
+CartButton.forEach(button => {
+    button.addEventListener('click', function() {
+        ProductInCart++;
+        CartInside.innerHTML = `<h1 class="custom-h1">${ProductInCart}</h1>`
+       
+    });
+});
+
 //bestseller
 
 //pointer
@@ -298,17 +312,6 @@ pics.forEach(function(image) {
             scale: 0,
             opacity: 0
         });
-    });
-});
-let CartInside = document.querySelector('.Cart-Counting-System')
-
-let CartButton = document.querySelectorAll('.Cart-buttons');
-var ProductInCart = 0;
-CartButton.forEach(button => {
-    button.addEventListener('click', function() {
-        ProductInCart++;
-        CartInside.innerHTML = `<h1 class="custom-h1">${ProductInCart}</h1>`
-       
     });
 });
 
