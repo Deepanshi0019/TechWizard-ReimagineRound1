@@ -300,7 +300,17 @@ pics.forEach(function(image) {
         });
     });
 });
+let CartInside = document.querySelector('.Cart-Counting-System')
 
+let CartButton = document.querySelectorAll('.Cart-buttons');
+var ProductInCart = 0;
+CartButton.forEach(button => {
+    button.addEventListener('click', function() {
+        ProductInCart++;
+        CartInside.innerHTML = `<h1 class="custom-h1">${ProductInCart}</h1>`
+       
+    });
+});
 
 // animation on scroll disables for mobile
 AOS.init({disable: 'mobile'});
