@@ -464,16 +464,13 @@ background-color: black;
   transform-style: preserve-3d
 }
 
-.exp-btn {
+.cart-btn {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   
-  .card:hover .exp-btn {
-      opacity: 1;
-  } 
 .dets-btn {
     position: absolute;
     top: 50%;
@@ -481,7 +478,9 @@ background-color: black;
     transform: translate(-50%, -50%);
   }
   
-  
+  .item{
+    color: black;
+  }
   
   
   /* top picks & bestseller RESPONSIVE */
@@ -495,11 +494,7 @@ background-color: black;
           flex-wrap: wrap;
       }
   }
-  @media (min-width:991px){
-      .exp-btn{
-          opacity: 0;
-      }
-  }
+  
   
   @media (min-width:525px) and (max-width:1023px) {
     .container
@@ -537,9 +532,10 @@ background-color: black;
     .dets-btn {
       opacity: 1;
   } 
-    .exp-btn{
+    .cart-btn{
       top: 5%;
       left: 15%;
+      opacity: 1;
     }
 }
 @media (min-width:1023px){
@@ -570,5 +566,11 @@ background-color: black;
   }
   .card:hover .dets-btn {
     opacity: 1;
+} 
+.cart-btn{
+  opacity: 0;
+}
+.card:hover .cart-btn {
+  opacity: 1;
 } 
 }
