@@ -317,3 +317,8 @@ CartButton.forEach(button => {
 
 AOS.init({disable: 'mobile'});
 AOS.init({disable: 'tablet'});
+
+
+// animation on scroll disables for mobile
+AOS.init({disable: 'mobile'});
+AOS.init({disable: 'tablet'});
