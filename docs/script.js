@@ -1,6 +1,10 @@
 /*                             Custom-Cursor                     */
 
-
+document.addEventListener('mousemove', function(e) {
+    const customCursor = document.querySelector('.custom-cursor');
+    customCursor.style.left = e.clientX + 'px';
+    customCursor.style.top = e.clientY + 'px';
+})
 
 
 /*                                 Home-Page CSS             */
@@ -145,6 +149,8 @@ window.addEventListener('scroll',function () {
 
 
 
+
+
 /*                                 Home-Page CSS Ends Here            */
 
 
@@ -238,19 +244,19 @@ let bs = document.getElementById('BS');
 let ttoi = document.getElementById('TTOI');
 
 bw.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bw.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = <video loop muted autoplay src="/vdio/bw.mp4" class="h-[70%] w-[100%]"></video>
 })
 ht.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/HT.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = <video loop muted autoplay src="/vdio/HT.mp4" class="h-[70%] w-[100%]"></video>
 })
 fn.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/fn.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = <video loop muted autoplay src="/vdio/fn.mp4" class="h-[70%] w-[100%]"></video>
 })
 bs.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bs.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = <video loop muted autoplay src="/vdio/bs.mp4" class="h-[70%] w-[100%]"></video>
 })
 ttoi.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/TTOI.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = <video loop muted autoplay src="/vdio/TTOI.mp4" class="h-[70%] w-[100%]"></video>
 })
 
 
@@ -270,6 +276,19 @@ document.querySelectorAll('.card-category').forEach(item => {
       item.closest('.card').classList.remove('glow');
   });
 });
+let CartInside = document.querySelector('#cartCounter')
+
+let CartButton = document.querySelectorAll('.Cart-buttons');
+var ProductInCart = 0;
+CartButton.forEach(button => {
+    button.addEventListener('click', function() {
+        ProductInCart++;
+        CartInside.innerHTML = `${ProductInCart}`
+        CartInside.classList.toggle("cart-counter-update")
+        
+    });
+});
+
 //bestseller
 
 //pointer
@@ -296,18 +315,7 @@ pics.forEach(function(image) {
         });
     });
 });
-let CartInside = document.querySelector('.Cart-Counting-System')
-
-let CartButton = document.querySelectorAll('.Cart-buttons');
-var ProductInCart = 0;
-CartButton.forEach(button => {
-    button.addEventListener('click', function() {
-        ProductInCart++;
-        CartInside.innerHTML = `<h1 class="custom-h1">${ProductInCart}</h1>`
-       
-    });
-});
 
 // animation on scroll disables for mobile
 AOS.init({disable: 'mobile'});
-AOS.init({disable: 'tablet'});
+AOS.init({disable: 'tablet'})
