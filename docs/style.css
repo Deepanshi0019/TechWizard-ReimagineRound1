@@ -548,6 +548,7 @@ background-color: black;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 1;
   }
   
 .dets-btn {
@@ -555,12 +556,13 @@ background-color: black;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 1;
   }
   
   .item{
     color: black;
   }
-  
+
   
   
   /* top picks & bestseller RESPONSIVE */
@@ -666,16 +668,14 @@ background-color: black;
     height: 50vmin;
     width: 100%;
   }
-  .card:hover .playback-btn{
+  .dets-btn {
+    opacity: 1;
+} 
+  .cart-btn{
     opacity: 1;
   }
-  .card:hover .dets-btn {
-    opacity: 1;
-} 
-.cart-btn{
-  opacity: 0;
+
+
 }
-.card:hover .cart-btn {
-  opacity: 1;
-} 
-}
+
+
