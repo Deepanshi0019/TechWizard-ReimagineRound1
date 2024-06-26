@@ -261,7 +261,24 @@ color: #aaa;
 }
 
 /*                             catgory css                           */
-.cat-box:hover .uppar-text{
+
+/* Initial states */
+.uppar-text {
+  transform: translateY(-10vmin);
+  transition: 0.5s ease-in-out;
+}
+
+.lower-btn {
+  transform: translateY(10vmin);
+  transition: 0.5s ease-in-out;
+}
+
+/* Class to apply */
+.cls {
+  transform: translateY(0);
+}
+
+/*.cat-box:hover .uppar-text{
   transform: translateY(0);
   transition: 0.5s ease-in-out;
 }
@@ -269,7 +286,7 @@ color: #aaa;
 .cat-box:hover .lower-btn{
  transform: translateY(0);
  transition: 0.5s ease-in-out;
-}
+}*/
 /*                           catgory css ends                         */
 
 @media (min-width:100px ) and (max-width:599px) {
@@ -554,7 +571,7 @@ background-color: black;
     border: 1px solid white;
     border-radius: 50%;
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
 }
 
   
