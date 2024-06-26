@@ -28,7 +28,7 @@ function dom() {
 function files() {
     let data = [];
     for (let i = 1; i <= 298; i++) {
-        data.push(`/Devinja-ReimagineRound1/HomePage/Image${i}.jpg`);
+        data.push(`/HomePage/Image${i}.jpg`);
     }
     return data;
 }
@@ -244,19 +244,19 @@ let bs = document.getElementById('BS');
 let ttoi = document.getElementById('TTOI');
 
 bw.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bw.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = <video loop muted autoplay src="/vdio/bw.mp4" class="h-[70%] w-[100%]"></video>
 })
 ht.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/HT.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = <video loop muted autoplay src="/vdio/HT.mp4" class="h-[70%] w-[100%]"></video>
 })
 fn.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/fn.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = <video loop muted autoplay src="/vdio/fn.mp4" class="h-[70%] w-[100%]"></video>
 })
 bs.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bs.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = <video loop muted autoplay src="/vdio/bs.mp4" class="h-[70%] w-[100%]"></video>
 })
 ttoi.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/TTOI.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML = <video loop muted autoplay src="/vdio/TTOI.mp4" class="h-[70%] w-[100%]"></video>
 })
 
 
@@ -283,7 +283,7 @@ var ProductInCart = 0;
 CartButton.forEach(button => {
     button.addEventListener('click', function() {
         ProductInCart++;
-        CartInside.innerHTML = `${ProductInCart}`
+        CartInside.innerHTML = `${ProductInCart}`;
         CartInside.classList.toggle("cart-counter-update")
         
     });
@@ -313,31 +313,6 @@ pics.forEach(function(image) {
             scale: 0,
             opacity: 0
         });
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    // Select all the images that need to be loaded
-    const images = document.querySelectorAll("img");
-    let loadedImages = 0;
-
-    // Function to check if all images are loaded
-    function checkImagesLoaded() {
-        loadedImages++;
-        if (loadedImages === images.length) {
-            // All images are loaded, hide the preloader
-            document.getElementById('preloader').style.display = 'none';
-        }
-    }
-
-    // Attach the checkImagesLoaded function to each image's load event
-    images.forEach(img => {
-        if (img.complete) {
-            checkImagesLoaded(); // If the image is already cached
-        } else {
-            img.addEventListener('load', checkImagesLoaded);
-            img.addEventListener('error', checkImagesLoaded); // In case of error, consider it loaded
-        }
     });
 });
 

@@ -1,4 +1,3 @@
-
 *{
   margin: 0;
   padding: 0;
@@ -120,35 +119,23 @@ z-index: 999;
 width: 100%;
 }
 
-/* Add this to your existing style.css or inside a <style> tag in your HTML head */
-#preloader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000; 
-  color: #fff; 
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999; 
-}
-
-.loader {
-  border: 16px solid #f3f3f3; 
-  border-top: 16px solid #3498db; 
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
+/* .custom-h1 {
+font-size: 2vmin; 
+border-radius: 50%; 
+font-weight: bold; 
+position: absolute; 
+top: 1.5vmin; 
+right: 3vmin; 
+height: auto;
+width: auto;
+padding: 1vmin; 
+padding-top: 0%;
+padding-bottom: 0%;
+text-align: center; 
+color: white; 
+background-color: #dc2626; 
+line-height: 3vmin; 
+} */
 .cart-container {
   position: relative;
   width: 50px; /* Adjust size as needed */
@@ -289,6 +276,18 @@ color: #aaa;
 
 }
 
+/*                             catgory css                           */
+.cat-box:hover .uppar-text{
+  transform: translateY(0);
+  transition: 0.5s ease-in-out;
+}
+
+.cat-box:hover .lower-btn{
+ transform: translateY(0);
+ transition: 0.5s ease-in-out;
+}
+/*                           catgory css ends                         */
+
 @media (min-width:100px ) and (max-width:599px) {
   .cart-counter {
     position: absolute;
@@ -327,7 +326,7 @@ background-color: black;
 
 /*                Home-Page CSS Ends Here
 
-  /*background: url(/Devinja-ReimagineRound1/media/download.svg);*/
+  /background: url(/Devinja-ReimagineRound1/media/download.svg);/
 
 /*                Home-Page CSS Ends Here
 
@@ -549,6 +548,7 @@ background-color: black;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 1;
   }
   
 .dets-btn {
@@ -556,12 +556,13 @@ background-color: black;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 1;
   }
   
   .item{
     color: black;
   }
-  
+
   
   
   /* top picks & bestseller RESPONSIVE */
@@ -667,16 +668,12 @@ background-color: black;
     height: 50vmin;
     width: 100%;
   }
-  .card:hover .playback-btn{
+  .dets-btn {
+    opacity: 1;
+} 
+  .cart-btn{
     opacity: 1;
   }
-  .card:hover .dets-btn {
-    opacity: 1;
-} 
-.cart-btn{
-  opacity: 0;
-}
-.card:hover .cart-btn {
-  opacity: 1;
-} 
+
+
 }

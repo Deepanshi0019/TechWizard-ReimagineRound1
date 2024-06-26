@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-creation of boat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body class="bg-black">
+    <!-- <h1 id="Cart-massage" class=" h-[4vmin] w-[4vmin] bg-red-500 opacity-65 ">Product Added Successfully .</h1> -->
+
+<!--NAV BAR 🍻-->     
+    <header id="The-Nav-Bar">
+        <nav class="absolute h-[7vmin] px-[5vmin] pr-[10vmin] md:pr-[5vmin] md:px-[10vmin] pt-[5vmin] w-full  bg-transparent text-white shadow-md flex items-center justify-between  p-[5vmin]  md:p-[5vmin] z-20">  
+            <div class="logo">
+                 <img src="https://i.postimg.cc/RV06435D/boat.png" alt="Logo" class="h-[6vmin]  md:h-[4vmin] ">
+              </div>
+            <div class="right-nav  flex gap-[3vmin] text-[2vmin] font-semibold items-center">
+                <a href="#home" class=" hidden md:block" data-link-alt="Home"><span>Home</span></a>
+                <a href="#shop" class=" hidden md:block" data-link-alt="Shop"><span>Shop</span></a>
+                <div class="dropdown hidden md:block">
+                  <a href="javascript:void(0)" class="dropbtn" data-link-alt="More"><span>More</span></a>
+                  <div class="dropdown-content hidden">
+                    <a href="#boatPersonalisation" data-link-alt="Boat Personalisation"><span>Boat Personalisation</span></a>
+                    <a href="#giftWithBoat" data-link-alt="Gift with BoAt"><span>Gift with BoAt</span></a>
+                    <a href="#corporateOrders" data-link-alt="Corporate Orders"><span>Corporate Orders</span></a>
+                    </div>
+                    </div>
+                    <div class="search-bar hidden md:block relative lg:flex items-center">
+                      <i class="ri-search-line absolute text-[2vmin] font-bold left-[2vmin] top-[0.5vmin]"></i>
+                      <input class="w-[30vmin] h-[4vmin] px-[5vmin] rounded-full bg-transparent border-2 border-white" type="text" placeholder=''>
+                    </div>
+                      <div id="Cart-log" class=" icon text-[5vmin] md:text-[3vmin] font-medium"><i class="ri-user-line"></i></div>
+                      <!-- <div id="user-logo" href="#cart" class="icon text-[5vmin] md:text-[3vmin] font-medium "><i class="ri-shopping-cart-2-line Cart-Counting-System"></i></div> -->
+                      <div class="cart-container">
+                        <div class="cart-icon">
+                            🛒 <!-- Simple cart icon using emoji; replace with actual icon if needed -->
+                        </div>
+                        <div class="cart-counter h-[3vmin] w-[3vmin]" id="cartCounter">0</div>
+                    </div>
+                      <!-- <h1 class="text-5xl h-[2vmin] w-[2vmin] text-white bg-red-600  absolute top-0 right-0">1</h1> -->
+                      <div class="burger-icon md:hidden">
+                        <label class="burger" for="burger">
+                          <input class="line" type="checkbox" id="burger" />
+                        </label>
+                      </div>
+                      
+            </div>
+          </nav>
+
+          <div id="Opened-menu" class="absolute  h-auto hidden md:hidden  w-full bg-black ">
+            <ul class="flex flex-col gap-[4vmin] p-[5vmin]">
+              <li class=" font-bold flex gap-[2vmin]" data-link-alt="Categories">Categories<i class="ri-arrow-right-wide-line"></i></li>
+              <li class=" font-bold flex gap-[2vmin]" data-link-alt="Shop">Shop<i class="ri-arrow-right-wide-line"></i></li>
+              <li class=" font-bold flex gap-[2vmin]" data-link-alt="Gift with BoAt">Gift with boAt<i class="ri-arrow-right-wide-line"></i></li>
+              <li class=" font-bold flex gap-[2vmin]" data-link-alt="Track your orders">Track your orders<i class="ri-arrow-right-wide-line"></i></li>
+              <li class=" font-bold flex gap-[2vmin]" data-link-alt="More">More<i class="ri-add-fill"></i></i></li>
+            </ul>
+        </div>
+    </header>
+<!--NAV BAR 🍻-->
+
+    <main class="text-white overflow-hidden" >
+
+<!--                              🏠🏠     HomaPage Section  🏠🏠                             -->
+
+        <div id="home" class=""><!--home div starting--> 
+
+            <canvas class="bg-fixed"></canvas>
+
+           
+        </div><!--home div-->
+
+<!--                             🏠🏠    HomaPage Ended🥳   🏠🏠                                  -->
+
+
+<!--                               🐈‍⬛🐈‍⬛   Category-Section  🐈‍⬛🐈‍⬛                              -->
+<div class="catgory py-[20vmin] h-auto">
+    <div data-aos="fade-left" data-aos-anchor-placement="center-center" class="catgory-heading text-center text-[10vmin] font-bold"><span class="text-red-600 font-[600] ">Discover</span> Categories</div>
+    <div class="content lg:flex h-auto w-full flex-nowrap pt-[10vmin] ">
+ 
+        <div class="cat-box h-[50vh] lg:h-[70vh] lg:w-[25vw] flex-shrink-0 relative overflow-y-hidden" style="background-image: url(https://cdn.shopify.com/s/files/1/0057/8938/4802/files/IM1300_sec4.png?v=1632653502); object-fit: cover; object-position: center; background-size: cover;">
+          <div class="cat-text h-[50vh] lg:h-[70vh] w-full flex flex-col justify-between items-center">
+                <div class="uppar-text pt-[2vmin] lg:-translate-y-[10vmin]">
+                    <h1 class="text-[3vmin] font-semibold ">HEADPHONES</h1>
+               </div>
+              <button class="lower-btn mb-[2vmin] w-[18vw] text-[3vmin] font-semibold border-2 hover:bg-red-700  lg:translate-y-[10vmin] ">See More</button>
+            </div>        
+        </div>   <!--First cat box end-->
+
+       
+        <div class="cat-box h-[50vh] lg:h-[70vh] lg:w-[25vw] flex-shrink-0 relative overflow-y-hidden" style="background-image: url(https://i.pinimg.com/736x/68/29/df/6829dfba10d9eb02e1e7d43df6d65c6b.jpg); object-fit: cover; object-position: center; background-size: cover;">
+            <div class="cat-text h-[50vh] lg:h-[70vh] w-full flex flex-col justify-between items-center">
+                  <div class="uppar-text pt-[2vmin] lg:-translate-y-[10vmin]">
+                      <h1 class="text-[3vmin] font-semibold ">EARBUDS</h1>
+                 </div>
+                <button class="lower-btn mb-[2vmin] w-[18vw] text-[3vmin] font-semibold border-2 hover:bg-red-700 lg:translate-y-[10vmin] ">See More</button>
+              </div>        
+          </div>   <!--second cat box end-->
+
+          <div class="cat-box h-[50vh] lg:h-[70vh] lg:w-[25vw] flex-shrink-0 relative overflow-y-hidden" style="background-image: url(https://i.postimg.cc/xjZwXyzt/boat-for-cat-1.jpg); object-fit: cover; object-position: right; background-size: cover;">
+            <div class="cat-text h-[50vh] lg:h-[70vh] w-full flex flex-col justify-between items-center">
+                  <div class="uppar-text pt-[2vmin] lg:-translate-y-[10vmin]">
+                      <h1 class="text-[3vmin] font-semibold ">NECKBAND</h1>
+                 </div>
+                <button class="lower-btn mb-[2vmin] w-[18vw] text-[3vmin] font-semibold border-2 hover:bg-red-700  lg:translate-y-[10vmin] ">See More</button>
+              </div>        
+          </div>   <!--Third cat box end-->
+         
+          <div class="cat-box h-[50vh] lg:h-[70vh] lg:w-[25vw] flex-shrink-0 relative overflow-y-hidden" style="background-image: url(https://i.pinimg.com/736x/8c/e9/e4/8ce9e478ea83a51e0fd664c079c9ea62.jpg); object-fit: cover; object-position: right; background-size: cover;">
+            <div class="cat-text h-[50vh] lg:h-[70vh] w-full flex flex-col justify-between items-center">
+                  <div class="uppar-text pt-[2vmin] lg:-translate-y-[10vmin]">
+                      <h1 class="text-[3vmin] font-semibold ">SPEAKER</h1>
+                 </div>
+                <button class="lower-btn mb-[2vmin] w-[18vw] text-[3vmin] font-semibold border-2 hover:bg-red-700 lg:translate-y-[10vmin] ">See More</button>
+              </div>        
+          </div>   <!--fourth cat box end-->
+
+          <div class="cat-box h-[50vh] lg:h-[70vh] lg:w-[25vw] flex-shrink-0 relative overflow-y-hidden" style="background-image: url(https://i.pinimg.com/564x/82/bc/17/82bc171f0e3790f6078a946960b07a88.jpg); object-fit: cover; object-position: left; background-size: cover;">
+            
+            <div class="cat-text h-[50vh] lg:h-[70vh] w-full flex flex-col justify-between items-center">
+                  <div class="uppar-text pt-[2vmin] lg:-translate-y-[10vmin]">
+                      <h1 class="text-[3vmin] font-semibold ">HEADPHONES</h1>
+                 </div>
+                <button class="lower-btn mb-[2vmin] w-[18vw] text-[3vmin] font-semibold border-2 hover:bg-white lg:translate-y-[10vmin] ">See More</button>
+              </div>        
+          </div>   <!--fiveth cat box end-->
+</div>
+
+<!--                            🐈‍⬛🐈‍⬛  Category-Section-End-here  🐈‍⬛🐈‍⬛                                -->
+
+
+
+<!--                                🌐🌐    explore BESTSELLER  🌐🌐                                       -->
+<div class="bestseller min-h-[100vh] w-full bg-black p-[3vw] lg:p-[2vw] flex flex-col items-center justify-center">
+    <div class="heading text-white flex flex-col items-center justify-center ">
+        <h1 ata-aos-anchor-placement="top-center" data-aos="fade-up" data-aos-easing="ease-out"
+            class="text-[12vmin] font-bold">TOP <span class="text-red-600 font-bold">PICKS</span></h1>
+        <div ata-aos-anchor-placement="top-center" data-aos="fade-up"
+            class="sub-head text-center lg:text-left py-[3vw] lg:py-[0vw] lg:mt-[-5vw] lg:ml-[-65vw] text-[4vmin] lg:text-[2.5vmin] lg:leading-[1.5vw]">
+            <h4>Discover <span class="text-red-600">boAt's</span> best:</h4>
+            <h4>Top-notch audio, stylish accessories.</h4>
+            <h4>Elevate your lifestyle!</h4>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-out"
+        class="container flex flex-wrap lg:flex-nowrap items-center justify-center gap-[7vw] lg:gap-[0vw]">
+        <div class="box mt-[8vh]">
+            <div data-tilt data-tilt-glare
+                class="card h-[22vh] w-[20vh] lg:h-[20vw] lg:w-[12vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
+                <img class="h-full w-full object-cover object-center rounded-[3vmin]"
+                    src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_120.jpg?v=1715169275" alt="">
+                <div
+                    class="cart-btn Cart-buttons text-black text-center border-2 px-[1vmin] py-[0.5vmin] border-black rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 lg:mt-[-8vw] lg:ml-[-3.6vw] hover:shadow-red-700/50 lg:opacity-1">
+                    <i class="ri-shopping-cart-2-line  hover:border-red-600 transition ease-in-out"></i>
+                </div>
+                <div
+                    class="dets-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:opacity-1 lg:mt-[-8vw] lg:ml-[2.5vw] ">
+                    <h4
+                        class="text-[3vmin] lg:text-[2vmin] lg:opacity-1 lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] lg:opacity-1 hover:text-white">
+                        Details
+                    </h4>
+                </div>
+                <div
+                    class="playback-btn px-[1vmin] text-white lg:text-black bg-[#FCC50B] rounded-[4vmin] shadow-md opacity-0 lg:font-semibold text-center text-[3.5vmin] lg:text-[2.3vmin] absolute">
+                    40 hours playback
+                </div>
+              <div
+                    class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[2.7vmin] py-[1vw] lg:mt-[-4vw]">
+                    Airdopes 120</div>
+            </div>
+        </div>
+        <div class="box mt-[8vh]">
+            <div data-tilt data-tilt-glare
+                class="card h-[22vh] w-[20vh] lg:h-[25vw] lg:w-[15vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
+                <img class="h-full w-full object-cover object-center rounded-[3vmin]"
+                    src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Airdopes-115_1.jpg?v=1686139410" alt="">
+                <div
+                    class="cart-btn Cart-buttons text-black text-center border-2 px-[1vmin] py-[0.5vmin] border-black rounded-[4vmin] hover:bg-red-600 hover:text-white hover:border-red-600 hover:shadow-red-700/50 lg:mt-[-10vw] lg:ml-[-5vw] lg:opacity-1">
+                    <i class="ri-shopping-cart-2-line  hover:border-red-600 transition ease-in-out"></i>
+                </div>
+                <div
+                    class="dets-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:opacity-1 lg:mt-[-10vw] lg:ml-[3.3vw] ">
+                    <h4
+                        class="text-[3vmin] lg:text-[2.3vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">
+                        Details
+                    </h4>
+                </div>
+                <div
+                    class="playback-btn px-[3vmin] text-white lg:text-black bg-[#FCC50B] rounded-[4vmin] shadow-md opacity-0 lg:font-semibold text-center text-[3.5vmin] lg:text-[2.5vmin] absolute">
+                    Clear calling
+                </div>
+              <div
+
+                    class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[2.8vmin] py-[1vw] lg:mt-[-4vw] lg:tracking-wide">
+                    Airdopes 115
+                </div>
+            </div>
+        </div>
+        <div class="box mt-[8vh]">
+            <div data-tilt data-tilt-glare
+                class="card h-[22vh] w-[20vh] lg:h-[28vw] lg:w-[18vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
+                <img class="h-full w-full object-cover object-center rounded-[3vmin]"
+                    src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927" alt="">
+                <div
+                    class="cart-btn Cart-buttons text-black text-center border-2 px-[1.2vmin] py-[0.5vmin] border-black rounded-[4vmin] hover:bg-red-600 hover:text-white hover:border-red-600 hover:shadow-red-700/50 lg:mt-[-11vw] lg:ml-[-6vw] lg:opacity-1">
+                    <i class="ri-shopping-cart-2-line text-[2.7vmin] hover:border-red-600 transition ease-in-out "></i>
+                </div>
+                <div
+                    class="dets-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:opacity-1 lg:mt-[-11vw] lg:ml-[4.2vw] ">
+                    <h4
+                        class="text-[3vmin] lg:text-[2.3vmin] lg:font-semibold h-full w-full px-[3.4vw] py-[1.2vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">
+                        Details
+                    </h4>
+                </div>
+                <div
+                    class="playback-btn px-[4vmin] text-white lg:text-black bg-[#FCC50B] rounded-[4vmin] shadow-md opacity-0 lg:font-semibold text-center text-[3.5vmin] lg:text-[2.5vmin] absolute">
+                    35 hours playback
+                </div>
+                <div
+                    class="text-white lg:text-black lg:font-semibold text-center text-[3.3vmin] lg:text-[3.5vmin] py-[1vw] lg:mt-[-5vw]">
+                    Airdopes Ace</div>
+            </div>
+        </div>
+        <div class="box mt-[8vh]">
+            <div data-tilt data-tilt-glare
+                class="card h-[22vh] w-[20vh] lg:h-[25vw] lg:w-[15vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
+                <img class="h-full w-full object-cover object-bottom rounded-[3vmin]"
+                    src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Supreme_1.jpg?v=1711262453" alt="">
+                    <div
+                    class="cart-btn Cart-buttons text-black text-center border-2 px-[1vmin] py-[0.5vmin] border-black rounded-[4vmin] hover:bg-red-600 hover:text-white hover:border-red-600 hover:shadow-red-700/50 lg:mt-[-10vw] lg:ml-[-5vw] lg:opacity-1">
+                    <i class="ri-shopping-cart-2-line transition ease-in-out"></i>
+                </div>
+                <div
+                    class="dets-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:opacity-1 lg:mt-[-10vw] lg:ml-[3.3vw] ">
+                    <h4
+                        class="text-[3vmin] lg:text-[2.3vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">
+                        Details
+                    </h4>
+                </div>
+                <div
+                    class="playback-btn px-[2vmin] text-white lg:text-black bg-[#FCC50B] rounded-[4vmin] shadow-md opacity-0 lg:font-semibold text-center text-[3.5vmin] lg:text-[2.5vmin] absolute">
+                    50 hours playback
+                </div>
+                <div
+                    class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[2.8vmin] py-[1vw] lg:mt-[-4vw] lg:tracking-wide">
+                    Airdopes Supereme</div>
+            </div>
+        </div>
+        <div class="box mt-[8vh]">
+            <div data-tilt data-tilt-glare
+                class="card h-[22vh] w-[20vh] lg:h-[20vw] lg:w-[12vw] lg:rounded-[3vmin] lg:overflow-hidden flex flex-col items-center justify-center relative">
+                <img class="h-full w-full object-cover object-center rounded-[3vmin]"
+                    src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Airdopes_138.jpg?v=1698402384" alt="">
+                <div
+                    class="cart-btn Cart-buttons text-black text-center border-2 px-[1vmin] py-[0.5vmin] border-black rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 lg:mt-[-8vw] lg:opacity-1 lg:ml-[-3.6vw] hover:shadow-red-700/50">
+                    <i class="ri-shopping-cart-2-line hover:text-white hover:border-red-600 transition ease-in-out"></i>
+                </div>
+                <div
+                    class="dets-btn text-black text-center border-2 border-black rounded-[4vmin] hover:bg-red-600 hover:border-red-600 lg:opacity-1 lg:mt-[-8vw] lg:ml-[2.5vw] ">
+                    <h4
+                        class="text-[3vmin] lg:text-[2vmin] lg:font-semibold h-full w-full px-[3vw] py-[1vw] lg:px-[0.8vw] lg:py-[0.2vw] hover:text-white">
+                        Details
+                    </h4>
+                </div>
+                <div
+                    class="playback-btn px-[1vmin] text-white lg:text-black bg-[#FCC50B] rounded-[4vmin] shadow-md opacity-0 lg:font-semibold text-center text-[3.5vmin] lg:text-[2.3vmin] absolute">
+                    60 hours playback
+                </div>
+                <div
+                    class="text-white lg:text-black lg:font-semibold text-center text-[3.5vmin] lg:text-[2.7vmin] py-[1vw] lg:mt-[-4vw]">
+                    Airdopes 138</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--                              🌐🌐  explore BESTSELLER-End-Here  🌐🌐                                -->
+
+
+<!--                                      Life-Style-Section                                 -->
+  
+      <div class="Life-Section h-auto pt-[20vmin] py-[10vmin] px-[5vmin] w-full" >   <!--main-page-->
+          <div data-aos="flip-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out" data-aos-duration="300" class="life-heading text-center text-[12vmin] font-semibold">Lifestyle<span class="text-red-600 font-[600] "> Picks</span></div>
+           <div class="life-contanier mt-[5vmin]">   <!--page ke andar ka container jisme 5 style honge -->
+               
+
+               <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="200" class="life1  h-[20vh] px-[5vmin] border-y-2 border-white flex justify-between items-center hover:bg-[#ff000037]"> 
+                 <!--And box-->
+                     <h1 class="text-[5vmin] font-semibold">For Fitness</h1>
+                     <div class="img-life h-[30vmin] w-[30vmin] rounded-full overflow-hidden bg-purple-400" style="display: none;">
+                          <img class="h-full w-full object-cover" src="https://i.postimg.cc/yYT8TyRk/hardik-panday.png" alt="">
+                     </div>
+                     <h2 class="cursor-pointer underline hover:text-gray-400">View All</h2>
+                </div>
+
+                <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="200" class="life1  h-[20vh] px-[5vmin] border-y-2 border-white flex justify-between items-center hover:bg-[#ff0000a7]">  <!--Main box-->
+                    <h1 class="text-[5vmin] font-semibold">For Music Heads</h1>
+                    <div class="img-life h-[30vmin] w-[30vmin] rounded-full overflow-hidden bg-purple-400 " style="display: none;">
+                         <img class="h-full w-full object-cover" src="https://i.postimg.cc/R0gCzSd9/Diljit.jpg" alt="">
+                    </div>
+                    <h2 class="cursor-pointer underline hover:text-gray-400">View All</h2>
+               </div>
+
+                <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="200" class="life1 h-[20vh] px-[5vmin] border-y-2 border-white flex justify-between items-center hover:bg-[#ff0000d5]">    <!--Main box-->
+                  <h1 class="text-[5vmin] font-semibold">For Bash Nights</h1>
+                  <div class="img-life h-[30vmin] w-[30vmin] rounded-full overflow-hidden bg-purple-400 " style="display: none;">
+                       <img class="h-full w-full object-cover" src="https://i.postimg.cc/Jzc4PcBs/Kartik-Aaryan.jpg" alt="">
+                  </div>
+                  <h2 class="cursor-pointer underline hover:text-gray-400">View All</h2>
+             </div>
+       
+
+                <div data-aos="fade-up" data-aos-easing="ease-in-out" class="life1 h-[20vh] px-[5vmin] border-y-2 border-white flex justify-between items-center hover:bg-red-700">
+                  <h1 class="text-[5vmin] font-semibold">For WorkOut</h1>
+                  <div class="img-life h-[30vmin] w-[30vmin] rounded-full overflow-hidden bg-purple-400 " style="display: none;">
+                       <img class="h-full w-full object-cover" src="https://i.postimg.cc/N0sGV91p/shreys-iyer.png" alt="">
+                  </div>
+                  <h2 class="cursor-pointer underline hover:text-gray-400">View All</h2>
+             </div>
+           </div>
+      </div>
+
+
+
+<!--                                     Life-Style Ends Here                               -->
+
+
+<!--                                    PRODUCTS-Section                                            -->
+<div class="products min-h-[100vh] w-full bg-black p-[3vw] lg:p-[0vw] flex lg:flex-nowrap items-center justify-center lg:justify-between relative">
+    <div data-aos="fade-right" data-aos-easing="ease-out" class="headline lg:w-[20%] lg:h-full text-white flex flex-col lg:flex-wrap items-center justify-center lg:justify-between ">
+        <h1 class="text-[10vmin] lg:text-[20vmin] font-semibold lg:-rotate-90 lg:ml-[-25vw] tracking-tighter lg:font-bold lg:border-white lg:border-b-2">PRODUCTS</h1>
+        <div class="sub-head text-[3vmin] lg:text-[5vmin] text-center lg:text-left lg:-rotate-90 lg:mt-[-6vw] lg:leading-[2.5vw]">
+            <h4>Discover <span class="text-red-600">boAt</span> :</h4>
+            <h4 class="lg:whitespace-nowrap">Ride the Wave of India's Top Tech!</h4>
+        </div>
+    </div>
+        <div data-aos-delay="300" data-aos="fade-left" data-aos-easing="ease-in-out" class="item-cont w-full lg:w-[67%] gap-[4vw] lg:gap-[0vw] mt-[6vh]">
+            <div class="pointer hidden md:h-[12vmin] md:w-[12vmin] md:bg-red-600 md:rounded-full md:z-[99] md:fixed md:flex md:items-center md:justify-center md:opacity-0">
+                <h5 class="text-[2.5vmin] text-white">View <i class="ri-arrow-right-up-line"></i></h5>
+            </div>
+            <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center cursor-pointer">
+                <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
+                    <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/gcQh1SYN/Nirvana-Ion.webp" alt="">
+                </div>
+                <div class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
+                    <h4 class="ml-4"><span class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Nirvana Ion</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold "> &#8377;1,999</span>  <span class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;7,999</span></h4>
+                    <i   class="ri-shopping-cart-2-line Cart-buttons px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
+                </div>
+            </div>
+            <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
+                <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
+                    <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/zXhhNCv5/Partypal-208.webp" alt="">
+                </div>
+                <div class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
+                    <h4 class="ml-4"><span class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Party Pal</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold "> &#8377;8,999</span>  <span class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;9,990</span></h4>
+                    <i class="ri-shopping-cart-2-line Cart-buttons px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
+                </div>
+            </div>
+            <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
+                <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
+                    <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/bwH2Dq1B/Primia-Curv.webp" alt="">
+                </div>
+                <div class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
+                    <h4 class="ml-4"><span class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Prima Curv</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold "> &#8377;2,199</span>  <span class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;8,999</span></h4>
+                    <i class="ri-shopping-cart-2-line Cart-buttons px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
+                </div>
+            </div>
+            <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
+                <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
+                    <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/Z5hd5WvN/Rockerz-518.webp" alt="">
+                </div>
+                <div class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
+                    <h4 class="ml-4"><span class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Rockerz 518</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold "> &#8377;1,599</span>  <span class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;3,990</span></h4>
+                    <i class="ri-shopping-cart-2-line Cart-buttons px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
+                </div>
+            </div>
+            <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
+                <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
+                    <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/dthByZ0S/bo-At-Rockerz-255-Max.webp" alt="">
+                </div>
+                <div class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
+                    <h4 class="ml-4"><span class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Rockerz 255</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold "> &#8377;1,399</span>  <span class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;3,999</span></h4>
+                    <i class="ri-shopping-cart-2-line Cart-buttons px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
+                </div>
+            </div>
+            <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
+                <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
+                    <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/8PxbBkJk/av590.webp" alt="">
+                </div>
+                <div class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
+                    <h4 class="ml-4"><span class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Aavante Bar</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold "> &#8377;1,999</span>  <span class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;5,990</span></h4>
+                    <i class="ri-shopping-cart-2-line Cart-buttons px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
+                </div>
+            </div>
+            <div class="item h-[39vh] lg:h-[55vh] w-[25vh] object-cover object-center">
+                <div class="h-[30vh] lg:h-[50vh] w-full rounded-[3vmin] overflow-hidden">
+                    <img class="h-auto w-full hover:scale-110 transition ease-in-out duration-300" src="https://i.postimg.cc/zXGQPfGn/AD-311-Pro.webp" alt="">
+                </div>
+                <div class="itm-dets mt-3 px-2 py-1 rounded-[3.5vmin] bg-white flex items-center justify-between cursor-default">
+                    <h4 class="ml-4"><span class="font-bold text-[4vmin] md:text-[2.5vmin] hover:underline hover:text-red-600">Airpodes 800</span> <br><span class="text-[3.5vmin] md:text-[2.1vmin] font-semibold "> &#8377;1,799</span>  <span class="line-through text-gray-500 text-[2.8vmin] md:text-[1.6vmin]"> &#8377;6,490</span></h4>
+                    <i class="ri-shopping-cart-2-line Cart-buttons px-2 py-1 border-2 border-black text-[3.5vmin] md:text-[3vmin] rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition ease-in-out delay-100 hover:shadow-md hover:shadow-red-700/50"></i>
+                </div>
+            </div>
+            <div class="item h-[40vh] w-[25vh] flex items-center justify-center lg:hidden">
+                <div class="h-[20vh] w-[20vh] bg-red-600 rounded-full flex items-center justify-center text-[3vmin] font-semibold hover:bg-white hover:text-red-600">View More <i class="ri-arrow-right-up-line"></i></div>
+            </div>
+        </div>
+</div>
+<!--                                    Products-Section-Ends-Here                                           -->
+
+
+
+<!--                         📰📰      Charcha in News  📰📰                                  -->
+
+<div id="Press-div" class="section py-[10vmin] h-auto w-[100vw] flex flex-col items-center">
+    <div data-aos="fade-up" data-aos-easing="ease-out" class="life-heading text-center text-[7vmin] font-semibold">See Our <span class="text-red-600 font-[600] ">Popularity</span></div>
+
+    <div id="Main-div" class="h-[70vh] flex items-end w-[100vw] mt-[5vmin] ">
+           <div id="Image-div" class="h-[100%] w-[50%]  flex flex-col items-center justify-center bg-red-600000">
+            <div data-aos="fade-right" data-aos-delay="100" class="h-[30%] w-full bg-transparent flex justify-center items-center" id="Heading">
+                        <h1 class="capitalize h-full text-white text-[6vmin] md:text-[4vmin] text-center justify-start md:text-center">We are creating a big change in <br> industry</h1>
+            </div>
+               <div id="IMG" class="h-[70%] w-[95%] flex ">
+               </div> 
+               <div id="IMG2" class="h-[70%] w-[95%]   ">
+                <video muted autoplay loop src="/vdio/boAt anywere.mp4" class="h-full w-full"></video>
+               </div> 
+        </div>
+           <div id="Text-div" class="h-[100%] w-[50%] flex flex-col gap-5 justify-center items-center">
+                 
+                <h2 data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out" id="BW" class="capitalize  transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-[6vmin] p-[1vmin]"
+                  href=""><small class="text-xl tracking-normal">01.</small>
+                  BW BusinessWorld</h2>
+                <h2 data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out" id="HT" class="capitalize  transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-[6vmin] p-[1vmin]"
+                  href=""><small class="text-xl tracking-normal">02.</small>
+                  hindustani times</h2>
+                <h2 data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out" id="FN" class="capitalize  transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-[6vmin] p-[1vmin]"
+                  href=""><small class="text-xl tracking-normal">03.</small>
+                  Fashion network </h2>
+                <h2 data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out" id="BS" class="capitalize  transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-[6vmin] p-[1vmin]"
+                  href=""><small class="text-xl tracking-normal">04.</small>
+                  Business Standard</h2>
+                <h2 data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out" id="TTOI" class="capitalize  transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-[6vmin] p-[1vmin]"
+                  href=""><small class="text-xl tracking-normal">05.</small>
+                  the times of india</h2>
+                
+           </div>
+    </div>
+</div>
+<!--                       📰📰     Charcha in news Ends Here  📰📰                           -->
+
+
+
+
+</main>
+
+<footer class="h-[25vmin] w-full lg:flex justify-center items-end mt-[20vmin]">
+    <div data-aos="fade-up" data-aos-anchor-placement="center-center" class="footer-content  bg-transparent lg:px-[20vmin] border-t-2 lg:border-2 border-white lg:border-b-0
+     text-white p-[5vmin] lg:rounded-t-full">
+       <h1 class="lg:text-[10vmin] text-[8vmin] font-semibold lg:text-center">Devloped By <span class="font-bold text-red-600"> Devinja</span> </h1>
+    <div class="teamName lg:flex gap-[8vmin] justify-center">
+       <a href="https://www.linkedin.com/in/rahul-chaudharyy/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-[3vmin] font-bold hover:underline"><i class="ri-linkedin-box-fill"></i> Rahul Chaudhary</a>
+       <a href="https://www.linkedin.com/in/latika-rai-638ab7260/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-[3vmin] font-bold hover:underline"><i class="ri-linkedin-box-fill"></i> Latika Rai</a>
+       <a href="https://www.linkedin.com/in/deepanshi-yadav-93a974238/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-[3vmin] font-bold hover:underline"><i class="ri-linkedin-box-fill"></i> Deepanshi Yadav</a>
+    </div>
+    </div>
+</footer>
+ 
+ <script src="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+     integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"
+     integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+    AOS.init();
+ </script>
+ <script src="script.js"></script>
+ <script src="vanilla-tilt.js"></script>
+</body>
+
+</html>
