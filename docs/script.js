@@ -316,6 +316,31 @@ pics.forEach(function(image) {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Select all the images that need to be loaded
+    const images = document.querySelectorAll("img");
+    let loadedImages = 0;
+
+    // Function to check if all images are loaded
+    function checkImagesLoaded() {
+        loadedImages++;
+        if (loadedImages === images.length) {
+            // All images are loaded, hide the preloader
+            document.getElementById('preloader').style.display = 'none';
+        }
+    }
+
+    // Attach the checkImagesLoaded function to each image's load event
+    images.forEach(img => {
+        if (img.complete) {
+            checkImagesLoaded(); // If the image is already cached
+        } else {
+            img.addEventListener('load', checkImagesLoaded);
+            img.addEventListener('error', checkImagesLoaded); // In case of error, consider it loaded
+        }
+    });
+});
+
 // animation on scroll disables for mobile
 AOS.init({disable: 'mobile'});
 AOS.init({disable: 'tablet'});
