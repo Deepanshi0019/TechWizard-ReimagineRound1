@@ -257,6 +257,30 @@ LifeStyleAnime();
 
 
 
+var cat = document.querySelectorAll(".cat-box");
+var uppr = document.querySelectorAll(".uppar-text");
+var lwr = document.querySelectorAll(".lower-btn");
+
+cat.forEach(element => {
+    element.addEventListener('mousemove', function() {
+        uppr.forEach(upprElement => {
+            upprElement.classList.add('cls');
+        });
+        lwr.forEach(lwrElement => {
+            lwrElement.classList.add('cls');
+        });
+    });
+
+    element.addEventListener('mouseleave', function() {
+        uppr.forEach(upprElement => {
+            upprElement.classList.remove('cls');
+        });
+        lwr.forEach(lwrElement => {
+            lwrElement.classList.remove('cls');
+        });
+    });
+});
+
 
 //                                      category and the press section by rahul
 let imageDiv = document.getElementById('IMG');
