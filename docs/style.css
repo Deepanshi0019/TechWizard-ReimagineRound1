@@ -147,7 +147,7 @@ line-height: 3vmin;
 
 /* Cart icon style */
 .cart-icon {
-  font-size: 2em; /* Size of the cart icon */
+  font-size: 4vmin; /* Size of the cart icon */
   cursor: pointer;
 }
 
@@ -575,7 +575,9 @@ background-color: black;
 
   
   /* top picks & bestseller RESPONSIVE */
-
+@media (max-width:405px) {
+  
+}
 
   @media (min-width:333px) and (max-width:734px) {
     
@@ -611,6 +613,7 @@ background-color: black;
       }
   }
   
+
   
   @media (min-width:525px) and (max-width:1023px) {
     .container
