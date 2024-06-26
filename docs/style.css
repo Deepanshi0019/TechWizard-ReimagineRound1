@@ -119,23 +119,7 @@ z-index: 999;
 width: 100%;
 }
 
-/* .custom-h1 {
-font-size: 2vmin; 
-border-radius: 50%; 
-font-weight: bold; 
-position: absolute; 
-top: 1.5vmin; 
-right: 3vmin; 
-height: auto;
-width: auto;
-padding: 1vmin; 
-padding-top: 0%;
-padding-bottom: 0%;
-text-align: center; 
-color: white; 
-background-color: #dc2626; 
-line-height: 3vmin; 
-} */
+
 .cart-container {
   position: relative;
   width: 50px; /* Adjust size as needed */
