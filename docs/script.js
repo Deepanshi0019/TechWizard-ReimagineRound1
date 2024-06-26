@@ -283,7 +283,7 @@ var ProductInCart = 0;
 CartButton.forEach(button => {
     button.addEventListener('click', function() {
         ProductInCart++;
-        CartInside.innerHTML = `${ProductInCart}`;
+        CartInside.innerHTML = `${ProductInCart}`
         CartInside.classList.toggle("cart-counter-update")
         
     });
@@ -318,4 +318,4 @@ pics.forEach(function(image) {
 
 // animation on scroll disables for mobile
 AOS.init({disable: 'mobile'});
-AOS.init({disable: 'tablet'});
+AOS.init({disable: 'tablet'})
