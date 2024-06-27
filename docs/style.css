@@ -323,9 +323,6 @@ display: block;
 }
 
 @media(min-width:71px) and (max-width:768px){
-     canvas{
-      display: none;
-     }
 }
 
 .Life-Section {
