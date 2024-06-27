@@ -273,12 +273,12 @@ color: #aaa;
   transition: 0.5s ease-in-out;
 }
 
-/* Class to apply */
+/* Class to apply 
 .cls {
   transform: translateY(0);
-}
+}*/
 
-/*.cat-box:hover .uppar-text{
+.cat-box:hover .uppar-text{
   transform: translateY(0);
   transition: 0.5s ease-in-out;
 }
@@ -286,7 +286,7 @@ color: #aaa;
 .cat-box:hover .lower-btn{
  transform: translateY(0);
  transition: 0.5s ease-in-out;
-}*/
+}
 /*                           catgory css ends                         */
 
 @media (min-width:100px ) and (max-width:599px) {
@@ -319,6 +319,13 @@ position: relative;
 canvas {
 max-width: 100vw;
 max-height: 100vh;
+display: block;
+}
+
+@media(min-width:71px) and (max-width:768px){
+     canvas{
+      display: none;
+     }
 }
 
 .Life-Section {

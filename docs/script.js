@@ -18,7 +18,7 @@
 //    })
 //  })
 
-document.addEventListener("mousemove", function(dets) {
+/*document.addEventListener("mousemove", function(dets) {
     let cursor = document.querySelector(".cursor");
 
     // Check specific x positions and adjust opacity if needed
@@ -67,7 +67,7 @@ document.addEventListener("mousemove", function(dets) {
 //         ease: "power1.out"
 //     });
 // });
-
+*/
 
 
 
@@ -257,7 +257,7 @@ LifeStyleAnime();
 
 
 
-var cat = document.querySelectorAll(".cat-box");
+/*var cat = document.querySelectorAll(".cat-box");
 var uppr = document.querySelectorAll(".uppar-text");
 var lwr = document.querySelectorAll(".lower-btn");
 
@@ -279,7 +279,7 @@ cat.forEach(element => {
             lwrElement.classList.remove('cls');
         });
     });
-});
+});               catagory hover animation        */
 
 
 //                                      category and the press section by rahul
