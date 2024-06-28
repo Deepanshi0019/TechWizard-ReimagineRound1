@@ -160,9 +160,6 @@ background: linear-gradient(85deg, rgba(252,80,80,1) 0%, rgba(220,38,38,1) 100%)
   .card:hover .playback-btn{
     opacity: 1;
   }
-  .card:hover .dets-btn {
-    opacity: 1;
-} 
   .exp-btn{
     opacity: 1;
     cursor: pointer;
