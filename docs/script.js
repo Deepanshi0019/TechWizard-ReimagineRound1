@@ -405,6 +405,10 @@ pics.forEach(function(image) {
     });
 });
 
+
+
+
+
 // animation on scroll disables for mobile
 AOS.init({disable: 'mobile'});
 AOS.init({disable: 'tablet'})
