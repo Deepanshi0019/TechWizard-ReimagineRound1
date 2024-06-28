@@ -1,5 +1,74 @@
 /*                             Custom-Cursor                     */
 
+// document.addEventListener("mousemove", function(dets){
+//      let cusor = document.querySelector(".cursor")
+//     console.log(dets.x);
+//    gsap.to(cusor,{
+//     let detsss = x:dets.x ;
+//     if(x:dets.x == 420 ){
+//        opacity:0 
+//     } else if(x:dets.x == 529){
+//         opacity:0  
+//     },
+//       x:dets.x,
+//       y:dets.y,
+//       duration:0.3,
+//        ease:"ease.out"
+
+//    })
+//  })
+
+/*document.addEventListener("mousemove", function(dets) {
+    let cursor = document.querySelector(".cursor");
+
+    // Check specific x positions and adjust opacity if needed
+    if (dets.x == 420 || dets.x == 529) {
+        gsap.to(cursor, {
+            opacity: 0,
+            x: dets.x,
+            y: dets.y,
+            duration: 0.3,
+            ease: "power1.out"
+        });
+    } else {
+        gsap.to(cursor, {
+            opacity: 1, // Reset opacity when not in the specific x positions
+            x: dets.x,
+            y: dets.y,
+            duration: 0.3,
+            ease: "power1.out"
+        });
+    }
+});
+// document.addEventListener("mousemove", function(event) {
+//     // Select the cursor and the section
+//     let cursor = document.querySelector(".cursor");
+//     let hoverSection = document.querySelectorAll(".bestseller");
+
+//     // Get the cursor's current position
+//     let mouseX = event.clientX;
+//     let mouseY = event.clientY;
+
+//     // Check if the cursor is within the bounds of the section
+//     let rect = hoverSection.getBoundingClientRect();
+//     let isInside = (
+//         mouseX >= rect.left && 
+//         mouseX <= rect.right && 
+//         mouseY >= rect.top && 
+//         mouseY <= rect.bottom
+//     );
+
+//     // Use GSAP to animate cursor movement and opacity
+//     gsap.to(cursor, {
+//         x: mouseX,
+//         y: mouseY,
+//         duration: 0.1,
+//         opacity: isInside ? 0 : 1,  // Hide if inside the section, show otherwise
+//         ease: "power1.out"
+//     });
+// });
+*/
+
 
 
 
@@ -145,6 +214,8 @@ window.addEventListener('scroll',function () {
 
 
 
+
+
 /*                                 Home-Page CSS Ends Here            */
 
 
@@ -185,6 +256,30 @@ LifeStyleAnime();
 //                                    LifeStyle Ends Here  
 
 
+
+/*var cat = document.querySelectorAll(".cat-box");
+var uppr = document.querySelectorAll(".uppar-text");
+var lwr = document.querySelectorAll(".lower-btn");
+
+cat.forEach(element => {
+    element.addEventListener('mousemove', function() {
+        uppr.forEach(upprElement => {
+            upprElement.classList.add('cls');
+        });
+        lwr.forEach(lwrElement => {
+            lwrElement.classList.add('cls');
+        });
+    });
+
+    element.addEventListener('mouseleave', function() {
+        uppr.forEach(upprElement => {
+            upprElement.classList.remove('cls');
+        });
+        lwr.forEach(lwrElement => {
+            lwrElement.classList.remove('cls');
+        });
+    });
+});               catagory hover animation        */
 
 
 //                                      category and the press section by rahul
@@ -241,7 +336,7 @@ bw.addEventListener('mouseenter', function () {
   imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bw.mp4" class="h-[70%] w-[100%]"></video>`
 })
 ht.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/HT.mp4" class="h-[70%] w-[100%]"></video>`
+  imageDiv.innerHTML =` <video loop muted autoplay src="/vdio/HT.mp4" class="h-[70%] w-[100%]"></video>`
 })
 fn.addEventListener('mouseenter', function () {
   imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/fn.mp4" class="h-[70%] w-[100%]"></video>`
@@ -270,6 +365,19 @@ document.querySelectorAll('.card-category').forEach(item => {
       item.closest('.card').classList.remove('glow');
   });
 });
+let CartInside = document.querySelector('#cartCounter')
+
+let CartButton = document.querySelectorAll('.Cart-buttons');
+var ProductInCart = 0;
+CartButton.forEach(button => {
+    button.addEventListener('click', function() {
+        ProductInCart++;
+        CartInside.innerHTML = `${ProductInCart}`
+        CartInside.classList.toggle("cart-counter-update")
+        
+    });
+});
+
 //bestseller
 
 //pointer
@@ -296,17 +404,6 @@ pics.forEach(function(image) {
         });
     });
 });
-let CartInside = document.querySelector('.Cart-Counting-System')
-
-let CartButton = document.querySelectorAll('.Cart-buttons');
-var ProductInCart = 0;
-CartButton.forEach(button => {
-    button.addEventListener('click', function() {
-        ProductInCart++;
-        CartInside.innerHTML = `<h1 class="custom-h1">${ProductInCart}</h1>`
-       
-    });
-});
 
 
 
@@ -314,4 +411,4 @@ CartButton.forEach(button => {
 
 // animation on scroll disables for mobile
 AOS.init({disable: 'mobile'});
-AOS.init({disable: 'tablet'});
+AOS.init({disable: 'tablet'})

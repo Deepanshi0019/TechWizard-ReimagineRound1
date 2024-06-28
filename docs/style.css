@@ -1,4 +1,3 @@
-
 *{
   margin: 0;
   padding: 0;
@@ -16,7 +15,6 @@ html body{
  height: 100vh;
  width: 100%;
 }
-
 a{
 position: relative;
 display: block;
@@ -121,22 +119,55 @@ z-index: 999;
 width: 100%;
 }
 
-.custom-h1 {
-font-size: 2vmin; 
-border-radius: 50%; 
-font-weight: bold; 
-position: absolute; 
-top: 1.5vmin; 
-right: 3vmin; 
-height: auto;
-width: auto;
-padding: 1vmin; 
-padding-top: 0%;
-padding-bottom: 0%;
-text-align: center; 
-color: white; 
-background-color: #dc2626; 
-line-height: 3vmin; 
+
+.cart-container {
+  position: relative;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cart icon style */
+.cart-icon {
+  font-size: 4vmin; /* Size of the cart icon */
+  cursor: pointer;
+}
+
+/* Cart counter style */
+.cart-counter {
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+}
+
+/* Optional: Add a subtle animation for when the number changes */
+.cart-counter-update {
+  animation: bump 0.3s ease-in-out;
+}
+
+/* Keyframes for the bump animation */
+@keyframes bump {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2);
+  }
+  100% {
+      transform: scale(1);
+  }
 }
 
 
@@ -225,8 +256,56 @@ color: #aaa;
 
   font-size: 4vmin;
 }
+
+
 }
 
+/*                             catgory css                           */
+
+/* Initial states */
+.uppar-text {
+  transform: translateY(-10vmin);
+  transition: 0.5s ease-in-out;
+}
+
+.lower-btn {
+  transform: translateY(10vmin);
+  transition: 0.5s ease-in-out;
+}
+
+/* Class to apply 
+.cls {
+  transform: translateY(0);
+}*/
+
+.cat-box:hover .uppar-text{
+  transform: translateY(0);
+  transition: 0.5s ease-in-out;
+}
+
+.cat-box:hover .lower-btn{
+ transform: translateY(0);
+ transition: 0.5s ease-in-out;
+}
+/*                           catgory css ends                         */
+
+@media (min-width:100px ) and (max-width:599px) {
+  .cart-counter {
+    position: absolute;
+    top: 9px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 2vem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 20px;
+  }
+}
 
 /*                  Home-Page CSS                  */
 #home {
@@ -240,6 +319,10 @@ position: relative;
 canvas {
 max-width: 100vw;
 max-height: 100vh;
+display: block;
+}
+
+@media(min-width:71px) and (max-width:768px){
 }
 
 .Life-Section {
@@ -248,7 +331,7 @@ background-color: black;
 
 /*                Home-Page CSS Ends Here
 
-  /*background: url(/Devinja-ReimagineRound1/media/download.svg);*/
+  /background: url(/Devinja-ReimagineRound1/media/download.svg);/
 
 /*                Home-Page CSS Ends Here
 
@@ -267,17 +350,7 @@ box-sizing: border-box;
 
 /* Add this to your CSS file or <style> section */
 
-/*                             catgory css                           */
-.cat-box:hover .uppar-text{
-  transform: translateY(0);
-  transition: 0.5s ease-in-out;
-}
 
-.cat-box:hover .lower-btn{
- transform: translateY(0);
- transition: 0.5s ease-in-out;
-}
-/*                           catgory css ends                         */
 
 
 .card {
@@ -495,13 +568,53 @@ background-color: black;
     color: black;
   }
 
+<<<<<<< HEAD
 
   /* SCROLLING EFFECT */
   @media (min-width:1023px){
     
   }
+=======
+  .cursor{
+    height: 60px;
+    width: 60px;
+    background-color: rgba(255, 255, 0, 0);
+    border: 1px solid white;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1000;
+}
+
+>>>>>>> db1128deadfd33e7dc127e08ce0990a029ff489e
   
   /* top picks & bestseller RESPONSIVE */
+@media (max-width:405px) {
+  
+}
+
+  @media (min-width:333px) and (max-width:734px) {
+    
+
+    .custom-h1 {
+      font-size: 4vmin; 
+      border-radius: 50%; 
+      font-weight: bold; 
+      position: absolute; 
+      top: 1.5vmin; 
+      right: 22vmin; 
+      height: auto;
+      width: auto;
+      padding: 1vmin; 
+      padding-top: 0%;
+      padding-bottom: 0%;
+      text-align: center; 
+      color: white; 
+      background-color: #dc2626; 
+      line-height: 3vmin; 
+      }
+      
+
+  }
   @media (min-width:461px) and (max-width:767px){
     .itm-dets h4 span{
       font-size: 2.3vmin;
@@ -513,6 +626,7 @@ background-color: black;
       }
   }
   
+
   
   @media (min-width:525px) and (max-width:1023px) {
     .container
