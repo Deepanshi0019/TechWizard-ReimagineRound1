@@ -1,76 +1,28 @@
-/*                             Custom-Cursor                     */
+function ClipPath() {
+    // Set initial properties for the animation elements
+    gsap.set(".products", { 
+        clipPath: "circle(0% at 50% 50%)" // Initial clip-path is a small circle
+    });
 
-// document.addEventListener("mousemove", function(dets){
-//      let cusor = document.querySelector(".cursor")
-//     console.log(dets.x);
-//    gsap.to(cusor,{
-//     let detsss = x:dets.x ;
-//     if(x:dets.x == 420 ){
-//        opacity:0 
-//     } else if(x:dets.x == 529){
-//         opacity:0  
-//     },
-//       x:dets.x,
-//       y:dets.y,
-//       duration:0.3,
-//        ease:"ease.out"
+    // Create the timeline for the animation
+    var tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#home",
+            start: "top top",    // Start the animation when the top of the home section hits the top of the viewport
+            end: "bottom top",   // End the animation when the bottom of the home section hits the top of the viewport
+            scrub: 1             // Smooth scrolling animation
+        }
+    });
 
-//    })
-//  })
+    // Define the clip-path animation
+    tl.to(".products", {
+        clipPath: "circle(150% at 50% 50%)", // Expanding the clip-path to cover the section
+        ease: "power2.out" // Smooth easing
+    });
+}
 
-/*document.addEventListener("mousemove", function(dets) {
-    let cursor = document.querySelector(".cursor");
-
-    // Check specific x positions and adjust opacity if needed
-    if (dets.x == 420 || dets.x == 529) {
-        gsap.to(cursor, {
-            opacity: 0,
-            x: dets.x,
-            y: dets.y,
-            duration: 0.3,
-            ease: "power1.out"
-        });
-    } else {
-        gsap.to(cursor, {
-            opacity: 1, // Reset opacity when not in the specific x positions
-            x: dets.x,
-            y: dets.y,
-            duration: 0.3,
-            ease: "power1.out"
-        });
-    }
-});
-// document.addEventListener("mousemove", function(event) {
-//     // Select the cursor and the section
-//     let cursor = document.querySelector(".cursor");
-//     let hoverSection = document.querySelectorAll(".bestseller");
-
-//     // Get the cursor's current position
-//     let mouseX = event.clientX;
-//     let mouseY = event.clientY;
-
-//     // Check if the cursor is within the bounds of the section
-//     let rect = hoverSection.getBoundingClientRect();
-//     let isInside = (
-//         mouseX >= rect.left && 
-//         mouseX <= rect.right && 
-//         mouseY >= rect.top && 
-//         mouseY <= rect.bottom
-//     );
-
-//     // Use GSAP to animate cursor movement and opacity
-//     gsap.to(cursor, {
-//         x: mouseX,
-//         y: mouseY,
-//         duration: 0.1,
-//         opacity: isInside ? 0 : 1,  // Hide if inside the section, show otherwise
-//         ease: "power1.out"
-//     });
-// });
-*/
-
-
-
+// Run the function to apply the animation
+ClipPath();
 
 /*                                 Home-Page CSS             */
 
@@ -93,7 +45,7 @@ function dom() {
 function files() {
     let data = [];
     for (let i = 1; i <= 298; i++) {
-        data.push(`/HomePage/Image${i}.jpg`);
+        data.push(`/Devinja-ReimagineRound1/HomePage/Image${i}.jpg`);
     }
     return data;
 }
@@ -257,105 +209,64 @@ LifeStyleAnime();
 
 
 
-/*var cat = document.querySelectorAll(".cat-box");
-var uppr = document.querySelectorAll(".uppar-text");
-var lwr = document.querySelectorAll(".lower-btn");
-
-cat.forEach(element => {
-    element.addEventListener('mousemove', function() {
-        uppr.forEach(upprElement => {
-            upprElement.classList.add('cls');
-        });
-        lwr.forEach(lwrElement => {
-            lwrElement.classList.add('cls');
-        });
+function resetAnimation(element, className) {
+    element.classList.remove(className);
+    void element.offsetWidth; 
+    element.classList.add(className);
+  }
+  
+  let imageDiv = document.getElementById('IMG');
+  let imageDiv2 = document.getElementById('IMG2');
+  let links = document.querySelectorAll('#Text-div h2');
+  
+  imageDiv2.classList.add('reveal');
+  imageDiv.classList.add('hidden');
+  
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      resetAnimation(imageDiv, 'reveal');
+      resetAnimation(imageDiv2, 'hidden');
+  
+      imageDiv.classList.add('reveal');
+      imageDiv.classList.remove('hidden');
+      imageDiv2.classList.add('hidden');
+      imageDiv2.classList.remove('reveal');
     });
-
-    element.addEventListener('mouseleave', function() {
-        uppr.forEach(upprElement => {
-            upprElement.classList.remove('cls');
-        });
-        lwr.forEach(lwrElement => {
-            lwrElement.classList.remove('cls');
-        });
-    });
-});               catagory hover animation        */
-
-
-//                                      category and the press section by rahul
-let imageDiv = document.getElementById('IMG');
-let imageDiv2 = document.getElementById('IMG2');
-let links = document.querySelectorAll('#Text-div h2');
-let txtdiv = document.getElementById('Text-div');
-var forHoverCards = document.querySelectorAll('.card-category')
-var actualCard = document.querySelectorAll('.card')
-
-
-imageDiv2.classList.add('reveal')
-imageDiv.classList.add('hidden')
-
-// links.addEventListener('mouseenter',function () { 
-//   imageDiv2.classList.add('hidden');
-//   imageDiv2.classList.remove('reveal');
-//  })
-
-//  links.addEventListener('mouseleave', () => {
-//   imageDiv2.classList.remove('hidden');
-//   imageDiv2.classList.add('reveal');
-//   // imageDiv.classList.add('hidden');
-// });
-
-links.forEach(link => {
-  link.addEventListener('mouseenter', () => {
-    imageDiv.classList.add('reveal');
-    imageDiv.classList.remove('hidden');
-    imageDiv2.classList.add('hidden');
-    imageDiv2.classList.remove('reveal');
-    // imageDiv2.classList.add('hidden');
-
   });
-
-  link.addEventListener('mouseleave', () => {
-    imageDiv.classList.remove('reveal');
-    imageDiv.classList.add('hidden');
-    imageDiv2.classList.remove('hidden');
-//   imageDiv2.classList.add('reveal');
+  
+  let bw = document.getElementById('BW');
+  let fn = document.getElementById('FN');
+  let ht = document.getElementById('HT');
+  let bs = document.getElementById('BS');
+  let ttoi = document.getElementById('TTOI');
+  
+  bw.addEventListener('click', function () {
+    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bw.mp4" class="h-[70%] w-[100%]"></video>`;
+    resetAnimation(imageDiv, 'reveal');
   });
-});
+  
+  ht.addEventListener('click', function () {
+    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/HT.mp4" class="h-[70%] w-[100%]"></video>`;
+    resetAnimation(imageDiv, 'reveal');
+  });
+  
+  fn.addEventListener('click', function () {
+    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/fn.mp4" class="h-[70%] w-[100%]"></video>`;
+    resetAnimation(imageDiv, 'reveal');
+  });
+  
+  bs.addEventListener('click', function () {
+    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bs.mp4" class="h-[70%] w-[100%]"></video>`;
+    resetAnimation(imageDiv, 'reveal');
+  });
+  
+  ttoi.addEventListener('click', function () {
+    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/TTOI.mp4" class="h-[70%] w-[100%]"></video>`;
+    resetAnimation(imageDiv, 'reveal');
+  });
+  
 
 
-
-
-let bw = document.getElementById('BW');
-let fn = document.getElementById('FN');
-let ht = document.getElementById('HT');
-let bs = document.getElementById('BS');
-let ttoi = document.getElementById('TTOI');
-
-bw.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bw.mp4" class="h-[70%] w-[100%]"></video>`
-})
-ht.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML =` <video loop muted autoplay src="/vdio/HT.mp4" class="h-[70%] w-[100%]"></video>`
-})
-fn.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/fn.mp4" class="h-[70%] w-[100%]"></video>`
-})
-bs.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bs.mp4" class="h-[70%] w-[100%]"></video>`
-})
-ttoi.addEventListener('mouseenter', function () {
-  imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/TTOI.mp4" class="h-[70%] w-[100%]"></video>`
-})
-
-
-// const linkss = document.querySelectorAll('#Text-div h2');
-
-// linkss.forEach((link, index) => {
-//   gsap.set(link, { opacity: 0.5, y: '-10px' });
-
-//   gsap.from(link, { opacity: 0, y: '-10px', duration: 5, delay: index * 0.2 });
-// });
 
 document.querySelectorAll('.card-category').forEach(item => {
   item.addEventListener('mouseenter', () => {
