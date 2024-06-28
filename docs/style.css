@@ -568,24 +568,6 @@ background-color: black;
     color: black;
   }
 
-<<<<<<< HEAD
-
-  /* SCROLLING EFFECT */
-  @media (min-width:1023px){
-    
-  }
-=======
-  .cursor{
-    height: 60px;
-    width: 60px;
-    background-color: rgba(255, 255, 0, 0);
-    border: 1px solid white;
-    border-radius: 50%;
-    position: fixed;
-    z-index: 1000;
-}
-
->>>>>>> db1128deadfd33e7dc127e08ce0990a029ff489e
   
   /* top picks & bestseller RESPONSIVE */
 @media (max-width:405px) {
@@ -703,7 +685,9 @@ background-color: black;
     opacity: 1;
   }
 
-
+  .card:hover .playback-btn{
+    opacity: 1;
+  }
 }
 
 
