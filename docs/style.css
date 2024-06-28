@@ -495,7 +495,11 @@ background-color: black;
     color: black;
   }
 
-  
+
+  /* SCROLLING EFFECT */
+  @media (min-width:1023px){
+    
+  }
   
   /* top picks & bestseller RESPONSIVE */
   @media (min-width:461px) and (max-width:767px){
@@ -550,6 +554,9 @@ background-color: black;
       top: 5%;
       left: 15%;
       opacity: 1;
+    }
+    .pointer{
+      opacity: 0;
     }
 }
 @media (min-width:1023px){

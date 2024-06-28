@@ -308,6 +308,10 @@ CartButton.forEach(button => {
     });
 });
 
+
+
+
+
 // animation on scroll disables for mobile
 AOS.init({disable: 'mobile'});
 AOS.init({disable: 'tablet'});
