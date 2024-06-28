@@ -45,7 +45,7 @@ function dom() {
 function files() {
     let data = [];
     for (let i = 1; i <= 298; i++) {
-        data.push(`/Devinja-ReimagineRound1/HomePage/Image${i}.jpg`);
+        data.push(`/HomePage/Image${i}.jpg`);
     }
     return data;
 }
