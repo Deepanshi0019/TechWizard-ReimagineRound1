@@ -281,27 +281,27 @@ function resetAnimation(element, className) {
   let ttoi = document.getElementById('TTOI');
   
   bw.addEventListener('click', function () {
-    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bw.mp4" class="h-[70%] w-[100%]"></video>`;
+    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bw.webm" class="h-[70%] w-[100%]"></video>`;
     resetAnimation(imageDiv, 'reveal');
   });
   
   ht.addEventListener('click', function () {
-    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/HT.mp4" class="h-[70%] w-[100%]"></video>`;
+    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/HT.webm" class="h-[70%] w-[100%]"></video>`;
     resetAnimation(imageDiv, 'reveal');
   });
   
   fn.addEventListener('click', function () {
-    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/fn.mp4" class="h-[70%] w-[100%]"></video>`;
+    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/fn.webm" class="h-[70%] w-[100%]"></video>`;
     resetAnimation(imageDiv, 'reveal');
   });
   
   bs.addEventListener('click', function () {
-    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bs.mp4" class="h-[70%] w-[100%]"></video>`;
+    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/bs.webm" class="h-[70%] w-[100%]"></video>`;
     resetAnimation(imageDiv, 'reveal');
   });
   
   ttoi.addEventListener('click', function () {
-    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/TTOI.mp4" class="h-[70%] w-[100%]"></video>`;
+    imageDiv.innerHTML = `<video loop muted autoplay src="/vdio/TTOI.webm" class="h-[70%] w-[100%]"></video>`;
     resetAnimation(imageDiv, 'reveal');
   });
   
