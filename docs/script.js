@@ -281,7 +281,7 @@ function resetAnimation(element, className) {
   let ttoi = document.getElementById('TTOI');
   
   bw.addEventListener('click', function () {
-    imageDiv.innerHTML = `<video loop muted autoplay src="vdi/bw.mp4" class="h-[70%] w-[100%]"></video>`;
+    imageDiv.innerHTML = `<video loop muted autoplay src="vdio/bw.mp4" class="h-[70%] w-[100%]"></video>`;
     resetAnimation(imageDiv, 'reveal');
   });
   
