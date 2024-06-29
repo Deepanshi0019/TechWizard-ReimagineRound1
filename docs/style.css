@@ -278,43 +278,10 @@ color: #aaa;
 }
 
 
-@media (min-width:421px) and (max-width:768px) {
-.logo>img {
-  height: 4vmin;
-}
-
-#Cart-log {
-  font-size: 4vmin;
-}
-
-#user-logo {
-
-  font-size: 4vmin;
-}
-
-
-}
 
 /*                             catgory css                           */
 
 /* Initial states */
-@media ( min-width:486px) and (max-width:1015px){
-.banner{
-  margin-top: 15vmin;
-}
-}
-
-@media (min-width: 1024px) {
-  .uppar-text {
-    transform: translateY(-10vmin);
-    transition: 0.5s ease-in-out;
-  }
-  
-  .lower-btn {
-    transform: translateY(10vmin);
-    transition: 0.5s ease-in-out;
-  }
-}
 
 /* Class to apply 
 .cls {
@@ -332,23 +299,7 @@ color: #aaa;
 }
 /*                           catgory css ends                         */
 
-@media (min-width:100px ) and (max-width:599px) {
-  .cart-counter {
-    position: absolute;
-    top: 9px;
-    right: 5px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 5px 10px;
-    font-size: 2vem;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 20px;
-  }
-}
+
 
 /*                  Home-Page CSS                  */
 #home {
@@ -364,11 +315,7 @@ max-width: 100vw;
 max-height: 100vh;
 }
 
-@media(min-width:71px) and (max-width:768px){
-}
-.Life-Section {
-background-color: black;
-}
+
 
 /*                Home-Page CSS Ends Here
 
@@ -472,52 +419,6 @@ background-color: black;
 
 }
 
-@media (max-width:607px) {
-#Main-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-items: center;
-  gap: 2rem;
-  height: auto;
-}
-
-#Heading-div {
-  height: 10vh;
-}
-
-#Image-div {
-  width: 100vw;
-  height: 30%;
-}
-
-#Text-div {
-  flex-direction: column;
-  justify-content: center;
-
-}
-
-#Text-div h2 {
-  text-align: center;
-  margin-left: 0;
-  width: 100vw;
-  font-size: 9vmin;
-  user-select: none;
-
-}
-
-#Press-div {
-  padding-bottom: 4rem;
-}
-
-}
-
-@media (min-width:607px) and (max-width:990px) {
-#Main-div {
-
-  height: auto;
-}
-
 #Image-div {
   display: flex;
   justify-content: center;
@@ -540,29 +441,6 @@ background-color: black;
   height: 100%;
 }
 
-}
-
-@media (min-width:767px) and (max-width:1706px) {
-#Category-section {
-  height: auto;
-}
-
-.card {
-  /* padding-top: 2rem; */
-  margin-top: 3rem;
-  margin-right: 2rem;
-  margin-left: 2rem;
-}
-}
-
-@media (min-width:1718px) and (max-width:2568px) {
-.card {
-  /* padding-top: 2rem; */
-  /* margin-top: 3rem; */
-  margin-right: 1rem;
-  margin-left: 1rem;
-}
-}
 
 /* bestsellers css*/
 ::selection {
@@ -614,7 +492,10 @@ background-color: black;
 background: linear-gradient(85deg, rgba(252,80,80,1) 0%, rgba(220,38,38,1) 100%);
   }
   
-  /* top picks & bestseller RESPONSIVE */
+
+
+
+  /* bestseller RESPONSIVE */
 @media (max-width:405px) {
   
 }
@@ -742,3 +623,131 @@ background: linear-gradient(85deg, rgba(252,80,80,1) 0%, rgba(220,38,38,1) 100%)
 }
 
 
+@media (min-width:421px) and (max-width:768px) {
+  .logo>img {
+    height: 4vmin;
+  }
+  
+  #Cart-log {
+    font-size: 4vmin;
+  }
+  
+  #user-logo {
+  
+    font-size: 4vmin;
+  }
+  
+  
+  }
+
+  @media (min-width:1718px) and (max-width:2568px) {
+    .card {
+      /* padding-top: 2rem; */
+      /* margin-top: 3rem; */
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+    }
+
+    
+@media (min-width:767px) and (max-width:1706px) {
+  #Category-section {
+    height: auto;
+  }
+  
+  .card {
+    /* padding-top: 2rem; */
+    margin-top: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  }
+
+  @media (min-width:607px) and (max-width:990px) {
+    #Main-div {
+    
+      height: auto;
+    }
+  }
+
+  @media (max-width:607px) {
+    #Main-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: center;
+      gap: 2rem;
+      height: auto;
+    }
+    
+    #Heading-div {
+      height: 10vh;
+    }
+    
+    #Image-div {
+      width: 100vw;
+      height: 30%;
+    }
+    
+    #Text-div {
+      flex-direction: column;
+      justify-content: center;
+    
+    }
+    
+    #Text-div h2 {
+      text-align: center;
+      margin-left: 0;
+      width: 100vw;
+      font-size: 9vmin;
+      user-select: none;
+    
+    }
+    
+    #Press-div {
+      padding-bottom: 4rem;
+    }
+    
+    }
+
+    @media(min-width:71px) and (max-width:768px){
+    }
+    .Life-Section {
+    background-color: black;
+    }
+
+    @media (min-width:100px ) and (max-width:599px) {
+      .cart-counter {
+        position: absolute;
+        top: 9px;
+        right: 5px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        padding: 5px 10px;
+        font-size: 2vem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 20px;
+      }
+    }
+
+    @media ( min-width:486px) and (max-width:1015px){
+      .banner{
+        margin-top: 15vmin;
+      }
+      }
+      
+      @media (min-width: 1024px) {
+        .uppar-text {
+          transform: translateY(-10vmin);
+          transition: 0.5s ease-in-out;
+        }
+        
+        .lower-btn {
+          transform: translateY(10vmin);
+          transition: 0.5s ease-in-out;
+        }
+      }
