@@ -1,3 +1,43 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the loader element
+    const loader = document.getElementById('loader');
+    
+    // Get all image elements in the document
+    const images = document.querySelectorAll('img');
+    let loadedImagesCount = 0;
+
+    // Function to check if all images are loaded
+    function checkAllImagesLoaded() {
+        loadedImagesCount++;
+        if (loadedImagesCount === images.length) {
+            // Hide the loader and show the content once all images are loaded
+            loader.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling if it was disabled
+        }
+    }
+
+    // Iterate over each image
+    images.forEach((img) => {
+        // If the image is already loaded from cache, increment the count
+        if (img.complete) {
+            checkAllImagesLoaded();
+        } else {
+            // Add event listeners for load and error events
+            img.addEventListener('load', checkAllImagesLoaded);
+            img.addEventListener('error', checkAllImagesLoaded); // Count errors as loaded
+        }
+    });
+
+    // If there are no images, hide the loader immediately
+    if (images.length === 0) {
+        loader.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
+    }
+});
+
+
+
+
 function ClipPath() {
     // Set initial properties for the animation elements
     gsap.set(".products", { 
