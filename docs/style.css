@@ -31,8 +31,8 @@ html body{
 }
 
 .spinner {
-  border: 8px solid #f3f3f3;
-  border-top: 8px solid #3498db;
+  border: 8px solid #f3f3f300; /* Light gray border */
+  border-top: 6px solid #e74c3c; /* Red border */
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -45,7 +45,7 @@ html body{
 }
 
 #loader p {
-  color: #fff;
+  color: #fff; /* White text color */
   margin-top: 20px;
   font-size: 20px;
 }
@@ -298,7 +298,11 @@ color: #aaa;
 /*                             catgory css                           */
 
 /* Initial states */
-
+@media ( min-width:486px) and (max-width:1015px){
+.banner{
+  margin-top: 15vmin;
+}
+}
 
 @media (min-width: 1024px) {
   .uppar-text {
