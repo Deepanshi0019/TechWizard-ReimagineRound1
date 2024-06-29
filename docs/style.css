@@ -115,7 +115,13 @@ background: linear-gradient(85deg, rgba(252,80,80,1) 0%, rgba(220,38,38,1) 100%)
     }
     .dets-btn {
       opacity: 1;
+      background-color: #DC2626;
+      color: white;
+      border: none;
   } 
+    .dets-btn h4{
+      color: white;
+    }
     .exp-btn{
       top: 5%;
       left: 15%;
