@@ -463,38 +463,33 @@ background-color: black;
   margin-right: 4vmin;
 }
 
-.card{
-  transform-style: preserve-3d
+.item h4, .item i{
+  color: black;
 }
 
-.cart-btn {
+.exp-btn {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1;
   }
   
+  .card:hover .exp-btn {
+      opacity: 1;
+  } 
 .dets-btn {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1;
   }
   
-  .item{
-    color: black;
-  }
-
   .banner-box{
     background: rgb(252,80,80);
 background: linear-gradient(85deg, rgba(252,80,80,1) 0%, rgba(220,38,38,1) 100%);
   }
   
-
-
-
+  
   /* bestseller RESPONSIVE */
 @media (max-width:405px) {
   
@@ -533,8 +528,20 @@ background: linear-gradient(85deg, rgba(252,80,80,1) 0%, rgba(220,38,38,1) 100%)
           flex-wrap: wrap;
       }
   }
-  
+  @media (min-width:991px){
+      .exp-btn{
+          opacity: 0;
+      }
+  }
 
+  @media (max-width:500px) {
+    .banner-box{
+      height: 8vh;
+    }
+    .banner-box h4{
+      font-size: 4vmin;
+    }
+  }
   
   @media (min-width:525px) and (max-width:1023px) {
     .container
@@ -549,6 +556,19 @@ background: linear-gradient(85deg, rgba(252,80,80,1) 0%, rgba(220,38,38,1) 100%)
       width: 35vh;
     }
   }
+  .banner-box{
+    border-radius: 6vw;
+    height: 10vh;
+  }
+  .banner-box h4{
+    font-size: 3vmin;
+  }
+
+  @media (min-width:740) and (max-width:1023px) {
+    .banner-box{
+      height: 10vh;
+    }
+  } 
 @media (max-width: 768px) {
   .products {
     display: flex;
@@ -571,21 +591,24 @@ background: linear-gradient(85deg, rgba(252,80,80,1) 0%, rgba(220,38,38,1) 100%)
     }
     .dets-btn {
       opacity: 1;
-  } 
-    .cart-btn{
-      top: 5%;
-      left: 15%;
-      opacity: 1;
-    }
-    .pointer{
-      opacity: 0;
-    }
-    .dets-btn {
-      opacity: 1;
       background-color: #DC2626;
       color: white;
       border: none;
   } 
+    .dets-btn h4{
+      color: white;
+    }
+    .exp-btn{
+      top: 5%;
+      left: 15%;
+    }
+    .banner-box{
+      border-radius: 6vw;
+      height: 17vh;
+    }
+    .banner-box h4{
+      font-size: 2vmin;
+    }
 }
 @media (min-width:1023px){
   .products .item-cont {
@@ -616,9 +639,12 @@ background: linear-gradient(85deg, rgba(252,80,80,1) 0%, rgba(220,38,38,1) 100%)
   .cart-btn{
     opacity: 1;
   }
-
   .card:hover .playback-btn{
     opacity: 1;
+  }
+  .exp-btn{
+    opacity: 1;
+    cursor: pointer;
   }
 }
 
