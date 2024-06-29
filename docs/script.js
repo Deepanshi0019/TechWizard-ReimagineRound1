@@ -85,7 +85,7 @@ function dom() {
 function files() {
     let data = [];
     for (let i = 1; i <= 298; i++) {
-        data.push(`/HomePage/Image${i}.jpg`);
+        data.push(``);
     }
     return data;
 }
@@ -357,9 +357,6 @@ pics.forEach(function(image) {
 });
 
 
-
-
-
 // animation on scroll disables for mobile
 AOS.init({disable: 'mobile'});
-AOS.init({disable: 'tablet'})
+AOS.init({disable: 'tablet'});
