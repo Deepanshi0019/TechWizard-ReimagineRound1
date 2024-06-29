@@ -571,6 +571,10 @@ background-color: black;
     color: black;
   }
 
+  .banner-box{
+    background: rgb(252,80,80);
+background: linear-gradient(85deg, rgba(252,80,80,1) 0%, rgba(220,38,38,1) 100%);
+  }
   
   /* top picks & bestseller RESPONSIVE */
 @media (max-width:405px) {
@@ -657,6 +661,12 @@ background-color: black;
     .pointer{
       opacity: 0;
     }
+    .dets-btn {
+      opacity: 1;
+      background-color: #DC2626;
+      color: white;
+      border: none;
+  } 
 }
 @media (min-width:1023px){
   .products .item-cont {
