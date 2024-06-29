@@ -263,14 +263,18 @@ color: #aaa;
 /*                             catgory css                           */
 
 /* Initial states */
-.uppar-text {
-  transform: translateY(-10vmin);
-  transition: 0.5s ease-in-out;
-}
 
-.lower-btn {
-  transform: translateY(10vmin);
-  transition: 0.5s ease-in-out;
+
+@media (min-width: 1024px) {
+  .uppar-text {
+    transform: translateY(-10vmin);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .lower-btn {
+    transform: translateY(10vmin);
+    transition: 0.5s ease-in-out;
+  }
 }
 
 /* Class to apply 
