@@ -12,8 +12,9 @@
 </head>
 <body class="bg-black">
     <!-- <h1 id="Cart-massage" class=" h-[4vmin] w-[4vmin] bg-red-500 opacity-65 ">Product Added Successfully .</h1> -->
-    <div class="cursor">
-
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+        <p>Loading...</p>
     </div>
 <!--NAV BAR 🍻-->     
     <header id="The-Nav-Bar">
@@ -80,27 +81,9 @@
 
 <!--                              🏠🏠    HomaPage Ended🥳   🏠🏠                                   -->
 
-<!--                                       warrarranty                                                    -->
-<div class="banner h-[60vh] w-full bg-black flex items-center justify-center">
-    <div data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-out" class="banner-box w-[70%] lg:h-[25vh] flex items-center justify-between rounded-[10vw] bg-red-400 px-[8vw]">
-        <div class="flex flex-col items-center justify-center">
-            <img class="h-[8vw]" src="/icon/download__1_-removebg-preview.png" alt="">
-            <h4 class="text-[3vmin] font-bold"><span class="">1 Year </span>Warranty</h4>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-            <img class="h-[8vw]" src="/icon/easy-returns7112-removebg-preview.png" alt="">
-            <h4 class="text-[3vmin] font-bold"><span>7 Day </span>Replacement</h4>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-            <img class="h-[8vw]" src="/icon/shipping-fast-delivery-truck-icon-260nw-1717424062-removebg-preview.png" alt="">
-            <h4 class="text-[3vmin] font-bold"><span>Free </span>Shippng</h4>
-        </div>
-    </div>
-</div>
-
 
 <!--                                    PRODUCTS-Section                                            -->
-<div class="products min-h-[100vh] w-full bg-black mt-[5vmin] p-[3vw] lg:p-[0vw] flex lg:flex-nowrap items-center justify-center lg:justify-between relative">
+<div class="products min-h-[100vh] w-full bg-black mt-[20vmin] p-[3vw] lg:p-[0vw] flex lg:flex-nowrap items-center justify-center lg:justify-between relative">
     <div data-aos="fade-right" data-aos-easing="ease-out" class="headline lg:w-[20%] lg:h-full text-white flex flex-col lg:flex-wrap items-center justify-center lg:justify-between ">
         <h1 class="text-[10vmin] lg:text-[20vmin] font-semibold lg:-rotate-90 lg:ml-[-25vw] tracking-tighter lg:font-bold lg:border-white lg:border-b-2">PRODUCTS</h1>
         <div class="sub-head text-[3vmin] lg:text-[5vmin] text-center lg:text-left lg:-rotate-90 lg:mt-[-6vw] lg:leading-[2.5vw]">
@@ -183,10 +166,27 @@
 <!--                                    Products-Section-Ends-Here                                           -->
 
 
+<!--                                       warrarranty                                                    -->
+<div class="banner h-[60vh] w-full bg-black flex items-center justify-center">
+    <div data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-out" class="banner-box w-[70%] lg:h-[25vh] flex items-center justify-between rounded-[10vw] bg-red-400 px-[8vw]">
+        <div class="flex flex-col items-center justify-center">
+            <img class="h-[8vw]" src="/icon/download__1_-removebg-preview.png" alt="">
+            <h4 class="text-[3vmin] font-bold"><span class="">1 Year </span>Warranty</h4>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+            <img class="h-[8vw]" src="/icon/easy-returns7112-removebg-preview.png" alt="">
+            <h4 class="text-[3vmin] font-bold"><span>7 Day </span>Replacement</h4>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+            <img class="h-[8vw]" src="/icon/shipping-fast-delivery-truck-icon-260nw-1717424062-removebg-preview.png" alt="">
+            <h4 class="text-[3vmin] font-bold"><span>Free </span>Shippng</h4>
+        </div>
+    </div>
+</div>
 
 
 <!--                               🐈‍⬛🐈‍⬛   Category-Section  🐈‍⬛🐈‍⬛                              -->
-<div class="catgory py-[20vmin] h-auto">
+<div class="catgory h-auto">
     <div data-aos="fade-left" data-aos-anchor-placement="center-center" class="catgory-heading text-center text-[10vmin] font-bold"><span class="text-red-600 font-black">Discover</span> Categories</div>
     <p class="text-center text-[3vmin] font-medium">Explore our products by categories.</p>
     <div class="content lg:flex h-auto w-full flex-nowrap pt-[10vmin] ">
