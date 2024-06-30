@@ -405,3 +405,22 @@ window.addEventListener("resize", checkScreenSize);
 // animation on scroll disables for mobile
 AOS.init({disable: 'mobile'});
 AOS.init({disable: 'tablet'});
+ // Function to check screen size and apply/remove AOS
+ function checkScreenSize() {
+    if (window.innerWidth >= 1024) { // 1024px is the breakpoint for 'lg' in Tailwind
+        initializeAOS();
+    } else {
+        // If screen is smaller, destroy AOS instance if it exists
+        AOS.refreshHard(); // Refresh AOS to reset animations
+        document.querySelectorAll('[data-aos]').forEach(function(el) {
+            el.removeAttribute('data-aos'); // Remove AOS attributes
+            el.removeAttribute('data-aos-anchor-placement'); // Remove AOS attributes
+        });
+    }
+}
+
+// Initialize on page load
+document.addEventListener("DOMContentLoaded", checkScreenSize);
+
+// Re-check on window resize
+window.addEventListener("resize", checkScreenSize);

@@ -598,6 +598,25 @@ background: linear-gradient(85deg, rgba(252,80,80,1) 0%, rgba(220,38,38,1) 100%)
     .dets-btn h4{
       color: white;
     }
+    .itm-dets{
+      white-space: nowrap;
+    }
+    .view-btn{
+      color: white;
+      background-color: #DC2626;
+    }
+    .view-btn i{
+      color: white;
+      background-color: #DC2626;
+    }
+    .view-btn:hover{
+      background-color: white;
+      color: #DC2626;
+    }
+    .view-btn:hover i{
+      background-color: white;
+      color: #DC2626;
+    }
     .exp-btn{
       top: 5%;
       left: 15%;
