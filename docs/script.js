@@ -294,27 +294,27 @@ function resetAnimation(element, className) {
   let ttoi = document.getElementById('TTOI');
   
   bw.addEventListener('click', function () {
-    imageDiv.innerHTML = `<video loop muted autoplay src="vdio/bw.mp4" class="h-[70%] w-[100%]"></video>`;
+    imageDiv.innerHTML = `<img src="https://i.postimg.cc/G3X8FY0g/BW.png" alt="" class="h-[70%] w-[100%]">`;
     resetAnimation(imageDiv, 'reveal');
   });
   
   ht.addEventListener('click', function () {
-    imageDiv.innerHTML = `<video loop muted autoplay src="vdio/HT.mp4" class="h-[70%] w-[100%]"></video>`;
+    imageDiv.innerHTML = `<img src="https://i.postimg.cc/d3V7MQC9/HT.png" alt="" class="h-[70%] w-[100%]">`;
     resetAnimation(imageDiv, 'reveal');
   });
   
   fn.addEventListener('click', function () {
-    imageDiv.innerHTML = `<video loop muted autoplay src="vdio/fn.mp4" class="h-[70%] w-[100%]"></video>`;
+    imageDiv.innerHTML = `<img src="https://i.postimg.cc/nzksw9Xz/FN.png" alt="" class="h-[70%] w-[100%]">`;
     resetAnimation(imageDiv, 'reveal');
   });
   
   bs.addEventListener('click', function () {
-    imageDiv.innerHTML = `<video loop muted autoplay src="vdio/bs.mp4" class="h-[70%] w-[100%]"></video>`;
+    imageDiv.innerHTML = `<img src="https://i.postimg.cc/qqDNpfXH/BS.png" alt="" class="h-[70%] w-[100%]">`;
     resetAnimation(imageDiv, 'reveal');
   });
   
   ttoi.addEventListener('click', function () {
-    imageDiv.innerHTML = `<video loop muted autoplay src="vdio/TTOI.mp4" class="h-[70%] w-[100%]"></video>`;
+    imageDiv.innerHTML = `<img src="https://i.postimg.cc/02r6cQPk/ttoi.png" alt="" class="h-[70%] w-[100%]">`;
     resetAnimation(imageDiv, 'reveal');
   });
   
