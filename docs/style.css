@@ -641,6 +641,7 @@ background: linear-gradient(85deg, rgba(252,80,80,1) 0%, rgba(220,38,38,1) 100%)
   }
   .card:hover .playback-btn{
     opacity: 1;
+    background-color: #FCC50B;
   }
   .exp-btn{
     opacity: 1;

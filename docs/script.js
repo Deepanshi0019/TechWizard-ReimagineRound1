@@ -369,6 +369,38 @@ pics.forEach(function(image) {
     });
 });
 
+//  TOP PICKS Starts here
+
+ // Function to initialize Tilt.js
+ function initializeTilt() {
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        glare: true,
+        "max-glare": 0.5,
+        scale: 1.1
+    });
+}
+
+function checkScreenSize() {
+    const tiltElements = document.querySelectorAll(".card");
+
+    if (window.innerWidth >= 1024) { // 1024px is the breakpoint for 'lg' in Tailwind
+        initializeTilt(tiltElements);
+    } else {
+        tiltElements.forEach((tiltElement) => {
+            if (tiltElement.vanillaTilt) {
+                tiltElement.vanillaTilt.destroy();
+            }
+        });
+    }
+}
+
+// Initialize on page load
+document.addEventListener("DOMContentLoaded", checkScreenSize);
+
+// Re-check on window resize
+window.addEventListener("resize", checkScreenSize);
+
+//  TOP PICKS ENDS here
 
 // animation on scroll disables for mobile
 AOS.init({disable: 'mobile'});
