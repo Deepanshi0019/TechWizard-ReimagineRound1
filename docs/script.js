@@ -37,33 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-function ClipPath() {
-    // Set initial properties for the animation elements
-    gsap.set(".products", { 
-        clipPath: "circle(0% at 50% 50%)" // Initial clip-path is a small circle
-    });
-
-    // Create the timeline for the animation
-    var tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#home",
-            start: "top top",    // Start the animation when the top of the home section hits the top of the viewport
-            end: "bottom top",   // End the animation when the bottom of the home section hits the top of the viewport
-            scrub: 1             // Smooth scrolling animation
-        }
-    });
-
-    // Define the clip-path animation
-    tl.to(".products", {
-        clipPath: "circle(150% at 50% 50%)", // Expanding the clip-path to cover the section
-        ease: "power2.out" // Smooth easing
-    });
-}
-
-// Run the function to apply the animation
-ClipPath();
-
 /*                                 Home-Page CSS             */
 
 let context;
@@ -158,22 +131,22 @@ gsap.to("#home canvas", {
 
 dom();
 
-function hompageheading(){
-    gsap.from("#home .text-content",{     // 
-        y:"200%",
-        opacity:0,
-        ease:Power4,
-        scrollTrigger:{
-           trigger:"#home",
-           scrub:true,
-           scroller:"body",
-           markers:false,
-           start:"bottom 100%",
+// function hompageheading(){
+//     gsap.from("#home .text-content",{     // 
+//         y:"200%",
+//         opacity:0,
+//         ease:Power4,
+//         scrollTrigger:{
+//            trigger:"#home",
+//            scrub:true,
+//            scroller:"body",
+//            markers:false,
+//            start:"bottom 100%",
          
-        }
-   })
-}
-hompageheading()
+//         }
+//    })
+// }
+// hompageheading()
                  // homepage text animation
 
 //                               For responsive nav
@@ -213,35 +186,75 @@ window.addEventListener('scroll',function () {
 
 //                                   LifeStyle
 
+function isMobile() {
+    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+}
+
 function LifeStyleAnime() {
+    const isMobileDevice = isMobile();
+
     document.querySelectorAll('.life1').forEach(function(el) {
-        el.addEventListener('mousemove', function(dets) {
-            gsap.to(this.querySelector('.img-life'), {
-                display: 'block', // Ensure the element is visible
-                opacity: 1,
-                x: gsap.utils.mapRange(0, window.innerWidth, -200, 200, dets.clientX),
-                y: gsap.utils.mapRange(0, window.innerWidth, -60, 60, dets.clientY),
-                scale: 1.2, // Scale up for pop effect
-                ease: Power4.easeOut,
-                duration: 1.1
-            });
-        });
-        el.addEventListener('mouseleave', function(dets) {
-            gsap.to(this.querySelector('.img-life'), {
-                opacity: 0,
-                x: 0, // Reset position
-                scale: 0.5, // Reset scale
-                ease: Power4.easeOut,
-                duration: 1.1,
-                onComplete: () => {
-                    this.querySelector('.img-life').style.display = 'none'; 
+        if (isMobileDevice) {
+            el.addEventListener('mousemove', function() {
+                const imgLife = this.querySelector('.img-life');
+                if (imgLife.style.display !== 'block') {
+                    gsap.to(imgLife, {
+                        display: 'block', // Ensure the element is visible
+                        opacity: 1,
+                        x: 0,
+                        y: 0,
+                        scale: 1.2, // Scale up for pop effect
+                        ease: Power4.easeOut,
+                        duration: 1.1
+                    });
                 }
             });
-        });
+        
+            el.addEventListener('mouseleave', function() {
+                const imgLife = this.querySelector('.img-life');
+                if (imgLife.style.display === 'block') {
+                    gsap.to(imgLife, {
+                        opacity: 0,
+                        x: 0,
+                        scale: 0.5,
+                        ease: Power4.easeOut,
+                        duration: 1.1,
+                        onComplete: () => {
+                            imgLife.style.display = 'none'; 
+                        }
+                    });
+                }
+            });
+        } else {
+            el.addEventListener('mousemove', function(dets) {
+                gsap.to(this.querySelector('.img-life'), {
+                    display: 'block', // Ensure the element is visible
+                    opacity: 1,
+                    x: gsap.utils.mapRange(0, window.innerWidth, -200, 200, dets.clientX),
+                    y: gsap.utils.mapRange(0, window.innerWidth, -60, 60, dets.clientY),
+                    scale: 1.2, // Scale up for pop effect
+                    ease: Power4.easeOut,
+                    duration: 1.1
+                });
+            });
+            el.addEventListener('mouseleave', function(dets) {
+                gsap.to(this.querySelector('.img-life'), {
+                    opacity: 0,
+                    x: 0, // Reset position
+                    scale: 0.5, // Reset scale
+                    ease: Power4.easeOut,
+                    duration: 1.1,
+                    onComplete: () => {
+                        this.querySelector('.img-life').style.display = 'none'; 
+                    }
+                });
+            });
+        }
     });
 }
 
 LifeStyleAnime();
+
     
 
 
