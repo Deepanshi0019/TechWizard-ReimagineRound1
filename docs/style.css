@@ -486,7 +486,7 @@ background-color: black;
   
   .banner-box{
     background: rgb(252,80,80);
-background: linear-gradient(85deg, rgba(252,80,80,1) 0%, rgba(220,38,38,1) 100%);
+    background: linear-gradient(85deg, rgba(252,80,80,1) 0%, rgba(220,38,38,1) 100%);
   }
   
   
